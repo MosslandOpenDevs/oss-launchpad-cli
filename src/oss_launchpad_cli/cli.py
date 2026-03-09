@@ -88,6 +88,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
         "Review README.md and replace placeholder setup commands with the first real local run.",
         "Fill docs/launch-plan.md with the launch audience, proof assets, and release scope.",
         "Complete docs/launch-scorecard.md so the first public announcement has a visible readiness checklist.",
+        "Review RELEASE_CHECKLIST.md before the first tag so launch steps and public proof stay aligned.",
         "Run demo/run_demo.sh and keep the benchmark/README.md evidence path in sync.",
     ]
     preset_steps = {

@@ -101,6 +101,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
+            self.assertIn("RELEASE_CHECKLIST.md", result.stdout)
             self.assertTrue((target / "README.md").exists())
             self.assertTrue((target / ".github" / "pull_request_template.md").exists())
             self.assertTrue((target / "prompts" / "system.txt").exists())
