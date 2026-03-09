@@ -1,0 +1,5 @@
+{
+  "project_tagline": "Bootstrap a public web-app repository with clearer onboarding, demo flow, and release discipline.",
+  "why_section": "This scaffold is tuned for repos that need to explain product value fast, show a happy-path demo, and keep contributor expectations easy to find.",
+  "setup_section": "- Install app dependencies.\n- Document environment variables.\n- Add a local run command and expected URL."
+}

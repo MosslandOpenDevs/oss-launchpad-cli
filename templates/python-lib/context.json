@@ -1,0 +1,5 @@
+{
+  "project_tagline": "Bootstrap a public Python library repository with reproducible examples, benchmark notes, and maintainable release docs.",
+  "why_section": "This scaffold is tuned for libraries that need clean install instructions, API usage examples, and trust-building release hygiene.",
+  "setup_section": "- Create a virtualenv.\n- Install the package in editable mode.\n- Add a quick import/use example near the top of the README."
+}

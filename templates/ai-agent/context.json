@@ -1,0 +1,5 @@
+{
+  "project_tagline": "Bootstrap a public AI agent repository with launch-ready docs, demo flow, and contribution hygiene.",
+  "why_section": "This scaffold is tuned for agent repos that need quick explanation, reproducible examples, and clear evaluation hooks for strangers.",
+  "setup_section": "- Create a virtualenv or runtime environment.\n- Install dependencies.\n- Document the first runnable agent command in the README."
+}

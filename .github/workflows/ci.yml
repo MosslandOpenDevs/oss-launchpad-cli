@@ -11,9 +11,14 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install package
         run: pip install -e .
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -q
       - name: Run scaffold smoke test
         run: |
-          oss-launchpad init sample --title "Sample"
-          test -f sample/README.md
-          test -f sample/CONTRIBUTING.md
-          test -f sample/benchmark/README.md
+          oss-launchpad init sample-agent --title "Sample Agent" --preset ai-agent
+          test -f sample-agent/README.md
+          test -f sample-agent/CONTRIBUTING.md
+          test -f sample-agent/benchmark/README.md
+          grep -q "public AI agent repository" sample-agent/README.md
+          oss-launchpad init sample-lib --title "Sample Library" --preset python-lib
+          grep -q "public Python library repository" sample-lib/README.md

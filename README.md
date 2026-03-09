@@ -20,6 +20,74 @@ Many open-source repositories fail early for reasons that have nothing to do wit
 
 ---
 
+## What it generates today
+
+Version `0.1.0` generates a launch-ready baseline scaffold:
+
+- `README.md`
+- `CONTRIBUTING.md`
+- `.github/ISSUE_TEMPLATE/bug_report.md`
+- `.github/ISSUE_TEMPLATE/feature_request.md`
+- `.github/pull_request_template.md`
+- `benchmark/README.md`
+- `demo/run_demo.sh`
+- `CHANGELOG.md`
+- `RELEASE_CHECKLIST.md`
+
+---
+
+## Project presets
+
+Current presets:
+
+- `ai-agent`
+- `web-app`
+- `python-lib`
+
+Each preset keeps the same public-repo scaffold, but changes the README framing and setup guidance so the generated repository feels more specific on day one.
+
+---
+
+## Example usage
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+
+oss-launchpad init my-agent --title "My Agent" --preset ai-agent
+oss-launchpad init my-webapp --title "My Web App" --preset web-app
+oss-launchpad init my-library --title "My Library" --preset python-lib
+```
+
+### Generated tree
+
+```text
+my-project/
+├─ README.md
+├─ CONTRIBUTING.md
+├─ CHANGELOG.md
+├─ RELEASE_CHECKLIST.md
+├─ benchmark/
+│  └─ README.md
+├─ demo/
+│  └─ run_demo.sh
+└─ .github/
+   ├─ ISSUE_TEMPLATE/
+   │  ├─ bug_report.md
+   │  └─ feature_request.md
+   └─ pull_request_template.md
+```
+
+### Why the output is more convincing than a bare repo
+
+- the README starts with a project-specific tagline,
+- setup guidance is preset-aware,
+- demo and benchmark folders exist from day one,
+- contribution and release files are already in place.
+
+---
+
 ## Long-term Project Direction
 
 This project is intended as a long-lived public infrastructure tool for open-source launches.
@@ -55,53 +123,13 @@ The CLI should remain small, auditable, and easy to extend. Prefer incremental t
 
 ## MVP scope
 
-Version `0.1.0` will generate:
+Version `0.1.0` focuses on:
 
-- `README.md`
-- `CONTRIBUTING.md`
-- `.github/ISSUE_TEMPLATE/bug_report.md`
-- `.github/ISSUE_TEMPLATE/feature_request.md`
-- `.github/pull_request_template.md`
-- `benchmark/README.md`
-- `demo/run_demo.sh`
-- `CHANGELOG.md`
-- `RELEASE_CHECKLIST.md`
-
----
-
-## Example usage
-
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -e .
-
-oss-launchpad init my-project --title "My Project"
-```
-
----
-
-## Roadmap
-
-### Phase 1
-- Baseline scaffold generation
-- Template validation
-- CLI help and init command
-
-### Phase 2
-- Presets by project type (library, CLI, AI agent, web app)
-- Better README variants
-- Release note templates
-
-### Phase 3
-- GitHub metadata generation
-- Benchmark skeleton presets
-- Demo verification helpers
-
-### Phase 4
-- Team-level policy packs
-- Template composition system
-- Community template registry
+- baseline scaffold generation,
+- preset-aware README/setup rendering,
+- no-overwrite initialization,
+- CLI help and init flow,
+- validation through automated tests.
 
 ---
 
@@ -111,6 +139,7 @@ oss-launchpad init my-project --title "My Project"
 oss-launchpad-cli/
 ├─ src/oss_launchpad_cli/
 ├─ templates/
+├─ tests/
 ├─ docs/
 ├─ .github/workflows/
 └─ README.md
