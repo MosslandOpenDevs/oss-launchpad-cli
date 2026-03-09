@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install package
+        run: pip install -e .
+      - name: Run scaffold smoke test
+        run: |
+          oss-launchpad init sample --title "Sample"
+          test -f sample/README.md
+          test -f sample/CONTRIBUTING.md
+          test -f sample/benchmark/README.md
