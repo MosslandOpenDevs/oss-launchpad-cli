@@ -24,6 +24,8 @@ class InitProjectTests(unittest.TestCase):
             self.assertTrue((target / "CONTRIBUTING.md").exists())
             self.assertTrue((target / "demo" / "run_demo.sh").exists())
             self.assertTrue((target / "docs" / "launch-plan.md").exists())
+            self.assertTrue((target / "docs" / "launch-scorecard.md").exists())
+            self.assertTrue((target / "docs" / "agent-demo-brief.md").exists())
 
     def test_init_project_renders_preset_specific_readme(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -40,6 +42,7 @@ class InitProjectTests(unittest.TestCase):
             self.assertIn("pyproject.toml", created)
             self.assertIn("src/my_library/__init__.py", created)
             self.assertIn("tests/test_smoke.py", created)
+            self.assertIn("examples/basic_usage.py", created)
             self.assertTrue((target / "src" / "my_library" / "__init__.py").exists())
 
     def test_existing_files_are_not_overwritten(self) -> None:
@@ -83,6 +86,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertTrue((target / "README.md").exists())
             self.assertTrue((target / ".github" / "pull_request_template.md").exists())
             self.assertTrue((target / "prompts" / "system.txt").exists())
+            self.assertIn("docs/launch-scorecard.md", result.stdout)
 
 
 if __name__ == "__main__":

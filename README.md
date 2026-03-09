@@ -32,14 +32,15 @@ Version `0.1.0` generates a launch-ready baseline scaffold:
 - `benchmark/README.md`
 - `demo/run_demo.sh`
 - `docs/launch-plan.md`
+- `docs/launch-scorecard.md`
 - `CHANGELOG.md`
 - `RELEASE_CHECKLIST.md`
 
 It now also adds preset-differentiated starter assets so the repo feels useful before the first manual commit:
 
-- `ai-agent` → `prompts/system.txt`, `evals/README.md`
-- `web-app` → `.env.example`, `docs/ui-ux-checklist.md`
-- `python-lib` → `pyproject.toml`, `src/<package>/__init__.py`, `tests/test_smoke.py`
+- `ai-agent` → `prompts/system.txt`, `evals/README.md`, `docs/agent-demo-brief.md`
+- `web-app` → `.env.example`, `docs/ui-ux-checklist.md`, `docs/landing-page-brief.md`
+- `python-lib` → `pyproject.toml`, `src/<package>/__init__.py`, `tests/test_smoke.py`, `examples/basic_usage.py`
 - all presets → `docs/launch-plan.md` so maintainers capture audience, proof assets, and release scope before going public
 
 ---
@@ -68,7 +69,7 @@ oss-launchpad init my-webapp --title "My Web App" --preset web-app
 oss-launchpad init my-library --title "My Library" --preset python-lib
 ```
 
-The init output now also prints a title slug plus preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md`, which acts as the repo-included launch handoff instead of leaving launch readiness as an implied TODO.
+The init output now also prints a title slug plus preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
 
 ### Generated tree
 
