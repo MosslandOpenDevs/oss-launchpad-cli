@@ -64,6 +64,50 @@ class InitProjectTests(unittest.TestCase):
             self.assertNotIn("README.md", created)
             self.assertEqual(existing.read_text(encoding="utf-8"), "keep me")
 
+    def test_second_init_run_reports_no_new_files(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "agent-repo"
+            env = dict(os.environ)
+            env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+
+            first = subprocess.run(
+                [
+                    sys.executable,
+                    "-m",
+                    "oss_launchpad_cli.cli",
+                    "init",
+                    str(target),
+                    "--title",
+                    "Agent Repo",
+                    "--preset",
+                    "ai-agent",
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+                env=env,
+            )
+            self.assertIn("Created files:", first.stdout)
+
+            second = subprocess.run(
+                [
+                    sys.executable,
+                    "-m",
+                    "oss_launchpad_cli.cli",
+                    "init",
+                    str(target),
+                    "--title",
+                    "Agent Repo",
+                    "--preset",
+                    "ai-agent",
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+                env=env,
+            )
+            self.assertIn("No new files created.", second.stdout)
+
     def test_web_app_preset_adds_information_architecture_doc(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "sample"

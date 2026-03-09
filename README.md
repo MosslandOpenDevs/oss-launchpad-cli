@@ -100,6 +100,7 @@ my-project/
 - `.editorconfig` gives the repo a consistent text-formatting baseline before the first manual edit,
 - preset-specific files make the first repo-specific commit easier to shape,
 - init now prints a preset-specific smoke command so the maintainer knows the first proof step immediately.
+- rerunning `init` against an existing scaffold keeps files untouched and prints `No new files created.` so teams can treat repeat runs as a safe drift check instead of a destructive rewrite.
 
 ### Example smoke commands printed by `init`
 
