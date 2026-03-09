@@ -27,6 +27,7 @@ class InitProjectTests(unittest.TestCase):
             self.assertIn("README.md", created)
             self.assertIn("docs/launch-plan.md", created)
             self.assertTrue((target / "CONTRIBUTING.md").exists())
+            self.assertTrue((target / ".editorconfig").exists())
             self.assertTrue((target / "demo" / "run_demo.sh").exists())
             self.assertTrue((target / "docs" / "launch-plan.md").exists())
             self.assertTrue((target / "docs" / "launch-scorecard.md").exists())

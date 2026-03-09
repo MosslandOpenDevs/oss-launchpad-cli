@@ -25,6 +25,7 @@ Many open-source repositories fail early for reasons that have nothing to do wit
 Version `0.1.0` generates a launch-ready baseline scaffold:
 
 - `README.md`
+- `.editorconfig`
 - `CONTRIBUTING.md`
 - `.github/ISSUE_TEMPLATE/bug_report.md`
 - `.github/ISSUE_TEMPLATE/feature_request.md`
@@ -96,6 +97,7 @@ my-project/
 - setup guidance is preset-aware,
 - demo and benchmark folders exist from day one,
 - contribution and release files are already in place,
+- `.editorconfig` gives the repo a consistent text-formatting baseline before the first manual edit,
 - preset-specific files make the first repo-specific commit easier to shape,
 - init now prints a preset-specific smoke command so the maintainer knows the first proof step immediately.
 
