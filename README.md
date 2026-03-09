@@ -38,9 +38,9 @@ Version `0.1.0` generates a launch-ready baseline scaffold:
 
 It now also adds preset-differentiated starter assets so the repo feels useful before the first manual commit:
 
-- `ai-agent` → `prompts/system.txt`, `evals/README.md`, `docs/agent-demo-brief.md`
-- `web-app` → `.env.example`, `docs/ui-ux-checklist.md`, `docs/landing-page-brief.md`
-- `python-lib` → `pyproject.toml`, `src/<package>/__init__.py`, `tests/test_smoke.py`, `examples/basic_usage.py`
+- `ai-agent` → `prompts/system.txt`, `evals/README.md`, `evals/smoke_cases.jsonl`, `docs/agent-demo-brief.md`
+- `web-app` → `.env.example`, `docs/ui-ux-checklist.md`, `docs/landing-page-brief.md`, `docs/information-architecture.md`
+- `python-lib` → `pyproject.toml`, `src/<package>/__init__.py`, `tests/test_smoke.py`, `examples/basic_usage.py`, `docs/api-surface.md`
 - all presets → `docs/launch-plan.md` so maintainers capture audience, proof assets, and release scope before going public
 
 ---

@@ -26,6 +26,7 @@ class InitProjectTests(unittest.TestCase):
             self.assertTrue((target / "docs" / "launch-plan.md").exists())
             self.assertTrue((target / "docs" / "launch-scorecard.md").exists())
             self.assertTrue((target / "docs" / "agent-demo-brief.md").exists())
+            self.assertTrue((target / "evals" / "smoke_cases.jsonl").exists())
 
     def test_init_project_renders_preset_specific_readme(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -43,7 +44,9 @@ class InitProjectTests(unittest.TestCase):
             self.assertIn("src/my_library/__init__.py", created)
             self.assertIn("tests/test_smoke.py", created)
             self.assertIn("examples/basic_usage.py", created)
+            self.assertIn("docs/api-surface.md", created)
             self.assertTrue((target / "src" / "my_library" / "__init__.py").exists())
+            self.assertTrue((target / "docs" / "api-surface.md").exists())
 
     def test_existing_files_are_not_overwritten(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -54,6 +57,13 @@ class InitProjectTests(unittest.TestCase):
             created = init_project(target, "Ignored", "web-app")
             self.assertNotIn("README.md", created)
             self.assertEqual(existing.read_text(encoding="utf-8"), "keep me")
+
+    def test_web_app_preset_adds_information_architecture_doc(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "sample"
+            created = init_project(target, "My Web App", "web-app")
+            self.assertIn("docs/information-architecture.md", created)
+            self.assertTrue((target / "docs" / "information-architecture.md").exists())
 
 
 class CliSmokeTests(unittest.TestCase):
