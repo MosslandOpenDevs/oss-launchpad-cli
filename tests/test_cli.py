@@ -15,6 +15,12 @@ from oss_launchpad_cli.cli import _build_smoke_command, init_project
 
 
 class InitProjectTests(unittest.TestCase):
+    def test_slugify_title_falls_back_for_punctuation_only_titles(self) -> None:
+        from oss_launchpad_cli.cli import _slugify_title
+
+        self.assertEqual(_slugify_title("***"), "new-project")
+        self.assertEqual(_slugify_title("  ---  "), "new-project")
+
     def test_build_smoke_command_is_preset_specific(self) -> None:
         self.assertIn("evals/smoke_cases.jsonl", _build_smoke_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/landing-page-brief.md", _build_smoke_command("web-app", "web-repo", "web_repo"))
