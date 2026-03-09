@@ -11,10 +11,15 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
-from oss_launchpad_cli.cli import init_project
+from oss_launchpad_cli.cli import _build_smoke_command, init_project
 
 
 class InitProjectTests(unittest.TestCase):
+    def test_build_smoke_command_is_preset_specific(self) -> None:
+        self.assertIn("evals/smoke_cases.jsonl", _build_smoke_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("docs/landing-page-brief.md", _build_smoke_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("tests/test_smoke.py", _build_smoke_command("python-lib", "library-project", "library_project"))
+
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "sample"
@@ -92,6 +97,8 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Preset: ai-agent", result.stdout)
             self.assertIn("Title slug: agent-repo", result.stdout)
             self.assertIn("Next steps:", result.stdout)
+            self.assertIn("Smoke command:", result.stdout)
+            self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertTrue((target / "README.md").exists())
             self.assertTrue((target / ".github" / "pull_request_template.md").exists())

@@ -74,6 +74,15 @@ def init_project(target: Path, title: str, preset: str) -> list[str]:
     return created
 
 
+def _build_smoke_command(preset: str, title_slug: str, package_name: str) -> str:
+    commands = {
+        "ai-agent": "python3 -m json.tool evals/smoke_cases.jsonl >/dev/null || head -n 3 evals/smoke_cases.jsonl",
+        "web-app": "sh demo/run_demo.sh && sed -n '1,40p' docs/landing-page-brief.md",
+        "python-lib": f"PYTHONPATH=src python3 -m unittest tests/test_smoke.py && python3 examples/basic_usage.py",
+    }
+    return commands[preset]
+
+
 def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[str]:
     common_steps = [
         "Review README.md and replace placeholder setup commands with the first real local run.",
@@ -95,7 +104,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
             f"Run python -m unittest tests/test_smoke.py after wiring the package import path for {title_slug}.",
         ],
     }
-    return common_steps + preset_steps[preset]
+    return [f"Smoke command: {_build_smoke_command(preset, title_slug, package_name)}"] + common_steps + preset_steps[preset]
 
 
 def main() -> None:

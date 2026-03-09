@@ -69,7 +69,7 @@ oss-launchpad init my-webapp --title "My Web App" --preset web-app
 oss-launchpad init my-library --title "My Library" --preset python-lib
 ```
 
-The init output now also prints a title slug plus preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
+The init output now also prints a title slug, a preset-specific smoke command, and preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
 
 ### Generated tree
 
@@ -96,7 +96,14 @@ my-project/
 - setup guidance is preset-aware,
 - demo and benchmark folders exist from day one,
 - contribution and release files are already in place,
-- preset-specific files make the first repo-specific commit easier to shape.
+- preset-specific files make the first repo-specific commit easier to shape,
+- init now prints a preset-specific smoke command so the maintainer knows the first proof step immediately.
+
+### Example smoke commands printed by `init`
+
+- `ai-agent` → `python3 -m json.tool evals/smoke_cases.jsonl >/dev/null || head -n 3 evals/smoke_cases.jsonl`
+- `web-app` → `sh demo/run_demo.sh && sed -n '1,40p' docs/landing-page-brief.md`
+- `python-lib` → `PYTHONPATH=src python3 -m unittest tests/test_smoke.py && python3 examples/basic_usage.py`
 
 ---
 
