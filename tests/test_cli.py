@@ -1,10 +1,15 @@
 from __future__ import annotations
 
+import os
 import subprocess
 import sys
 import tempfile
 import unittest
 from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+SRC = ROOT / "src"
+sys.path.insert(0, str(SRC))
 
 from oss_launchpad_cli.cli import init_project
 
@@ -15,8 +20,10 @@ class InitProjectTests(unittest.TestCase):
             target = Path(tmp) / "sample"
             created = init_project(target, "Sample Project", "ai-agent")
             self.assertIn("README.md", created)
+            self.assertIn("docs/launch-plan.md", created)
             self.assertTrue((target / "CONTRIBUTING.md").exists())
             self.assertTrue((target / "demo" / "run_demo.sh").exists())
+            self.assertTrue((target / "docs" / "launch-plan.md").exists())
 
     def test_init_project_renders_preset_specific_readme(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -50,6 +57,8 @@ class CliSmokeTests(unittest.TestCase):
     def test_cli_init_prints_preset_and_creates_files(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "agent-repo"
+            env = dict(os.environ)
+            env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
             result = subprocess.run(
                 [
                     sys.executable,
@@ -65,10 +74,12 @@ class CliSmokeTests(unittest.TestCase):
                 check=True,
                 capture_output=True,
                 text=True,
+                env=env,
             )
             self.assertIn("Preset: ai-agent", result.stdout)
             self.assertIn("Title slug: agent-repo", result.stdout)
             self.assertIn("Next steps:", result.stdout)
+            self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertTrue((target / "README.md").exists())
             self.assertTrue((target / ".github" / "pull_request_template.md").exists())
             self.assertTrue((target / "prompts" / "system.txt").exists())

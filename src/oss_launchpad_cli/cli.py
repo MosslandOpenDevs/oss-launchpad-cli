@@ -77,6 +77,7 @@ def init_project(target: Path, title: str, preset: str) -> list[str]:
 def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[str]:
     common_steps = [
         "Review README.md and replace placeholder setup commands with the first real local run.",
+        "Fill docs/launch-plan.md with the launch audience, proof assets, and release scope.",
         "Run demo/run_demo.sh and keep the benchmark/README.md evidence path in sync.",
     ]
     preset_steps = {
