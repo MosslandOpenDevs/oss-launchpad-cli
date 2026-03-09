@@ -1,0 +1,7 @@
+# {title} system prompt
+
+Describe the operating contract for {title}.
+- Primary user jobs:
+- Allowed tools or integrations:
+- Guardrails and escalation rules:
+- Definition of a successful demo run:

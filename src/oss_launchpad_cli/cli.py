@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 from pathlib import Path
 
 PACKAGE_ROOT = Path(__file__).resolve().parent
@@ -19,38 +20,80 @@ DEFAULT_CONTEXT = {
 }
 
 
-def _load_preset_context(preset: str) -> dict[str, str]:
+def _slugify_title(title: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", title.strip().lower()).strip("-")
+    return slug or "new-project"
+
+
+def _load_preset_context(preset: str, title: str) -> dict[str, str]:
     if preset not in PRESET_TEMPLATE_ROOTS:
         raise ValueError(f"Unsupported preset: {preset}")
     context_path = PRESET_TEMPLATE_ROOTS[preset] / "context.json"
     with context_path.open("r", encoding="utf-8") as handle:
         preset_context = json.load(handle)
+    title_slug = _slugify_title(title)
     merged = dict(DEFAULT_CONTEXT)
     merged.update(preset_context)
+    merged.update(
+        {
+            "title": title,
+            "title_slug": title_slug,
+            "package_name": title_slug.replace("-", "_"),
+        }
+    )
     return merged
 
 
 def _iter_template_files(root: Path) -> list[Path]:
-    return sorted(path for path in root.rglob("*") if path.is_file())
+    if not root.exists():
+        return []
+    return sorted(path for path in root.rglob("*") if path.is_file() and path.name != "context.json")
 
 
-def init_project(target: Path, title: str, preset: str) -> list[str]:
+def _render_template_group(target: Path, template_root: Path, context: dict[str, str]) -> list[str]:
     created: list[str] = []
-    context = _load_preset_context(preset)
-    context["title"] = title
-
-    for template_file in _iter_template_files(BASE_TEMPLATE_ROOT):
-        rel_path = template_file.relative_to(BASE_TEMPLATE_ROOT)
-        file_path = target / rel_path
+    for template_file in _iter_template_files(template_root):
+        rel_path = template_file.relative_to(template_root)
+        rendered_rel_path = Path(rel_path.as_posix().format(**context))
+        file_path = target / rendered_rel_path
         if file_path.exists():
             continue
         file_path.parent.mkdir(parents=True, exist_ok=True)
         rendered = template_file.read_text(encoding="utf-8").format(**context)
         file_path.write_text(rendered, encoding="utf-8")
-        if file_path.name == "run_demo.sh":
+        if file_path.suffix == ".sh":
             file_path.chmod(0o755)
-        created.append(rel_path.as_posix())
+        created.append(rendered_rel_path.as_posix())
     return created
+
+
+def init_project(target: Path, title: str, preset: str) -> list[str]:
+    context = _load_preset_context(preset, title)
+    created = _render_template_group(target, BASE_TEMPLATE_ROOT, context)
+    created.extend(_render_template_group(target, PRESET_TEMPLATE_ROOTS[preset], context))
+    return created
+
+
+def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[str]:
+    common_steps = [
+        "Review README.md and replace placeholder setup commands with the first real local run.",
+        "Run demo/run_demo.sh and keep the benchmark/README.md evidence path in sync.",
+    ]
+    preset_steps = {
+        "ai-agent": [
+            "Update prompts/system.txt with the first system prompt or agent contract.",
+            "Add a real evaluation command under evals/README.md before the first public release.",
+        ],
+        "web-app": [
+            "Fill .env.example with the minimum local variables required to boot the app.",
+            "Replace docs/ui-ux-checklist.md examples with the actual landing-page and happy-path UX checks.",
+        ],
+        "python-lib": [
+            f"Implement the first public API in src/{package_name}/__init__.py.",
+            f"Run python -m unittest tests/test_smoke.py after wiring the package import path for {title_slug}.",
+        ],
+    }
+    return common_steps + preset_steps[preset]
 
 
 def main() -> None:
@@ -73,14 +116,20 @@ def main() -> None:
         target = Path(args.directory).resolve()
         target.mkdir(parents=True, exist_ok=True)
         created = init_project(target, args.title, args.preset)
+        title_slug = _slugify_title(args.title)
+        package_name = title_slug.replace("-", "_")
         print(f"Initialized scaffold in: {target}")
         print(f"Preset: {args.preset}")
+        print(f"Title slug: {title_slug}")
         if created:
             print("Created files:")
             for item in created:
                 print(f"- {item}")
         else:
             print("No new files created.")
+        print("Next steps:")
+        for step in _build_next_steps(args.preset, title_slug, package_name):
+            print(f"- {step}")
 
 
 if __name__ == "__main__":

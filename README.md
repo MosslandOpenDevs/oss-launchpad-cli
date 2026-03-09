@@ -2,7 +2,7 @@
 
 CLI toolkit for bootstrapping public open-source projects with strong documentation, reproducibility, and launch readiness.
 
-> Build cleaner public repos faster: README, demo script, benchmark folder, issue/PR templates, and release scaffolding in one flow.
+> Build cleaner public repos faster: README, demo script, benchmark folder, issue/PR templates, release scaffolding, and preset-specific starter files in one flow.
 
 ---
 
@@ -34,6 +34,12 @@ Version `0.1.0` generates a launch-ready baseline scaffold:
 - `CHANGELOG.md`
 - `RELEASE_CHECKLIST.md`
 
+It now also adds preset-differentiated starter assets so the repo feels useful before the first manual commit:
+
+- `ai-agent` → `prompts/system.txt`, `evals/README.md`
+- `web-app` → `.env.example`, `docs/ui-ux-checklist.md`
+- `python-lib` → `pyproject.toml`, `src/<package>/__init__.py`, `tests/test_smoke.py`
+
 ---
 
 ## Project presets
@@ -44,7 +50,7 @@ Current presets:
 - `web-app`
 - `python-lib`
 
-Each preset keeps the same public-repo scaffold, but changes the README framing and setup guidance so the generated repository feels more specific on day one.
+Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
 
 ---
 
@@ -59,6 +65,8 @@ oss-launchpad init my-agent --title "My Agent" --preset ai-agent
 oss-launchpad init my-webapp --title "My Web App" --preset web-app
 oss-launchpad init my-library --title "My Library" --preset python-lib
 ```
+
+The init output now also prints a title slug plus preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately.
 
 ### Generated tree
 
@@ -84,7 +92,8 @@ my-project/
 - the README starts with a project-specific tagline,
 - setup guidance is preset-aware,
 - demo and benchmark folders exist from day one,
-- contribution and release files are already in place.
+- contribution and release files are already in place,
+- preset-specific files make the first repo-specific commit easier to shape.
 
 ---
 
@@ -127,6 +136,7 @@ Version `0.1.0` focuses on:
 
 - baseline scaffold generation,
 - preset-aware README/setup rendering,
+- preset-specific starter file generation,
 - no-overwrite initialization,
 - CLI help and init flow,
 - validation through automated tests.

@@ -26,6 +26,15 @@ class InitProjectTests(unittest.TestCase):
             self.assertIn("Library Project", readme)
             self.assertIn("public Python library repository", readme)
 
+    def test_init_project_adds_preset_specific_files(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "sample"
+            created = init_project(target, "My Library", "python-lib")
+            self.assertIn("pyproject.toml", created)
+            self.assertIn("src/my_library/__init__.py", created)
+            self.assertIn("tests/test_smoke.py", created)
+            self.assertTrue((target / "src" / "my_library" / "__init__.py").exists())
+
     def test_existing_files_are_not_overwritten(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "sample"
@@ -58,8 +67,11 @@ class CliSmokeTests(unittest.TestCase):
                 text=True,
             )
             self.assertIn("Preset: ai-agent", result.stdout)
+            self.assertIn("Title slug: agent-repo", result.stdout)
+            self.assertIn("Next steps:", result.stdout)
             self.assertTrue((target / "README.md").exists())
             self.assertTrue((target / ".github" / "pull_request_template.md").exists())
+            self.assertTrue((target / "prompts" / "system.txt").exists())
 
 
 if __name__ == "__main__":
