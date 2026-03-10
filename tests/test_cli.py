@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
-from oss_launchpad_cli.cli import _build_smoke_command, _build_starter_assets, init_project
+from oss_launchpad_cli.cli import _build_smoke_command, _build_starter_assets, _build_validation_command, init_project
 
 
 class InitProjectTests(unittest.TestCase):
@@ -30,6 +30,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("prompts/system.txt", _build_starter_assets("ai-agent", "agent_repo"))
         self.assertIn("docs/information-architecture.md", _build_starter_assets("web-app", "web_repo"))
         self.assertIn("src/library_project/__init__.py", _build_starter_assets("python-lib", "library_project"))
+
+    def test_build_validation_command_is_preset_specific(self) -> None:
+        self.assertIn("json.tool", _build_validation_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("landing-page-brief.md", _build_validation_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("python3 -m unittest tests/test_smoke.py", _build_validation_command("python-lib", "library-project", "library_project"))
 
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -156,6 +161,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("prompts/system.txt", result.stdout)
             self.assertIn("Next steps:", result.stdout)
             self.assertIn("Smoke command:", result.stdout)
+            self.assertIn("Validation command:", result.stdout)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertIn("RELEASE_CHECKLIST.md", result.stdout)

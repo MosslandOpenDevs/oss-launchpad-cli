@@ -83,6 +83,15 @@ def _build_smoke_command(preset: str, title_slug: str, package_name: str) -> str
     return commands[preset]
 
 
+def _build_validation_command(preset: str, title_slug: str, package_name: str) -> str:
+    commands = {
+        "ai-agent": "python3 -m json.tool evals/smoke_cases.jsonl >/dev/null",
+        "web-app": "sh demo/run_demo.sh >/dev/null && sed -n '1,20p' docs/landing-page-brief.md",
+        "python-lib": "PYTHONPATH=src python3 -m unittest tests/test_smoke.py",
+    }
+    return commands[preset]
+
+
 def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[str]:
     common_steps = [
         "Review README.md and replace placeholder setup commands with the first real local run.",
@@ -105,7 +114,10 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
             f"Run python -m unittest tests/test_smoke.py after wiring the package import path for {title_slug}.",
         ],
     }
-    return [f"Smoke command: {_build_smoke_command(preset, title_slug, package_name)}"] + common_steps + preset_steps[preset]
+    return [
+        f"Smoke command: {_build_smoke_command(preset, title_slug, package_name)}",
+        f"Validation command: {_build_validation_command(preset, title_slug, package_name)}",
+    ] + common_steps + preset_steps[preset]
 
 
 def _build_starter_assets(preset: str, package_name: str) -> list[str]:
