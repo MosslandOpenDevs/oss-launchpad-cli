@@ -118,6 +118,14 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/ui-ux-checklist.md", _build_first_issue_command("web-app", "web-repo", "web_repo"))
         self.assertIn("tests/test_smoke.py", _build_first_issue_command("python-lib", "library-project", "library_project"))
 
+    def test_build_next_steps_keeps_web_app_bootstrap_handoffs_visible(self) -> None:
+        steps = _build_next_steps("web-app", "web-repo", "web_repo")
+
+        self.assertIn("Customize-first command: sed -n '1,80p' docs/landing-page-brief.md && sed -n '1,80p' docs/ui-ux-checklist.md", steps)
+        self.assertIn("First-issue command: sed -n '1,120p' docs/ui-ux-checklist.md && sed -n '1,120p' docs/information-architecture.md", steps)
+        self.assertIn("Fill .env.example with the minimum local variables required to boot the app.", steps)
+        self.assertIn("Replace docs/ui-ux-checklist.md examples with the actual landing-page and happy-path UX checks.", steps)
+
     def test_build_next_steps_keeps_release_checklist_and_command_handoffs(self) -> None:
         steps = _build_next_steps("python-lib", "library-project", "library_project")
 
