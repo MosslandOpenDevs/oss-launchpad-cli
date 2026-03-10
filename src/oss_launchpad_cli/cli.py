@@ -226,6 +226,21 @@ def _build_first_proof_assets(preset: str, package_name: str) -> list[str]:
     return assets[preset]
 
 
+def _build_day_zero_docs(preset: str, package_name: str) -> list[str]:
+    common_docs = [
+        "README.md",
+        "docs/launch-plan.md",
+        "docs/launch-scorecard.md",
+        "RELEASE_CHECKLIST.md",
+    ]
+    preset_docs = {
+        "ai-agent": ["docs/agent-demo-brief.md", "evals/README.md"],
+        "web-app": ["docs/landing-page-brief.md", "docs/ui-ux-checklist.md", "docs/information-architecture.md"],
+        "python-lib": ["docs/api-surface.md", "examples/basic_usage.py", "tests/test_smoke.py"],
+    }
+    return common_docs + preset_docs[preset]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="oss-launchpad")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -264,6 +279,9 @@ def main() -> None:
             print(f"- {item}")
         print("First proof assets to capture:")
         for item in _build_first_proof_assets(args.preset, package_name):
+            print(f"- {item}")
+        print("Day-zero docs to open:")
+        for item in _build_day_zero_docs(args.preset, package_name):
             print(f"- {item}")
         print("Next steps:")
         for step in _build_next_steps(args.preset, title_slug, package_name):

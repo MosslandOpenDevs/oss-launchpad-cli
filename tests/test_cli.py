@@ -13,6 +13,7 @@ sys.path.insert(0, str(SRC))
 
 from oss_launchpad_cli.cli import (
     _build_customize_first_command,
+    _build_day_zero_docs,
     _build_first_issue_command,
     _build_first_release_command,
     _build_first_pr_command,
@@ -78,6 +79,12 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/agent-demo-brief.md", _build_first_pr_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/information-architecture.md", _build_first_pr_command("web-app", "web-repo", "web_repo"))
         self.assertIn("examples/basic_usage.py", _build_first_pr_command("python-lib", "library-project", "library_project"))
+
+    def test_build_day_zero_docs_is_preset_specific(self) -> None:
+        self.assertIn("README.md", _build_day_zero_docs("ai-agent", "agent_repo"))
+        self.assertIn("evals/README.md", _build_day_zero_docs("ai-agent", "agent_repo"))
+        self.assertIn("docs/information-architecture.md", _build_day_zero_docs("web-app", "web_repo"))
+        self.assertIn("tests/test_smoke.py", _build_day_zero_docs("python-lib", "library_project"))
 
     def test_build_starter_review_command_is_preset_specific(self) -> None:
         self.assertIn("README.md", _build_starter_review_command("ai-agent", "agent-repo", "agent_repo"))
@@ -245,6 +252,8 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("prompts/system.txt", result.stdout)
             self.assertIn("First proof assets to capture:", result.stdout)
             self.assertIn("docs/agent-demo-brief.md", result.stdout)
+            self.assertIn("Day-zero docs to open:", result.stdout)
+            self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertIn("Next steps:", result.stdout)
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("Validation command:", result.stdout)
