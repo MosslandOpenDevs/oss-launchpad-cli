@@ -88,6 +88,7 @@ If you want a short paired-file command for proof review before the first public
 If you want a quick "does this preset already feel alive?" pass immediately after scaffold generation, open `docs/PRESET_FIRST_RUN_SIGNALS.md`.
 If you want the shortest path from first preset-specific edit to a believable proof artifact, open `docs/PRESET_FIRST_CUSTOM_PROOF.md`.
 If you want a copy-ready maintainer progress update right after scaffold generation, open `docs/PRESET_FIRST_MAINTAINER_UPDATE.md`.
+If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
 ## Local validation loop
