@@ -58,6 +58,13 @@ Current presets:
 - `python-lib`
 
 Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
+
+Quick chooser:
+
+- `ai-agent` — best when the first believable proof is a prompt, eval, and runnable agent contract.
+- `web-app` — best when the first believable proof is a landing flow, UI checklist, and demo script.
+- `python-lib` — best when the first believable proof is an importable package, smoke test, and usage example.
+
 If you are deciding which preset matches the first public proof your repo needs, start with `docs/PRESET_SELECTION_GUIDE.md`.
 If you need to understand how `--title` becomes the printed slug and generated package path, open `docs/TITLE_SLUG_GUIDE.md`.
 If you want to use repeated `init` runs as a safe scaffold drift check, open `docs/INIT_RERUN_GUIDE.md`.
