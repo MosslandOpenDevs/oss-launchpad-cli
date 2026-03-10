@@ -116,6 +116,7 @@ If you want a one-page maintainer review between scaffold generation and the fir
 If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
 If you want a shorter checklist for whether the first preset proof is already believable enough to show, open `docs/PRESET_FIRST_PROOF_READY_CHECK.md`.
 If you want a compact sequence for reviewing the generated proof pair before the first manual commit, open `docs/PRESET_FIRST_PROOF_REVIEW_SEQUENCE.md`.
+If you need a quick rule for deciding what belongs in that first believable proof commit versus what should wait, open `docs/PRESET_FIRST_PROOF_KEEP_OR_TRIM.md`.
 If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
 If you want a last-pass checklist before turning that first believable proof into the first public repo push, open `docs/PRESET_FIRST_PROOF_REPO_PUSH_CHECK.md`.
 If you need a shortest-possible repo-push test, use `docs/PRESET_FIRST_PROOF_REPO_PUSH_CHECK.md` to confirm one visible proof asset, one reproducible check asset, honest launch docs, and a still-reviewable first public diff.
