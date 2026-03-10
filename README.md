@@ -74,6 +74,7 @@ If you want a preset-by-preset map from generated files to the first believable 
 If you want a preset-specific checklist for the first real pull request after scaffold generation, open `docs/PRESET_FIRST_PULL_REQUEST.md`.
 If you want a compact test for whether the scaffold already feels ready for the first real review, open `docs/PRESET_FIRST_REVIEW_SIGNAL.md`.
 If you want a one-page proof map for deciding what to verify before the first public release, open `docs/PRESET_FIRST_RELEASE_PROOF.md`.
+If you want a short paired-file command for proof review before the first public push, use the printed proof-review command after `init`.
 If you want a quick "does this preset already feel alive?" pass immediately after scaffold generation, open `docs/PRESET_FIRST_RUN_SIGNALS.md`.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
@@ -101,7 +102,7 @@ oss-launchpad init my-webapp --title "My Web App" --preset web-app
 oss-launchpad init my-library --title "My Library" --preset python-lib
 ```
 
-The init output now also prints a title slug, the `python-lib` package import path, a preset-specific smoke command, preset-specific starter assets to customize first, preset-specific proof assets to capture first, and preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
+The init output now also prints a title slug, the `python-lib` package import path, a preset-specific smoke command, preset-specific starter assets to customize first, preset-specific proof assets to capture first, a preset-specific proof-review command, and preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
 
 ### Generated tree
 
