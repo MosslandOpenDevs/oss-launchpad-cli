@@ -87,7 +87,7 @@ oss-launchpad init my-webapp --title "My Web App" --preset web-app
 oss-launchpad init my-library --title "My Library" --preset python-lib
 ```
 
-The init output now also prints a title slug, a preset-specific smoke command, preset-specific starter assets to customize first, and preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
+The init output now also prints a title slug, a preset-specific smoke command, preset-specific starter assets to customize first, preset-specific proof assets to capture first, and preset-aware next steps so the generated scaffold can be turned into a real launch checklist immediately. Those next steps explicitly point maintainers to `docs/launch-plan.md` and `docs/launch-scorecard.md`, which act as repo-included launch handoff artifacts instead of leaving launch readiness as an implied TODO.
 
 ### Generated tree
 

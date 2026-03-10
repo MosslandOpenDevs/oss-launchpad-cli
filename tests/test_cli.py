@@ -11,7 +11,13 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
-from oss_launchpad_cli.cli import _build_smoke_command, _build_starter_assets, _build_validation_command, init_project
+from oss_launchpad_cli.cli import (
+    _build_first_proof_assets,
+    _build_smoke_command,
+    _build_starter_assets,
+    _build_validation_command,
+    init_project,
+)
 
 
 class InitProjectTests(unittest.TestCase):
@@ -35,6 +41,20 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("json.tool", _build_validation_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("landing-page-brief.md", _build_validation_command("web-app", "web-repo", "web_repo"))
         self.assertIn("python3 -m unittest tests/test_smoke.py", _build_validation_command("python-lib", "library-project", "library_project"))
+
+    def test_build_first_proof_assets_is_preset_specific(self) -> None:
+        self.assertEqual(
+            _build_first_proof_assets("ai-agent", "agent_repo"),
+            ["docs/agent-demo-brief.md", "evals/smoke_cases.jsonl", "demo/run_demo.sh"],
+        )
+        self.assertEqual(
+            _build_first_proof_assets("web-app", "web_repo"),
+            ["docs/landing-page-brief.md", "docs/ui-ux-checklist.md", "demo/run_demo.sh"],
+        )
+        self.assertEqual(
+            _build_first_proof_assets("python-lib", "library_project"),
+            ["examples/basic_usage.py", "tests/test_smoke.py", "docs/api-surface.md"],
+        )
 
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -167,6 +187,8 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Title slug: agent-repo", result.stdout)
             self.assertIn("Starter assets to customize first:", result.stdout)
             self.assertIn("prompts/system.txt", result.stdout)
+            self.assertIn("First proof assets to capture:", result.stdout)
+            self.assertIn("docs/agent-demo-brief.md", result.stdout)
             self.assertIn("Next steps:", result.stdout)
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("Validation command:", result.stdout)

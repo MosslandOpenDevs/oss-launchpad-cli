@@ -145,6 +145,27 @@ def _build_starter_assets(preset: str, package_name: str) -> list[str]:
     return assets[preset]
 
 
+def _build_first_proof_assets(preset: str, package_name: str) -> list[str]:
+    assets = {
+        "ai-agent": [
+            "docs/agent-demo-brief.md",
+            "evals/smoke_cases.jsonl",
+            "demo/run_demo.sh",
+        ],
+        "web-app": [
+            "docs/landing-page-brief.md",
+            "docs/ui-ux-checklist.md",
+            "demo/run_demo.sh",
+        ],
+        "python-lib": [
+            "examples/basic_usage.py",
+            "tests/test_smoke.py",
+            "docs/api-surface.md",
+        ],
+    }
+    return assets[preset]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="oss-launchpad")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -178,6 +199,9 @@ def main() -> None:
             print("No new files created.")
         print("Starter assets to customize first:")
         for item in _build_starter_assets(args.preset, package_name):
+            print(f"- {item}")
+        print("First proof assets to capture:")
+        for item in _build_first_proof_assets(args.preset, package_name):
             print(f"- {item}")
         print("Next steps:")
         for step in _build_next_steps(args.preset, title_slug, package_name):
