@@ -82,6 +82,7 @@ If you want a compact test for whether the scaffold already feels ready for the 
 If you want to turn preset starter assets into the first believable issue backlog, open `docs/PRESET_FIRST_ISSUE_TRIAGE.md`.
 If you want a shorter preset-by-preset map from generated files to the first believable backlog issues, open `docs/PRESET_FIRST_BACKLOG_PROOF.md`.
 If you want a one-page proof map for deciding what to verify before the first public release, open `docs/PRESET_FIRST_RELEASE_PROOF.md`.
+If you want a preset-specific copy-ready release-proof command before the first public tag, open `docs/PRESET_FIRST_RELEASE_COMMANDS.md`.
 If you want a preset-by-preset check for the very first believable public proof before pushing the repo, open `docs/PRESET_FIRST_PUBLIC_PROOF_CHECK.md`.
 If you want the shortest preset-aware path from fresh scaffold to first believable proof, open `docs/PRESET_FIRST_PROOF_SEQUENCE.md`.
 If you want a short paired-file command for proof review before the first public push, use the printed proof-review command after `init`.
