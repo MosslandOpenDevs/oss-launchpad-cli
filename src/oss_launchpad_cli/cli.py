@@ -244,7 +244,7 @@ def main() -> None:
         if args.preset == "python-lib":
             print(f"Package import path: {package_name}")
         if created:
-            print("Created files:")
+            print(f"Created {len(created)} file(s):")
             for item in created:
                 print(f"- {item}")
         else:

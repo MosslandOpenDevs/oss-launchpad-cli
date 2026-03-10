@@ -170,7 +170,8 @@ class InitProjectTests(unittest.TestCase):
                 text=True,
                 env=env,
             )
-            self.assertIn("Created files:", first.stdout)
+            self.assertIn("Created ", first.stdout)
+            self.assertIn("file(s):", first.stdout)
 
             second = subprocess.run(
                 [
@@ -231,6 +232,7 @@ class CliSmokeTests(unittest.TestCase):
                 env=env,
             )
             self.assertIn("Preset: ai-agent", result.stdout)
+            self.assertRegex(result.stdout, r"Created \d+ file\(s\):")
             self.assertIn("Title slug: agent-repo", result.stdout)
             self.assertIn("Starter assets to customize first:", result.stdout)
             self.assertIn("prompts/system.txt", result.stdout)
