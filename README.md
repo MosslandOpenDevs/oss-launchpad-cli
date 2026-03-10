@@ -122,6 +122,7 @@ If you want a one-page signal for whether those proof assets are already convinc
 If you want a shorter checklist for whether the first preset proof is already believable enough to show, open `docs/PRESET_FIRST_PROOF_READY_CHECK.md`.
 If you want a compact sequence for reviewing the generated proof pair before the first manual commit, open `docs/PRESET_FIRST_PROOF_REVIEW_SEQUENCE.md`.
 If you need a quick rule for deciding what belongs in that first believable proof commit versus what should wait, open `docs/PRESET_FIRST_PROOF_KEEP_OR_TRIM.md`.
+If you want concrete preset-by-preset examples of what to keep in that first believable proof commit versus what to defer, open `docs/PRESET_FIRST_PROOF_TRIM_EXAMPLES.md`.
 If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
 If you want a one-line preset-aware update that keeps the first proof claim honest about scope, open `docs/PRESET_FIRST_PROOF_SCOPE_STATUS_LINE.md`.
 If you want a short post-ready check before describing or pushing that first believable proof, open `docs/PRESET_FIRST_PROOF_POST_CHECK.md`.
