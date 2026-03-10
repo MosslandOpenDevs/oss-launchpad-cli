@@ -67,6 +67,7 @@ If you want the shortest preset-specific proof command to re-run after customizi
 If you want a one-page "does this scaffold already feel alive?" check before the first public commit, open `docs/PRESET_PROOF_OF_LIFE_CHECKLIST.md`.
 If you want the shortest preset-specific proof command to run immediately after scaffold generation, open `docs/PRESET_FIRST_PROOF_COMMANDS.md`.
 If you want a compact map of which generated files should become the first believable proof by preset, open `docs/PRESET_FIRST_PROOF_OUTPUTS.md`.
+If you want the shortest paired-file review command for the first believable proof, open `docs/PRESET_FIRST_PROOF_REVIEW_COMMAND.md`.
 If you want a compact day-zero checklist between scaffold generation and the first public push, open `docs/PRESET_DAY_ZERO_CHECKLIST.md`.
 If you want a compact maintainer handoff checklist after scaffold generation and before the first public push, open `docs/PRESET_HANDOFF_CHECKLIST.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
