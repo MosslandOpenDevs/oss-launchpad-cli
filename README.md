@@ -110,6 +110,7 @@ If you want a compact rule for keeping the first proof believable without inflat
 If you want a quick diff-focused pass after the first preset-specific manual edit, open `docs/PRESET_FIRST_PROOF_DIFF_CHECK.md`.
 If you want a compact pre-commit diff review for that first believable proof, open `docs/PRESET_FIRST_PROOF_DIFF_REVIEW.md`.
 If you want a compact audit to confirm that the generated scaffold already shows one believable proof asset plus one reproducible check asset, open `docs/PRESET_FIRST_PROOF_AUDIT.md`.
+If you want a one-line note for keeping that first proof push honest and reviewable, open `docs/PRESET_FIRST_PROOF_PUSH_NOTE.md`.
 If you want a one-page maintainer review between scaffold generation and the first manual commit, open `docs/PRESET_FIRST_PROOF_MAINTAINER_REVIEW.md`.
 If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
 If you want a shorter checklist for whether the first preset proof is already believable enough to show, open `docs/PRESET_FIRST_PROOF_READY_CHECK.md`.
