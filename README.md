@@ -57,6 +57,7 @@ Current presets:
 Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
 If you are deciding which preset matches the first public proof your repo needs, start with `docs/PRESET_SELECTION_GUIDE.md`.
 If you need to understand how `--title` becomes the printed slug and generated package path, open `docs/TITLE_SLUG_GUIDE.md`.
+If you want to use repeated `init` runs as a safe scaffold drift check, open `docs/INIT_RERUN_GUIDE.md`.
 
 ---
 
