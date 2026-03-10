@@ -89,6 +89,7 @@ If you want a one-page proof map for deciding what to verify before the first pu
 If you need a single-line pass/fail cue before claiming that release proof publicly, open `docs/PRESET_FIRST_RELEASE_SIGNAL.md`.
 If you want a preset-specific copy-ready release-proof command before the first public tag, open `docs/PRESET_FIRST_RELEASE_COMMANDS.md`.
 If you want a preset-by-preset check for the very first believable public proof before pushing the repo, open `docs/PRESET_FIRST_PUBLIC_PROOF_CHECK.md`.
+If you want a compact note for describing that first public proof without overselling maturity, open `docs/PRESET_FIRST_PUBLIC_PROOF_NOTE.md`.
 If you want the shortest preset-aware path from fresh scaffold to first believable proof, open `docs/PRESET_FIRST_PROOF_SEQUENCE.md`.
 If you want a compact decision rule for picking the first believable proof pair by preset, open `docs/PRESET_FIRST_PROOF_DECISION.md`.
 If you want a short paired-file command for proof review before the first public push, use the printed proof-review command after `init`.
