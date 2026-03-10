@@ -258,6 +258,8 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Starter assets to customize first:", result.stdout)
             self.assertIn("prompts/system.txt", result.stdout)
             self.assertIn("First proof assets to capture:", result.stdout)
+            self.assertIn("Starter-review command: sed -n '1,80p' README.md && sed -n '1,80p' prompts/system.txt", result.stdout)
+            self.assertIn("Day-zero review command: sed -n '1,120p' README.md && sed -n '1,120p' docs/agent-demo-brief.md", result.stdout)
             self.assertIn("docs/agent-demo-brief.md", result.stdout)
             self.assertIn("Day-zero docs to open:", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
