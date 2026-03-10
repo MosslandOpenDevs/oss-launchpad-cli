@@ -73,6 +73,7 @@ If you want a compact preset-aware rule for pairing one visible proof asset with
 If you want the shortest preset-by-preset file pair list for that first proof, open `docs/PRESET_FIRST_PROOF_FILE_PAIRS.md`.
 If you want a compact day-zero checklist between scaffold generation and the first public push, open `docs/PRESET_DAY_ZERO_CHECKLIST.md`.
 If you want the exact doc set to open immediately after `oss-launchpad init`, open `docs/PRESET_DAY_ZERO_DOCS.md`.
+If you want a single review command for the first README-plus-proof-file sanity check, open `docs/PRESET_DAY_ZERO_REVIEW_COMMAND.md`.
 If you want a compact maintainer handoff checklist after scaffold generation and before the first public push, open `docs/PRESET_HANDOFF_CHECKLIST.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
 If you want a single-page review checklist for the printed preset output before the first manual commit, open `docs/PRESET_OUTPUT_REVIEW.md`.

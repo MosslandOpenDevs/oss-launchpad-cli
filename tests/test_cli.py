@@ -14,6 +14,7 @@ sys.path.insert(0, str(SRC))
 from oss_launchpad_cli.cli import (
     _build_customize_first_command,
     _build_day_zero_docs,
+    _build_day_zero_review_command,
     _build_first_issue_command,
     _build_first_release_command,
     _build_first_pr_command,
@@ -91,6 +92,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/landing-page-brief.md", _build_starter_review_command("web-app", "web-repo", "web_repo"))
         self.assertIn("src/library_project/__init__.py", _build_starter_review_command("python-lib", "library-project", "library_project"))
 
+    def test_build_day_zero_review_command_is_preset_specific(self) -> None:
+        self.assertIn("docs/agent-demo-brief.md", _build_day_zero_review_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("docs/landing-page-brief.md", _build_day_zero_review_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("examples/basic_usage.py", _build_day_zero_review_command("python-lib", "library-project", "library_project"))
+
     def test_build_proof_review_command_is_preset_specific(self) -> None:
         self.assertIn("docs/launch-plan.md", _build_proof_review_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/launch-scorecard.md", _build_proof_review_command("web-app", "web-repo", "web_repo"))
@@ -111,6 +117,7 @@ class InitProjectTests(unittest.TestCase):
 
         self.assertIn("Smoke command: PYTHONPATH=src python3 -m unittest tests/test_smoke.py && python3 examples/basic_usage.py", steps)
         self.assertIn("Validation command: PYTHONPATH=src python3 -m unittest tests/test_smoke.py", steps)
+        self.assertIn("Day-zero review command: sed -n '1,120p' README.md && sed -n '1,120p' examples/basic_usage.py", steps)
         self.assertIn("Proof-review command: sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' examples/basic_usage.py", steps)
         self.assertIn("First-issue command: sed -n '1,120p' docs/api-surface.md && sed -n '1,120p' tests/test_smoke.py", steps)
         self.assertIn("First-release command: sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' docs/api-surface.md", steps)
@@ -258,6 +265,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("Validation command:", result.stdout)
             self.assertIn("Customize-first command:", result.stdout)
+            self.assertIn("Day-zero review command:", result.stdout)
             self.assertIn("Starter-review command:", result.stdout)
             self.assertIn("First-PR evidence command:", result.stdout)
             self.assertIn("Proof-review command:", result.stdout)
