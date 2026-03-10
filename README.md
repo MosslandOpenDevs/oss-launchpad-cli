@@ -73,6 +73,7 @@ If you want a preset-by-preset map from generated files to the first believable 
 If you want a preset-specific checklist for the first real pull request after scaffold generation, open `docs/PRESET_FIRST_PULL_REQUEST.md`.
 If you want a compact test for whether the scaffold already feels ready for the first real review, open `docs/PRESET_FIRST_REVIEW_SIGNAL.md`.
 If you want a one-page proof map for deciding what to verify before the first public release, open `docs/PRESET_FIRST_RELEASE_PROOF.md`.
+If you want a quick "does this preset already feel alive?" pass immediately after scaffold generation, open `docs/PRESET_FIRST_RUN_SIGNALS.md`.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
 ## Local validation loop
