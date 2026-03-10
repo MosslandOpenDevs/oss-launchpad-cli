@@ -71,6 +71,7 @@ If you want a compact maintainer handoff checklist after scaffold generation and
 If you want a single-page review checklist for the printed preset output before the first manual commit, open `docs/PRESET_OUTPUT_REVIEW.md`.
 If you want a preset-by-preset map from generated files to the first believable proof path, open `docs/PRESET_OUTPUT_PROOF_MAP.md`.
 If you want a preset-specific checklist for the first real pull request after scaffold generation, open `docs/PRESET_FIRST_PULL_REQUEST.md`.
+If you want a compact test for whether the scaffold already feels ready for the first real review, open `docs/PRESET_FIRST_REVIEW_SIGNAL.md`.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
 ## Local validation loop
