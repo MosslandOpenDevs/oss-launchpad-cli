@@ -8,6 +8,9 @@ CLI toolkit for bootstrapping public open-source projects with strong documentat
 
 ## Why this project exists
 
+Recommended maintainer loop: scaffold once, tailor the generated docs immediately, then keep the review commands in the repo so every launch decision leaves visible evidence.
+
+
 Many open-source repositories fail early for reasons that have nothing to do with code quality:
 
 - unclear README structure,
