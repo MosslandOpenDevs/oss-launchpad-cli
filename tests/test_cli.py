@@ -12,6 +12,7 @@ SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
 from oss_launchpad_cli.cli import (
+    _build_customize_first_command,
     _build_first_proof_assets,
     _build_smoke_command,
     _build_starter_assets,
@@ -41,6 +42,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("json.tool", _build_validation_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("landing-page-brief.md", _build_validation_command("web-app", "web-repo", "web_repo"))
         self.assertIn("python3 -m unittest tests/test_smoke.py", _build_validation_command("python-lib", "library-project", "library_project"))
+
+    def test_build_customize_first_command_is_preset_specific(self) -> None:
+        self.assertIn("prompts/system.txt", _build_customize_first_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("docs/ui-ux-checklist.md", _build_customize_first_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("src/library_project/__init__.py", _build_customize_first_command("python-lib", "library-project", "library_project"))
 
     def test_build_first_proof_assets_is_preset_specific(self) -> None:
         self.assertEqual(
@@ -192,6 +198,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Next steps:", result.stdout)
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("Validation command:", result.stdout)
+            self.assertIn("Customize-first command:", result.stdout)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertIn("RELEASE_CHECKLIST.md", result.stdout)

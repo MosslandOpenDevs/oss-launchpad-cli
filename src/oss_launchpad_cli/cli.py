@@ -92,6 +92,15 @@ def _build_validation_command(preset: str, title_slug: str, package_name: str) -
     return commands[preset]
 
 
+def _build_customize_first_command(preset: str, title_slug: str, package_name: str) -> str:
+    commands = {
+        "ai-agent": "sed -n '1,80p' prompts/system.txt && sed -n '1,80p' evals/README.md",
+        "web-app": "sed -n '1,80p' docs/landing-page-brief.md && sed -n '1,80p' docs/ui-ux-checklist.md",
+        "python-lib": f"sed -n '1,80p' src/{package_name}/__init__.py && sed -n '1,80p' docs/api-surface.md",
+    }
+    return commands[preset]
+
+
 def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[str]:
     common_steps = [
         "Review README.md and replace placeholder setup commands with the first real local run.",
@@ -117,6 +126,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
     return [
         f"Smoke command: {_build_smoke_command(preset, title_slug, package_name)}",
         f"Validation command: {_build_validation_command(preset, title_slug, package_name)}",
+        f"Customize-first command: {_build_customize_first_command(preset, title_slug, package_name)}",
     ] + common_steps + preset_steps[preset]
 
 
