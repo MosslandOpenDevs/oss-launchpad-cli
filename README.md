@@ -121,6 +121,7 @@ If you want a one-page maintainer review between scaffold generation and the fir
 If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
 If you want a shorter checklist for whether the first preset proof is already believable enough to show, open `docs/PRESET_FIRST_PROOF_READY_CHECK.md`.
 If you want a compact sequence for reviewing the generated proof pair before the first manual commit, open `docs/PRESET_FIRST_PROOF_REVIEW_SEQUENCE.md`.
+If you need a quick pass/hold exit card before that first believable proof commit, open `docs/PRESET_FIRST_PROOF_REVIEW_EXIT.md`.
 If you need a quick rule for deciding what belongs in that first believable proof commit versus what should wait, open `docs/PRESET_FIRST_PROOF_KEEP_OR_TRIM.md`.
 If you want concrete preset-by-preset examples of what to keep in that first believable proof commit versus what to defer, open `docs/PRESET_FIRST_PROOF_TRIM_EXAMPLES.md`.
 If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
