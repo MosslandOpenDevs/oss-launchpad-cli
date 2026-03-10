@@ -87,6 +87,7 @@ If you want to turn preset starter assets into the first believable issue backlo
 If you want a shorter preset-by-preset map from generated files to the first believable backlog issues, open `docs/PRESET_FIRST_BACKLOG_PROOF.md`.
 If you want a one-page proof map for deciding what to verify before the first public release, open `docs/PRESET_FIRST_RELEASE_PROOF.md`.
 If you need a single-line pass/fail cue before claiming that release proof publicly, open `docs/PRESET_FIRST_RELEASE_SIGNAL.md`.
+If you want a compact note for keeping that first release intentionally narrow and believable, open `docs/PRESET_FIRST_RELEASE_SCOPE_NOTE.md`.
 If you want a preset-specific copy-ready release-proof command before the first public tag, open `docs/PRESET_FIRST_RELEASE_COMMANDS.md`.
 If you want a preset-by-preset check for the very first believable public proof before pushing the repo, open `docs/PRESET_FIRST_PUBLIC_PROOF_CHECK.md`.
 If you want a compact note for describing that first public proof without overselling maturity, open `docs/PRESET_FIRST_PUBLIC_PROOF_NOTE.md`.
