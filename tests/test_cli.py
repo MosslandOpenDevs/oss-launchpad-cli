@@ -15,6 +15,7 @@ from oss_launchpad_cli.cli import (
     _build_customize_first_command,
     _build_first_pr_command,
     _build_first_proof_assets,
+    _build_next_steps,
     _build_proof_review_command,
     _build_smoke_command,
     _build_starter_assets,
@@ -85,6 +86,15 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/launch-plan.md", _build_proof_review_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/launch-scorecard.md", _build_proof_review_command("web-app", "web-repo", "web_repo"))
         self.assertIn("examples/basic_usage.py", _build_proof_review_command("python-lib", "library-project", "library_project"))
+
+    def test_build_next_steps_keeps_release_checklist_and_command_handoffs(self) -> None:
+        steps = _build_next_steps("python-lib", "library-project", "library_project")
+
+        self.assertIn("Smoke command: PYTHONPATH=src python3 -m unittest tests/test_smoke.py && python3 examples/basic_usage.py", steps)
+        self.assertIn("Validation command: PYTHONPATH=src python3 -m unittest tests/test_smoke.py", steps)
+        self.assertIn("Proof-review command: sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' examples/basic_usage.py", steps)
+        self.assertIn("Review RELEASE_CHECKLIST.md before the first tag so launch steps and public proof stay aligned.", steps)
+        self.assertIn("Implement the first public API in src/library_project/__init__.py.", steps)
 
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
