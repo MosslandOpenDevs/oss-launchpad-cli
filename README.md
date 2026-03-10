@@ -276,3 +276,12 @@ MIT
 ## First-proof audit
 
 Before the first public demo or launch artifact, use `docs/first-proof-audit.md` to confirm the proof asset, smoke command, and day-zero docs still line up.
+
+
+## Preset discovery
+
+```bash
+PYTHONPATH=src python3 -m oss_launchpad_cli.cli presets
+```
+
+Use this to compare starter assets before choosing `ai-agent`, `web-app`, or `python-lib`.

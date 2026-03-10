@@ -262,6 +262,10 @@ def _build_day_zero_docs(preset: str, package_name: str) -> list[str]:
     return common_docs + preset_docs[preset]
 
 
+def _list_presets() -> list[str]:
+    return sorted(PRESET_TEMPLATE_ROOTS)
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="oss-launchpad")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -271,12 +275,22 @@ def main() -> None:
     init_cmd.add_argument("--title", help="Project title", default="New Project")
     init_cmd.add_argument(
         "--preset",
-        choices=sorted(PRESET_TEMPLATE_ROOTS),
+        choices=_list_presets(),
         default="ai-agent",
         help="Project preset to render into the scaffold",
     )
 
+    presets_cmd = sub.add_parser("presets", help="List scaffold presets and starter assets")
+
     args = parser.parse_args()
+
+    if args.command == "presets":
+        for preset in _list_presets():
+            package_name = 'sample_project'
+            print(f"{preset}:")
+            for asset in _build_starter_assets(preset, package_name):
+                print(f"- {asset}")
+        return
 
     if args.command == "init":
         target = Path(args.directory).resolve()

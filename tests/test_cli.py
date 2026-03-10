@@ -23,6 +23,7 @@ from oss_launchpad_cli.cli import (
     _build_next_steps,
     _build_proof_review_command,
     _build_smoke_command,
+    _list_presets,
     _build_starter_assets,
     _build_starter_review_command,
     _build_validation_command,
@@ -42,6 +43,10 @@ class InitProjectTests(unittest.TestCase):
 
         self.assertEqual(_slugify_title("My_Library v2"), "my-library-v2")
         self.assertEqual(_slugify_title(" Agent---CLI   Demo "), "agent-cli-demo")
+
+
+    def test_list_presets_returns_sorted_presets(self) -> None:
+        self.assertEqual(_list_presets(), ["ai-agent", "python-lib", "web-app"])
 
     def test_build_smoke_command_is_preset_specific(self) -> None:
         self.assertIn("evals/smoke_cases.jsonl", _build_smoke_command("ai-agent", "agent-repo", "agent_repo"))
@@ -255,6 +260,24 @@ class InitProjectTests(unittest.TestCase):
 
 
 class CliSmokeTests(unittest.TestCase):
+
+    def test_cli_presets_prints_starter_assets_for_each_preset(self) -> None:
+        env = dict(os.environ)
+        env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+        result = subprocess.run(
+            [sys.executable, "-m", "oss_launchpad_cli.cli", "presets"],
+            check=True,
+            capture_output=True,
+            text=True,
+            env=env,
+        )
+        self.assertIn("ai-agent:", result.stdout)
+        self.assertIn("- prompts/system.txt", result.stdout)
+        self.assertIn("python-lib:", result.stdout)
+        self.assertIn("- src/sample_project/__init__.py", result.stdout)
+        self.assertIn("web-app:", result.stdout)
+        self.assertIn("- demo/run_demo.sh", result.stdout)
+
     def test_cli_init_prints_preset_and_creates_files(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "agent-repo"
