@@ -260,3 +260,8 @@ oss-launchpad-cli/
 ## License
 
 MIT
+
+
+## First-proof audit
+
+Before the first public demo or launch artifact, use `docs/first-proof-audit.md` to confirm the proof asset, smoke command, and day-zero docs still line up.
