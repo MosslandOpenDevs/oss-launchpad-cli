@@ -62,6 +62,7 @@ If you want a compact audit loop for verifying the repeat-init no-overwrite cont
 If you want to understand the preset-specific smoke command that `init` prints after scaffold generation, open `docs/PRESET_SMOKE_COMMANDS.md`.
 If you want the generated README to show convincing preset-specific proof assets before the first public push, open `docs/README_PROOF_ASSETS_GUIDE.md`.
 If you want a tight checklist for the very first real preset-specific commit after scaffold generation, open `docs/PRESET_FIRST_COMMIT_GUIDE.md`.
+If you want a compact proof standard for making that first manual commit feel believable, open `docs/PRESET_FIRST_COMMIT_PROOF.md`.
 If you want a short guide for the first preset-specific files to customize, open `docs/PRESET_CUSTOMIZE_FIRST_GUIDE.md`.
 If you want the shortest preset-specific proof command to re-run after customizing the scaffold, open `docs/PRESET_VALIDATION_COMMANDS.md`.
 If you want a one-page "does this scaffold already feel alive?" check before the first public commit, open `docs/PRESET_PROOF_OF_LIFE_CHECKLIST.md`.
