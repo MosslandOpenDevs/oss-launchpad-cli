@@ -100,6 +100,7 @@ If you want a commit message pattern for that first believable manual proof, ope
 If you want a last-pass check for whether the first proof pair is actually convincing instead of merely present, open `docs/PRESET_FIRST_PROOF_MARGIN_CHECK.md`.
 If you want a compact rule for keeping the first proof believable without inflating it into a whole-roadmap commit, open `docs/PRESET_FIRST_PROOF_BOUNDARY.md`.
 If you want a quick diff-focused pass after the first preset-specific manual edit, open `docs/PRESET_FIRST_PROOF_DIFF_CHECK.md`.
+If you want a compact pre-commit diff review for that first believable proof, open `docs/PRESET_FIRST_PROOF_DIFF_REVIEW.md`.
 If you want a compact audit to confirm that the generated scaffold already shows one believable proof asset plus one reproducible check asset, open `docs/PRESET_FIRST_PROOF_AUDIT.md`.
 If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
 If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
