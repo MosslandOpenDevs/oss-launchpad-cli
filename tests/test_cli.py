@@ -281,5 +281,34 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("src/library_project/__init__.py", result.stdout)
 
 
+    def test_cli_init_python_lib_prints_starter_and_proof_assets(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "library-project"
+            env = dict(os.environ)
+            env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    "-m",
+                    "oss_launchpad_cli.cli",
+                    "init",
+                    str(target),
+                    "--title",
+                    "Library Project",
+                    "--preset",
+                    "python-lib",
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+                env=env,
+            )
+            self.assertIn("Starter assets to customize first:", result.stdout)
+            self.assertIn("src/library_project/__init__.py", result.stdout)
+            self.assertIn("First proof assets to capture:", result.stdout)
+            self.assertIn("examples/basic_usage.py", result.stdout)
+            self.assertIn("First-issue command:", result.stdout)
+
+
 if __name__ == "__main__":
     unittest.main()
