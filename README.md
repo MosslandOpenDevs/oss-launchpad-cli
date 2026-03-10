@@ -111,6 +111,7 @@ If you want a quick diff-focused pass after the first preset-specific manual edi
 If you want a compact pre-commit diff review for that first believable proof, open `docs/PRESET_FIRST_PROOF_DIFF_REVIEW.md`.
 If you want a compact audit to confirm that the generated scaffold already shows one believable proof asset plus one reproducible check asset, open `docs/PRESET_FIRST_PROOF_AUDIT.md`.
 If you want a one-line note for keeping that first proof push honest and reviewable, open `docs/PRESET_FIRST_PROOF_PUSH_NOTE.md`.
+If you want a short pass/hold cue for whether the first proof already feels believable, open `docs/PRESET_FIRST_PROOF_STATUS_SIGNAL.md`.
 If you want a one-line status cue before describing the first public repo push, open `docs/PRESET_FIRST_REPO_PUSH_STATUS_LINE.md`.
 If you want a one-page maintainer review between scaffold generation and the first manual commit, open `docs/PRESET_FIRST_PROOF_MAINTAINER_REVIEW.md`.
 If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
