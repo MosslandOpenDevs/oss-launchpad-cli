@@ -51,6 +51,7 @@ class InitProjectTests(unittest.TestCase):
     def test_build_starter_assets_is_preset_specific(self) -> None:
         self.assertIn("prompts/system.txt", _build_starter_assets("ai-agent", "agent_repo"))
         self.assertIn("docs/information-architecture.md", _build_starter_assets("web-app", "web_repo"))
+        self.assertIn("demo/run_demo.sh", _build_starter_assets("web-app", "web_repo"))
         self.assertIn("src/library_project/__init__.py", _build_starter_assets("python-lib", "library_project"))
 
     def test_build_validation_command_is_preset_specific(self) -> None:

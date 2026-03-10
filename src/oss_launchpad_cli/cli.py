@@ -213,6 +213,7 @@ def _build_starter_assets(preset: str, package_name: str) -> list[str]:
             "docs/ui-ux-checklist.md",
             "docs/landing-page-brief.md",
             "docs/information-architecture.md",
+            "demo/run_demo.sh",
         ],
         "python-lib": [
             "pyproject.toml",
