@@ -110,6 +110,7 @@ If you want a one-page signal for whether those proof assets are already convinc
 If you want a shorter checklist for whether the first preset proof is already believable enough to show, open `docs/PRESET_FIRST_PROOF_READY_CHECK.md`.
 If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
 If you want a last-pass checklist before turning that first believable proof into the first public repo push, open `docs/PRESET_FIRST_PROOF_REPO_PUSH_CHECK.md`.
+If you need a shortest-possible repo-push test, use `docs/PRESET_FIRST_PROOF_REPO_PUSH_CHECK.md` to confirm one visible proof asset, one reproducible check asset, honest launch docs, and a still-reviewable first public diff.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
 ## Local validation loop
