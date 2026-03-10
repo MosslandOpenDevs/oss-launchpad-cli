@@ -128,6 +128,15 @@ def _build_proof_review_command(preset: str, title_slug: str, package_name: str)
     return commands[preset]
 
 
+def _build_first_release_command(preset: str, title_slug: str, package_name: str) -> str:
+    commands = {
+        "ai-agent": "sed -n '1,120p' docs/launch-plan.md && sed -n '1,120p' docs/agent-demo-brief.md",
+        "web-app": "sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' docs/landing-page-brief.md",
+        "python-lib": f"sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' docs/api-surface.md",
+    }
+    return commands[preset]
+
+
 def _build_first_issue_command(preset: str, title_slug: str, package_name: str) -> str:
     commands = {
         "ai-agent": "sed -n '1,120p' docs/agent-demo-brief.md && sed -n '1,120p' evals/README.md",
@@ -167,6 +176,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
         f"First-PR evidence command: {_build_first_pr_command(preset, title_slug, package_name)}",
         f"Proof-review command: {_build_proof_review_command(preset, title_slug, package_name)}",
         f"First-issue command: {_build_first_issue_command(preset, title_slug, package_name)}",
+        f"First-release command: {_build_first_release_command(preset, title_slug, package_name)}",
     ] + common_steps + preset_steps[preset]
 
 

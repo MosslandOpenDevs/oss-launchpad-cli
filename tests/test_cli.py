@@ -14,6 +14,7 @@ sys.path.insert(0, str(SRC))
 from oss_launchpad_cli.cli import (
     _build_customize_first_command,
     _build_first_issue_command,
+    _build_first_release_command,
     _build_first_pr_command,
     _build_first_proof_assets,
     _build_next_steps,
@@ -88,6 +89,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/launch-scorecard.md", _build_proof_review_command("web-app", "web-repo", "web_repo"))
         self.assertIn("examples/basic_usage.py", _build_proof_review_command("python-lib", "library-project", "library_project"))
 
+    def test_build_first_release_command_is_preset_specific(self) -> None:
+        self.assertIn("docs/agent-demo-brief.md", _build_first_release_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("docs/landing-page-brief.md", _build_first_release_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("docs/api-surface.md", _build_first_release_command("python-lib", "library-project", "library_project"))
+
     def test_build_first_issue_command_is_preset_specific(self) -> None:
         self.assertIn("docs/agent-demo-brief.md", _build_first_issue_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/ui-ux-checklist.md", _build_first_issue_command("web-app", "web-repo", "web_repo"))
@@ -100,6 +106,7 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("Validation command: PYTHONPATH=src python3 -m unittest tests/test_smoke.py", steps)
         self.assertIn("Proof-review command: sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' examples/basic_usage.py", steps)
         self.assertIn("First-issue command: sed -n '1,120p' docs/api-surface.md && sed -n '1,120p' tests/test_smoke.py", steps)
+        self.assertIn("First-release command: sed -n '1,120p' docs/launch-scorecard.md && sed -n '1,120p' docs/api-surface.md", steps)
         self.assertIn("Review RELEASE_CHECKLIST.md before the first tag so launch steps and public proof stay aligned.", steps)
         self.assertIn("Implement the first public API in src/library_project/__init__.py.", steps)
 
@@ -246,6 +253,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("First-PR evidence command:", result.stdout)
             self.assertIn("Proof-review command:", result.stdout)
             self.assertIn("First-issue command:", result.stdout)
+            self.assertIn("First-release command:", result.stdout)
             self.assertEqual(result.stdout.count("Starter-review command:"), 1)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
@@ -310,6 +318,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("First proof assets to capture:", result.stdout)
             self.assertIn("examples/basic_usage.py", result.stdout)
             self.assertIn("First-issue command:", result.stdout)
+            self.assertIn("First-release command:", result.stdout)
 
 
 if __name__ == "__main__":
