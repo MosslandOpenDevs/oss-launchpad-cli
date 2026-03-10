@@ -139,6 +139,15 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("Review RELEASE_CHECKLIST.md before the first tag so launch steps and public proof stay aligned.", steps)
         self.assertIn("Implement the first public API in src/library_project/__init__.py.", steps)
 
+    def test_build_next_steps_keeps_first_proof_handoff_commands_for_ai_agent(self) -> None:
+        steps = _build_next_steps("ai-agent", "agent-repo", "agent_repo")
+
+        self.assertIn("First-PR evidence command: sed -n '1,120p' docs/agent-demo-brief.md && sed -n '1,120p' evals/README.md", steps)
+        self.assertIn("First proof status command: sed -n '1,80p' docs/agent-demo-brief.md && sed -n '1,40p' evals/smoke_cases.jsonl", steps)
+        self.assertIn("First-release command: sed -n '1,120p' docs/launch-plan.md && sed -n '1,120p' docs/agent-demo-brief.md", steps)
+        self.assertIn("Update prompts/system.txt with the first system prompt or agent contract.", steps)
+        self.assertIn("Add a real evaluation command under evals/README.md before the first public release.", steps)
+
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "sample"
