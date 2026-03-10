@@ -28,6 +28,12 @@ class InitProjectTests(unittest.TestCase):
         self.assertEqual(_slugify_title("***"), "new-project")
         self.assertEqual(_slugify_title("  ---  "), "new-project")
 
+    def test_slugify_title_collapses_mixed_separators_into_single_dashes(self) -> None:
+        from oss_launchpad_cli.cli import _slugify_title
+
+        self.assertEqual(_slugify_title("My_Library v2"), "my-library-v2")
+        self.assertEqual(_slugify_title(" Agent---CLI   Demo "), "agent-cli-demo")
+
     def test_build_smoke_command_is_preset_specific(self) -> None:
         self.assertIn("evals/smoke_cases.jsonl", _build_smoke_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/landing-page-brief.md", _build_smoke_command("web-app", "web-repo", "web_repo"))
