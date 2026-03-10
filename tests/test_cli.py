@@ -200,6 +200,33 @@ class CliSmokeTests(unittest.TestCase):
             self.assertTrue((target / "prompts" / "system.txt").exists())
             self.assertIn("docs/launch-scorecard.md", result.stdout)
 
+    def test_cli_init_prints_python_package_import_path(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "library-project"
+            env = dict(os.environ)
+            env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    "-m",
+                    "oss_launchpad_cli.cli",
+                    "init",
+                    str(target),
+                    "--title",
+                    "Library Project",
+                    "--preset",
+                    "python-lib",
+                ],
+                check=True,
+                capture_output=True,
+                text=True,
+                env=env,
+            )
+            self.assertIn("Preset: python-lib", result.stdout)
+            self.assertIn("Title slug: library-project", result.stdout)
+            self.assertIn("Package import path: library_project", result.stdout)
+            self.assertIn("src/library_project/__init__.py", result.stdout)
+
 
 if __name__ == "__main__":
     unittest.main()

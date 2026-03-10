@@ -191,6 +191,8 @@ def main() -> None:
         print(f"Initialized scaffold in: {target}")
         print(f"Preset: {args.preset}")
         print(f"Title slug: {title_slug}")
+        if args.preset == "python-lib":
+            print(f"Package import path: {package_name}")
         if created:
             print("Created files:")
             for item in created:
