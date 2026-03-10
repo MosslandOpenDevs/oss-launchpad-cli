@@ -94,6 +94,7 @@ If you want the shortest path from first preset-specific edit to a believable pr
 If you want a copy-ready maintainer progress update right after scaffold generation, open `docs/PRESET_FIRST_MAINTAINER_UPDATE.md`.
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
+If you want a compact pass/fail check before claiming that sentence publicly, open `docs/PRESET_FIRST_PROOF_STATUS_CHECK.md`.
 If you want the shortest preset-aware issue draft checklist after that first proof, open `docs/PRESET_FIRST_ISSUE_CHECKLIST.md`.
 If you want a commit message pattern for that first believable manual proof, open `docs/PRESET_FIRST_PROOF_COMMIT_MESSAGE.md`.
 If you want a last-pass check for whether the first proof pair is actually convincing instead of merely present, open `docs/PRESET_FIRST_PROOF_MARGIN_CHECK.md`.
