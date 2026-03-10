@@ -70,6 +70,7 @@ If you want the shortest preset-specific proof command to run immediately after 
 If you want a compact map of which generated files should become the first believable proof by preset, open `docs/PRESET_FIRST_PROOF_OUTPUTS.md`.
 If you want the shortest paired-file review command for the first believable proof, open `docs/PRESET_FIRST_PROOF_REVIEW_COMMAND.md`.
 If you want a compact preset-aware rule for pairing one visible proof asset with one reproducible check asset, open `docs/PRESET_FIRST_PROOF_PAIRING.md`.
+If you want the shortest preset-by-preset file pair list for that first proof, open `docs/PRESET_FIRST_PROOF_FILE_PAIRS.md`.
 If you want a compact day-zero checklist between scaffold generation and the first public push, open `docs/PRESET_DAY_ZERO_CHECKLIST.md`.
 If you want a compact maintainer handoff checklist after scaffold generation and before the first public push, open `docs/PRESET_HANDOFF_CHECKLIST.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
