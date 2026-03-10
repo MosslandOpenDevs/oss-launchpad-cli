@@ -63,6 +63,16 @@ If you want the generated README to show convincing preset-specific proof assets
 If you want a tight checklist for the very first real preset-specific commit after scaffold generation, open `docs/PRESET_FIRST_COMMIT_GUIDE.md`.
 If you want the shortest preset-specific proof command to re-run after customizing the scaffold, open `docs/PRESET_VALIDATION_COMMANDS.md`.
 
+## Local validation loop
+
+Before shipping doc or scaffold changes, run the CLI smoke tests locally:
+
+```bash
+python3 -m unittest tests/test_cli.py
+```
+
+That keeps README claims, generated scaffold output, and printed next-step guidance aligned.
+
 ---
 
 ## Example usage
