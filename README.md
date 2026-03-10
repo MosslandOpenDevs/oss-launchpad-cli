@@ -100,6 +100,7 @@ If you want a quick "does this preset already feel alive?" pass immediately afte
 If you want the shortest path from first preset-specific edit to a believable proof artifact, open `docs/PRESET_FIRST_CUSTOM_PROOF.md`.
 If you want a copy-ready maintainer progress update right after scaffold generation, open `docs/PRESET_FIRST_MAINTAINER_UPDATE.md`.
 If you want a shorter owner-specific first-proof progress note, open `docs/PRESET_FIRST_PROOF_OWNER_UPDATE.md`.
+If you want a 30-second owner-ready audit before posting that first proof update, open `docs/PRESET_FIRST_PROOF_OWNER_READY_CHECK.md`.
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
 If you want a compact set of honest names for that first believable proof pair, open `docs/PRESET_FIRST_PROOF_LABELS.md`.
