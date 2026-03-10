@@ -60,6 +60,7 @@ If you need to understand how `--title` becomes the printed slug and generated p
 If you want to use repeated `init` runs as a safe scaffold drift check, open `docs/INIT_RERUN_GUIDE.md`.
 If you want a compact audit loop for verifying the repeat-init no-overwrite contract, open `docs/PRESET_REPEAT_INIT_AUDIT.md`.
 If you want to understand the preset-specific smoke command that `init` prints after scaffold generation, open `docs/PRESET_SMOKE_COMMANDS.md`.
+If you want an equally short public update after that smoke proof passes, open `docs/PRESET_FIRST_RELEASE_STATUS_LINE.md`.
 If you want the generated README to show convincing preset-specific proof assets before the first public push, open `docs/README_PROOF_ASSETS_GUIDE.md`.
 If you want a tight checklist for the very first real preset-specific commit after scaffold generation, open `docs/PRESET_FIRST_COMMIT_GUIDE.md`.
 If you want a compact proof standard for making that first manual commit feel believable, open `docs/PRESET_FIRST_COMMIT_PROOF.md`.
