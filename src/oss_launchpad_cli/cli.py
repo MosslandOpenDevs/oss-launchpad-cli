@@ -258,7 +258,6 @@ def main() -> None:
         print("Next steps:")
         for step in _build_next_steps(args.preset, title_slug, package_name):
             print(f"- {step}")
-        print(f"Starter-review command: {_build_starter_review_command(args.preset, title_slug, package_name)}")
 
 
 if __name__ == "__main__":

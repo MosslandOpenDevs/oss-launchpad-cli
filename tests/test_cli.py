@@ -244,6 +244,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("First-PR evidence command:", result.stdout)
             self.assertIn("Proof-review command:", result.stdout)
             self.assertIn("First-issue command:", result.stdout)
+            self.assertEqual(result.stdout.count("Starter-review command:"), 1)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertIn("RELEASE_CHECKLIST.md", result.stdout)
