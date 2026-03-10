@@ -128,6 +128,15 @@ def _build_proof_review_command(preset: str, title_slug: str, package_name: str)
     return commands[preset]
 
 
+def _build_first_issue_command(preset: str, title_slug: str, package_name: str) -> str:
+    commands = {
+        "ai-agent": "sed -n '1,120p' docs/agent-demo-brief.md && sed -n '1,120p' evals/README.md",
+        "web-app": "sed -n '1,120p' docs/ui-ux-checklist.md && sed -n '1,120p' docs/information-architecture.md",
+        "python-lib": f"sed -n '1,120p' docs/api-surface.md && sed -n '1,120p' tests/test_smoke.py",
+    }
+    return commands[preset]
+
+
 def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[str]:
     common_steps = [
         "Review README.md and replace placeholder setup commands with the first real local run.",
@@ -157,6 +166,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
         f"Starter-review command: {_build_starter_review_command(preset, title_slug, package_name)}",
         f"First-PR evidence command: {_build_first_pr_command(preset, title_slug, package_name)}",
         f"Proof-review command: {_build_proof_review_command(preset, title_slug, package_name)}",
+        f"First-issue command: {_build_first_issue_command(preset, title_slug, package_name)}",
     ] + common_steps + preset_steps[preset]
 
 
