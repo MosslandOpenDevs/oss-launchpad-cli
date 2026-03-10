@@ -93,6 +93,7 @@ If you want the shortest path from first preset-specific edit to a believable pr
 If you want a copy-ready maintainer progress update right after scaffold generation, open `docs/PRESET_FIRST_MAINTAINER_UPDATE.md`.
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
+If you want the shortest preset-aware issue draft checklist after that first proof, open `docs/PRESET_FIRST_ISSUE_CHECKLIST.md`.
 If you want a commit message pattern for that first believable manual proof, open `docs/PRESET_FIRST_PROOF_COMMIT_MESSAGE.md`.
 If you want a last-pass check for whether the first proof pair is actually convincing instead of merely present, open `docs/PRESET_FIRST_PROOF_MARGIN_CHECK.md`.
 If you want a quick diff-focused pass after the first preset-specific manual edit, open `docs/PRESET_FIRST_PROOF_DIFF_CHECK.md`.
@@ -161,6 +162,7 @@ my-project/
 - `ai-agent` → `python3 -m json.tool evals/smoke_cases.jsonl >/dev/null || head -n 3 evals/smoke_cases.jsonl`
 - `web-app` → `sh demo/run_demo.sh && sed -n '1,40p' docs/landing-page-brief.md`
 - `python-lib` → `PYTHONPATH=src python3 -m unittest tests/test_smoke.py && python3 examples/basic_usage.py`
+- First issue handoff checklist → `docs/PRESET_FIRST_ISSUE_CHECKLIST.md`
 
 ---
 
