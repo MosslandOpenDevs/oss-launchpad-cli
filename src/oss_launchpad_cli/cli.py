@@ -108,6 +108,31 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
     return [f"Smoke command: {_build_smoke_command(preset, title_slug, package_name)}"] + common_steps + preset_steps[preset]
 
 
+def _build_starter_assets(preset: str, package_name: str) -> list[str]:
+    assets = {
+        "ai-agent": [
+            "prompts/system.txt",
+            "evals/README.md",
+            "evals/smoke_cases.jsonl",
+            "docs/agent-demo-brief.md",
+        ],
+        "web-app": [
+            ".env.example",
+            "docs/ui-ux-checklist.md",
+            "docs/landing-page-brief.md",
+            "docs/information-architecture.md",
+        ],
+        "python-lib": [
+            "pyproject.toml",
+            f"src/{package_name}/__init__.py",
+            "tests/test_smoke.py",
+            "examples/basic_usage.py",
+            "docs/api-surface.md",
+        ],
+    }
+    return assets[preset]
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="oss-launchpad")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -139,6 +164,9 @@ def main() -> None:
                 print(f"- {item}")
         else:
             print("No new files created.")
+        print("Starter assets to customize first:")
+        for item in _build_starter_assets(args.preset, package_name):
+            print(f"- {item}")
         print("Next steps:")
         for step in _build_next_steps(args.preset, title_slug, package_name):
             print(f"- {step}")

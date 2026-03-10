@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"
 sys.path.insert(0, str(SRC))
 
-from oss_launchpad_cli.cli import _build_smoke_command, init_project
+from oss_launchpad_cli.cli import _build_smoke_command, _build_starter_assets, init_project
 
 
 class InitProjectTests(unittest.TestCase):
@@ -25,6 +25,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("evals/smoke_cases.jsonl", _build_smoke_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/landing-page-brief.md", _build_smoke_command("web-app", "web-repo", "web_repo"))
         self.assertIn("tests/test_smoke.py", _build_smoke_command("python-lib", "library-project", "library_project"))
+
+    def test_build_starter_assets_is_preset_specific(self) -> None:
+        self.assertIn("prompts/system.txt", _build_starter_assets("ai-agent", "agent_repo"))
+        self.assertIn("docs/information-architecture.md", _build_starter_assets("web-app", "web_repo"))
+        self.assertIn("src/library_project/__init__.py", _build_starter_assets("python-lib", "library_project"))
 
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -147,6 +152,8 @@ class CliSmokeTests(unittest.TestCase):
             )
             self.assertIn("Preset: ai-agent", result.stdout)
             self.assertIn("Title slug: agent-repo", result.stdout)
+            self.assertIn("Starter assets to customize first:", result.stdout)
+            self.assertIn("prompts/system.txt", result.stdout)
             self.assertIn("Next steps:", result.stdout)
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
