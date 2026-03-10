@@ -18,6 +18,7 @@ from oss_launchpad_cli.cli import (
     _build_proof_review_command,
     _build_smoke_command,
     _build_starter_assets,
+    _build_starter_review_command,
     _build_validation_command,
     init_project,
 )
@@ -74,6 +75,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/agent-demo-brief.md", _build_first_pr_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/information-architecture.md", _build_first_pr_command("web-app", "web-repo", "web_repo"))
         self.assertIn("examples/basic_usage.py", _build_first_pr_command("python-lib", "library-project", "library_project"))
+
+    def test_build_starter_review_command_is_preset_specific(self) -> None:
+        self.assertIn("README.md", _build_starter_review_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("docs/landing-page-brief.md", _build_starter_review_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("src/library_project/__init__.py", _build_starter_review_command("python-lib", "library-project", "library_project"))
 
     def test_build_proof_review_command_is_preset_specific(self) -> None:
         self.assertIn("docs/launch-plan.md", _build_proof_review_command("ai-agent", "agent-repo", "agent_repo"))
@@ -217,6 +223,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("Validation command:", result.stdout)
             self.assertIn("Customize-first command:", result.stdout)
+            self.assertIn("Starter-review command:", result.stdout)
             self.assertIn("First-PR evidence command:", result.stdout)
             self.assertIn("Proof-review command:", result.stdout)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
