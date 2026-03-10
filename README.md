@@ -101,6 +101,7 @@ If you want a compact rule for keeping the first proof believable without inflat
 If you want a quick diff-focused pass after the first preset-specific manual edit, open `docs/PRESET_FIRST_PROOF_DIFF_CHECK.md`.
 If you want a compact audit to confirm that the generated scaffold already shows one believable proof asset plus one reproducible check asset, open `docs/PRESET_FIRST_PROOF_AUDIT.md`.
 If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
+If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
 ## Local validation loop
