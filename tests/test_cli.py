@@ -131,6 +131,14 @@ class InitProjectTests(unittest.TestCase):
             self.assertIn("docs/information-architecture.md", created)
             self.assertTrue((target / "docs" / "information-architecture.md").exists())
 
+    def test_init_project_marks_demo_shell_script_executable(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "sample"
+            init_project(target, "My Web App", "web-app")
+            demo_script = target / "demo" / "run_demo.sh"
+            self.assertTrue(demo_script.exists())
+            self.assertTrue(demo_script.stat().st_mode & 0o111)
+
 
 class CliSmokeTests(unittest.TestCase):
     def test_cli_init_prints_preset_and_creates_files(self) -> None:
