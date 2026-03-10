@@ -100,6 +100,7 @@ If you want a copy-ready maintainer progress update right after scaffold generat
 If you want a shorter owner-specific first-proof progress note, open `docs/PRESET_FIRST_PROOF_OWNER_UPDATE.md`.
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
+If you want the shortest paired-file command for checking whether that first proof update is ready to post, use the new first proof status command printed by `oss-launchpad init`.
 If you want a compact pass/fail check before claiming that sentence publicly, open `docs/PRESET_FIRST_PROOF_STATUS_CHECK.md`.
 If you want the shortest preset-aware issue draft checklist after that first proof, open `docs/PRESET_FIRST_ISSUE_CHECKLIST.md`.
 If you want a commit message pattern for that first believable manual proof, open `docs/PRESET_FIRST_PROOF_COMMIT_MESSAGE.md`.
