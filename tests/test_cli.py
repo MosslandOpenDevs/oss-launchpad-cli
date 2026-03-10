@@ -13,6 +13,7 @@ sys.path.insert(0, str(SRC))
 
 from oss_launchpad_cli.cli import (
     _build_customize_first_command,
+    _build_first_pr_command,
     _build_first_proof_assets,
     _build_smoke_command,
     _build_starter_assets,
@@ -67,6 +68,11 @@ class InitProjectTests(unittest.TestCase):
             _build_first_proof_assets("python-lib", "library_project"),
             ["examples/basic_usage.py", "tests/test_smoke.py", "docs/api-surface.md"],
         )
+
+    def test_build_first_pr_command_is_preset_specific(self) -> None:
+        self.assertIn("docs/agent-demo-brief.md", _build_first_pr_command("ai-agent", "agent-repo", "agent_repo"))
+        self.assertIn("docs/information-architecture.md", _build_first_pr_command("web-app", "web-repo", "web_repo"))
+        self.assertIn("examples/basic_usage.py", _build_first_pr_command("python-lib", "library-project", "library_project"))
 
     def test_init_project_creates_base_scaffold(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -205,6 +211,7 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("Smoke command:", result.stdout)
             self.assertIn("Validation command:", result.stdout)
             self.assertIn("Customize-first command:", result.stdout)
+            self.assertIn("First-PR evidence command:", result.stdout)
             self.assertIn("evals/smoke_cases.jsonl", result.stdout)
             self.assertIn("docs/launch-plan.md", result.stdout)
             self.assertIn("RELEASE_CHECKLIST.md", result.stdout)
