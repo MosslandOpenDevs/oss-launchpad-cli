@@ -96,6 +96,7 @@ If you want a commit message pattern for that first believable manual proof, ope
 If you want a last-pass check for whether the first proof pair is actually convincing instead of merely present, open `docs/PRESET_FIRST_PROOF_MARGIN_CHECK.md`.
 If you want a quick diff-focused pass after the first preset-specific manual edit, open `docs/PRESET_FIRST_PROOF_DIFF_CHECK.md`.
 If you want a compact audit to confirm that the generated scaffold already shows one believable proof asset plus one reproducible check asset, open `docs/PRESET_FIRST_PROOF_AUDIT.md`.
+If you want a one-page signal for whether those proof assets are already convincing enough to show publicly, open `docs/PRESET_FIRST_PROOF_READY_SIGNAL.md`.
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 
 ## Local validation loop
