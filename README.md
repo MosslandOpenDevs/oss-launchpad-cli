@@ -185,6 +185,7 @@ If you need a UI/UX-first scope note before widening that first web-app slice, o
 If you need stable browser-proof checkpoints for that first web-app form-to-result-card slice, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md`.
 If you need a compact stability-first reminder for that same browser lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_STABILITY_NOTE.md`.
 If you need a compact reminder to keep that first browser proof in a stability-first lane before widening scope, open `docs/PRESET_WEB_APP_PLAYWRIGHT_STABILITY_LANE.md`.
+If you need the matching checkpoint rule for one form, one result card, and one reproducible demo proof, open `docs/PRESET_WEB_APP_FORM_CARD_CHECKPOINT.md`.
 If you need a tiny recovery note for rerunning that first form-to-result-card proof after a flaky browser step, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY_NOTE.md`.
 If you need a quick asset checklist before calling that first web-app result-card slice reviewable, open `docs/PRESET_WEB_DEMO_ASSET_CHECK.md`.
 If you need a compact handoff note for generated web-app demos that should end in one report-style result card plus downloadable artifacts, open `docs/PRESET_WEB_APP_REPORT_CARD_HANDOFF.md`.
