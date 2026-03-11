@@ -119,6 +119,7 @@ If you want a 30-second owner-ready audit before posting that first proof update
 If you want a compact UI-first proof loop for `web-app` scaffolds, open `docs/PRESET_WEB_APP_UI_PROOF_LOOP.md`.
 If you want the shortest UI/UX review handoff before widening that first `web-app` slice, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
 If you want a compact Playwright stability loop before widening that first `web-app` proof slice, open `docs/PRESET_WEB_APP_PLAYWRIGHT_STABILITY_LOOP.md`.
+If you need a one-screen rule for keeping that first web-app proof limited to one form, one submit, and one result card, open `docs/PRESET_WEB_DEMO_FORM_RESULT_STABILITY.md`.
 If you need a compact checkpoint order for that same first web-app Playwright proof lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINT_SEQUENCE.md`.
 If you need a compact Playwright recovery checklist for that same first web-app proof lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY.md`.
 If you need a shorter form-to-card recovery note before reopening broader demo scope, open `docs/PRESET_WEB_APP_FORM_TO_CARD_RECOVERY_NOTE.md`.
