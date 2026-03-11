@@ -119,6 +119,7 @@ If you need the shortest UI-first proof path before that polish pass, open `docs
 If you want a shorter first-pass checklist for the first manual `web-app` UI edit, open `docs/PRESET_WEB_APP_UI_FIRST_PASS.md`.
 That pass should stay UI-first: keep the landing brief, information architecture, checklist, and demo script aligned before widening scope or polishing secondary screens.
 If you want a one-card review note once the first web demo proof is visible, open `docs/PRESET_WEB_DEMO_RESULT_CARD.md`.
+If you want a faster guardrail for keeping the first visible `web-app` proof limited to one believable result card, open `docs/PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md`.
 If you want a compact landing-brief + information-architecture proof loop for the first `web-app` PR, open `docs/PRESET_WEB_APP_FIRST_PR_PROOF_LOOP.md`.
 If you need a compact UI handoff rule card once that first `web-app` proof exists, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
 If you need a compact note for keeping the first `web-app` proof scoped to one visible result instead of a fake multi-screen launch claim, open `docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md`.
