@@ -252,6 +252,7 @@ python3 -m unittest tests/test_cli.py
 ```
 
 That keeps README claims, generated scaffold output, and printed next-step guidance aligned.
+If you want a compact README-first checklist for new launch scaffolds, open `docs/README_TEMPLATE_CHECKLIST_NOTE.md`.
 
 ---
 
