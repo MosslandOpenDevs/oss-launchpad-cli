@@ -160,6 +160,7 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("First-issue command: sed -n '1,120p' docs/ui-ux-checklist.md && sed -n '1,120p' docs/information-architecture.md", steps)
         self.assertIn("Fill .env.example with the minimum local variables required to boot the app.", steps)
         self.assertIn("Review docs/information-architecture.md alongside docs/landing-page-brief.md before the first UI implementation.", steps)
+        self.assertIn("Use docs/PRESET_WEB_APP_UI_PROOF_LOOP.md to keep the first landing-page proof tied to docs/ui-ux-checklist.md and demo/run_demo.sh.", steps)
         self.assertIn("Replace docs/ui-ux-checklist.md examples with the actual landing-page and happy-path UX checks.", steps)
 
     def test_build_next_steps_keeps_release_checklist_and_command_handoffs(self) -> None:
