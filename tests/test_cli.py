@@ -124,6 +124,20 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/ui-ux-checklist.md", _build_first_issue_command("web-app", "web-repo", "web_repo"))
         self.assertIn("tests/test_smoke.py", _build_first_issue_command("python-lib", "library-project", "library_project"))
 
+    def test_build_first_proof_assets_keeps_web_demo_result_card_for_web_app(self) -> None:
+        self.assertIn(
+            "docs/landing-page-brief.md",
+            _build_first_proof_assets("web-app", "web_repo"),
+        )
+        self.assertIn(
+            "docs/ui-ux-checklist.md",
+            _build_first_proof_assets("web-app", "web_repo"),
+        )
+        self.assertIn(
+            "demo/run_demo.sh",
+            _build_first_proof_assets("web-app", "web_repo"),
+        )
+
     def test_build_next_steps_keeps_web_app_bootstrap_handoffs_visible(self) -> None:
         steps = _build_next_steps("web-app", "web-repo", "web_repo")
 
