@@ -377,3 +377,6 @@ If you need a short acceptance note for when that first form -> result card slic
 If you need a short note for keeping the first web-app result-card proof tied to one report/download target, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_HANDOFF.md`.
 
 If you need a short note for keeping the first web-app result card tied to one exported report file, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_FILE_NOTE.md`.
+
+
+If you need a short note for preserving `report_author` / `report_authors` fields in preset JSON exports, open `docs/PRESET_JSON_REPORT_AUTHOR_ALIAS_NOTE.md`.
