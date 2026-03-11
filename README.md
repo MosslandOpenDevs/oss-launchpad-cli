@@ -165,6 +165,7 @@ If you need a compact check that the first `web-app` result card still exposes o
 If you need a slightly fuller UI-first scope note for the same one-form -> one-result-card -> one-download proof, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_BLUEPRINT.md`.
 If you need a short audit that keeps the first generated `web-app` proof scoped to one form, one result card, and one export target, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_CHECK.md`.
 If you need the shortest `web-app` form -> result card -> download proof path before a wider demo pass, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_START.md`.
+If you want the shortest note for keeping one preset JSON export aligned with one starter form and one result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NOTE.md`.
 If you need a compact scope note for keeping that same proof limited to one form, one result card, and one download action, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_SCOPE_NOTE.md`.
 - `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_DOWNLOAD_SCOPE.md` — keep one visible report download tied to the same primary result card.
 If you need the shortest UI/UX-first + Playwright-stable stack for that same first visible proof, open `docs/PRESET_WEB_APP_RESULT_CARD_PROOF_STACK.md`.
