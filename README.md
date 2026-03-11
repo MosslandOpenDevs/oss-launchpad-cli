@@ -121,6 +121,7 @@ That pass should stay UI-first: keep the landing brief, information architecture
 If you want a one-card review note once the first web demo proof is visible, open `docs/PRESET_WEB_DEMO_RESULT_CARD.md`.
 If you want a compact landing-brief + information-architecture proof loop for the first `web-app` PR, open `docs/PRESET_WEB_APP_FIRST_PR_PROOF_LOOP.md`.
 If you need a compact UI handoff rule card once that first `web-app` proof exists, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
+If you need a compact note for keeping the first `web-app` proof scoped to one visible result instead of a fake multi-screen launch claim, open `docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md`.
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.

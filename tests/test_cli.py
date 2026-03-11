@@ -153,6 +153,12 @@ class InitProjectTests(unittest.TestCase):
             _build_first_proof_assets("web-app", "web_repo"),
         )
 
+    def test_readme_mentions_web_app_ui_scope_note(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_UI_SCOPE_NOTE.md").exists())
+
     def test_build_next_steps_keeps_web_app_bootstrap_handoffs_visible(self) -> None:
         steps = _build_next_steps("web-app", "web-repo", "web_repo")
 
