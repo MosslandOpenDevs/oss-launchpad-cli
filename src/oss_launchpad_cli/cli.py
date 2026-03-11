@@ -296,12 +296,14 @@ def main() -> None:
 
     presets_cmd = sub.add_parser("presets", help="List scaffold presets and starter assets")
     presets_cmd.add_argument("--json", action="store_true", help="Print preset metadata as JSON")
+    presets_cmd.add_argument("--preset", choices=_list_presets(), help="Show metadata for one preset only")
 
     args = parser.parse_args()
 
     if args.command == "presets":
         preset_map = {}
-        for preset in _list_presets():
+        preset_names = [args.preset] if args.preset else _list_presets()
+        for preset in preset_names:
             package_name = 'sample_project'
             preset_map[preset] = {
                 "starter_assets": _build_starter_assets(preset, package_name),

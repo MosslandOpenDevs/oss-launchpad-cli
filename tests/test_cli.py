@@ -371,6 +371,22 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("web-app:", result.stdout)
         self.assertIn("- demo/run_demo.sh", result.stdout)
 
+
+    def test_cli_presets_can_limit_output_to_one_preset(self) -> None:
+        env = dict(os.environ)
+        env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+        result = subprocess.run(
+            [sys.executable, "-m", "oss_launchpad_cli.cli", "presets", "--preset", "web-app"],
+            check=True,
+            capture_output=True,
+            text=True,
+            env=env,
+        )
+        self.assertIn("web-app:", result.stdout)
+        self.assertIn("- demo/run_demo.sh", result.stdout)
+        self.assertNotIn("ai-agent:", result.stdout)
+        self.assertNotIn("python-lib:", result.stdout)
+
     def test_cli_presets_json_prints_structured_metadata(self) -> None:
         env = dict(os.environ)
         env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
