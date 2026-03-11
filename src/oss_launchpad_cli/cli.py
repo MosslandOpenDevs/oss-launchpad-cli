@@ -312,6 +312,7 @@ def main() -> None:
         for preset in preset_names:
             package_name = 'sample_project'
             preset_map[preset] = {
+                "preset_key": preset,
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),

@@ -155,7 +155,7 @@ If you need a compact scope note for keeping that same proof limited to one form
 If you need the shortest UI/UX-first + Playwright-stable stack for that same first visible proof, open `docs/PRESET_WEB_APP_RESULT_CARD_PROOF_STACK.md`.
 If you need a short maintainer-ready note once that first result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_HANDOFF.md`.
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
-That JSON export now keeps a human label plus a one-line preset summary beside each preset so scripts, docs, and UI pickers can explain the proof lane without hard-coding copy.
+That JSON export now keeps a stable `preset_key` plus a human label and one-line preset summary beside each preset so scripts, docs, and UI pickers can explain the proof lane without hard-coding copy.
 If you want the shortest start note before wiring that JSON into a script, UI, or review bot, open `docs/PRESET_JSON_EXPORT_START.md`.
 If you need the most compact UI-first note for that same preset JSON handoff, open `docs/PRESET_JSON_UI_START.md`.
 If you only need one preset payload for a picker or script, open `docs/PRESET_JSON_SINGLE_PRESET_NOTE.md`.
