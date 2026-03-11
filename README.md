@@ -164,6 +164,7 @@ If you need a short guardrail for keeping that first web-app proof reproducible 
 If you need a compact UI/UX-first note for keeping the first generated web-app result card scannable before widening the demo, open `docs/PRESET_WEB_APP_RESULT_CARD_SCAN_NOTE.md`.
 If you need a quick label-focused scan before sharing that first result card proof, open `docs/PRESET_WEB_APP_RESULT_CARD_LABEL_CHECK.md`.
 If you need a compact copy cue for the first empty-state result card before real demo data exists, open `docs/PRESET_WEB_APP_RESULT_CARD_EMPTY_STATE_NOTE.md`.
+If you need a quick scan for whether the generated web-app result card keeps input summary, primary status, and one download target above the fold, open `docs/PRESET_WEB_APP_RESULT_CARD_ABOVE_FOLD_CHECK.md`.
 If you need the same review as a compact field-by-field scan, open `docs/PRESET_WEB_APP_RESULT_CARD_FIELD_SCAN.md`.
 If you need a compact naming cue for keeping the first web-app report download tied to one visible result-card basename, open `docs/PRESET_WEB_APP_REPORT_BASENAME_NOTE.md`.
 If you want a compact file-open order before the first real web-app UI edit, open `docs/PRESET_WEB_APP_STARTER_REVIEW.md`.
