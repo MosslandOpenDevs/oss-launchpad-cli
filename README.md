@@ -130,6 +130,7 @@ If you need a compact reminder to keep the first web-app result card tied to one
 If you want a compact landing-brief + information-architecture proof loop for the first `web-app` PR, open `docs/PRESET_WEB_APP_FIRST_PR_PROOF_LOOP.md`.
 If you want the narrowest believable web-app proof before expanding scope, open `docs/PRESET_WEB_APP_FORM_TO_CARD_LOOP.md`.
 If you need a compact stack note for keeping that same first web-app proof limited to one form, one result card, and one reproducible handoff, open `docs/PRESET_WEB_APP_FORM_TO_CARD_STACK.md`.
+If you need the narrowest form -> result card -> download stack reminder before widening the demo scope, open `docs/PRESET_WEB_APP_FORM_RESULT_CARD_STACK.md`.
 If you need a smaller form -> result card -> report handoff reminder before widening that first web-app slice, open `docs/PRESET_WEB_APP_FORM_RESULT_STACK_NOTE.md`.
 If you need a compact UI handoff rule card once that first `web-app` proof exists, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
 If you need a shorter audit for whether one visible `web-app` result card still forms an honest UI proof, open `docs/PRESET_WEB_APP_RESULT_CARD_UI_AUDIT.md`.
