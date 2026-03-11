@@ -114,6 +114,7 @@ If you want a copy-ready maintainer progress update right after scaffold generat
 If you want a shorter owner-specific first-proof progress note, open `docs/PRESET_FIRST_PROOF_OWNER_UPDATE.md`.
 If you want a 30-second owner-ready audit before posting that first proof update, open `docs/PRESET_FIRST_PROOF_OWNER_READY_CHECK.md`.
 If you want a compact UI-first proof loop for `web-app` scaffolds, open `docs/PRESET_WEB_APP_UI_PROOF_LOOP.md`.
+If you want the shortest UI/UX review handoff before widening that first `web-app` slice, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
 If you need a compact Playwright recovery checklist for that same first web-app proof lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY.md`.
 If you need a compact rule for keeping the first web-app proof tied to one form, one result card, and one downloadable artifact bundle, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_CHECK.md`.
 If you need a quick polish pass for the generated `web-app` demo script after the first manual edits, open `docs/PRESET_WEB_APP_DEMO_SCRIPT_POLISH.md`.
