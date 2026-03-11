@@ -1,12 +1,5 @@
-# Preset web-app Playwright stability lane
+# PRESET_WEB_APP_PLAYWRIGHT_STABILITY_LANE
 
-Keep the first `web-app` browser proof in a stability-first lane:
-
-1. one form,
-2. one result card,
-3. one download or handoff artifact,
-4. one deterministic replay path.
-
-Do not widen the surface until that narrow slice can be rerun reliably without changing selectors, steps, or evidence expectations.
-
-Use this note together with `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md` and `docs/PRESET_WEB_APP_RESULT_CARD_REPRO_CHECK.md` when the first demo proof needs to stay reproducible.
+- Keep the first browser-proof lane reproducible: one form, one primary action, one visible result card.
+- Re-run the same happy-path check before widening coverage.
+- Recover from flaky automation by confirming page state, refreshing selectors, and replaying the smallest passing flow.
