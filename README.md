@@ -154,6 +154,7 @@ If you need a compact map of the machine-readable fields exposed by `oss-launchp
 That JSON export now keeps a human label plus a one-line preset summary beside each preset so scripts, docs, and UI pickers can explain the proof lane without hard-coding copy.
 If you want the shortest start note before wiring that JSON into a script, UI, or review bot, open `docs/PRESET_JSON_EXPORT_START.md`.
 If you only need one preset payload for a picker or script, open `docs/PRESET_JSON_SINGLE_PRESET_NOTE.md`.
+If you need a compact reminder to keep one visible owner beside that preset JSON in a picker or setup form, open `docs/PRESET_JSON_OWNER_NOTE.md`.
 If you need a short reviewer note for why that JSON export exists at all, open `docs/PRESET_JSON_EXPORT_REVIEW_NOTE.md`.
 If you need a compact first-pass note before widening a web-app preset into a larger UI proof loop, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
 If you need a UI/UX-first scope note before widening that first web-app slice, open `docs/PRESET_WEB_APP_UI_UX_START.md`.
