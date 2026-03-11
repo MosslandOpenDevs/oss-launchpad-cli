@@ -133,6 +133,7 @@ If you need a short maintainer-ready note once that first result card is believa
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
 If you need a compact first-pass note before widening a web-app preset into a larger UI proof loop, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
 If you need stable browser-proof checkpoints for that first web-app form-to-result-card slice, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md`.
+If you want a compact file-open order before the first real web-app UI edit, open `docs/PRESET_WEB_APP_STARTER_REVIEW.md`.
 If you need a compact evidence ladder for deciding whether that first web-app proof is visible enough to share, open `docs/PRESET_WEB_DEMO_PROOF.md`.
 If the first web-app proof needs a form-first readiness audit before widening scope, open `docs/PRESET_WEB_APP_FORM_READINESS_CHECK.md`.
 
