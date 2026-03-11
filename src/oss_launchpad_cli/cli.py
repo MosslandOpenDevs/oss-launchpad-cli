@@ -227,6 +227,17 @@ def _build_starter_assets(preset: str, package_name: str) -> list[str]:
     return assets[preset]
 
 
+
+
+def _build_quickstart_docs(preset: str, package_name: str) -> list[str]:
+    docs = {
+        "ai-agent": ["README.md", "prompts/system.txt", "evals/README.md", "docs/agent-demo-brief.md"],
+        "web-app": ["README.md", ".env.example", "docs/landing-page-brief.md", "docs/ui-ux-checklist.md"],
+        "python-lib": ["README.md", f"src/{package_name}/__init__.py", "examples/basic_usage.py", "docs/api-surface.md"],
+    }
+    return docs[preset]
+
+
 def _build_first_proof_assets(preset: str, package_name: str) -> list[str]:
     assets = {
         "ai-agent": [
@@ -292,6 +303,7 @@ def main() -> None:
             package_name = 'sample_project'
             preset_map[preset] = {
                 "starter_assets": _build_starter_assets(preset, package_name),
+                "quickstart_docs": _build_quickstart_docs(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),
                 "day_zero_docs": _build_day_zero_docs(preset, package_name),
                 "smoke_command": _build_smoke_command(preset, "sample-project", package_name),
@@ -333,6 +345,9 @@ def main() -> None:
             print("No new files created.")
         print("Starter assets to customize first:")
         for item in _build_starter_assets(args.preset, package_name):
+            print(f"- {item}")
+        print("Quickstart docs to open first:")
+        for item in _build_quickstart_docs(args.preset, package_name):
             print(f"- {item}")
         print("First proof assets to capture:")
         for item in _build_first_proof_assets(args.preset, package_name):

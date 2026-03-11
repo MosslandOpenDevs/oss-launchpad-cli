@@ -20,6 +20,7 @@ from oss_launchpad_cli.cli import (
     _build_first_release_command,
     _build_first_pr_command,
     _build_first_proof_assets,
+    _build_quickstart_docs,
     _build_next_steps,
     _build_proof_review_command,
     _build_smoke_command,
@@ -68,6 +69,20 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("prompts/system.txt", _build_customize_first_command("ai-agent", "agent-repo", "agent_repo"))
         self.assertIn("docs/ui-ux-checklist.md", _build_customize_first_command("web-app", "web-repo", "web_repo"))
         self.assertIn("src/library_project/__init__.py", _build_customize_first_command("python-lib", "library-project", "library_project"))
+
+    def test_build_quickstart_docs_is_preset_specific(self) -> None:
+        self.assertEqual(
+            _build_quickstart_docs("ai-agent", "agent_repo"),
+            ["README.md", "prompts/system.txt", "evals/README.md", "docs/agent-demo-brief.md"],
+        )
+        self.assertEqual(
+            _build_quickstart_docs("web-app", "web_repo"),
+            ["README.md", ".env.example", "docs/landing-page-brief.md", "docs/ui-ux-checklist.md"],
+        )
+        self.assertEqual(
+            _build_quickstart_docs("python-lib", "library_project"),
+            ["README.md", "src/library_project/__init__.py", "examples/basic_usage.py", "docs/api-surface.md"],
+        )
 
     def test_build_first_proof_assets_is_preset_specific(self) -> None:
         self.assertEqual(
