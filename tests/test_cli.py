@@ -545,6 +545,12 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_DEMO_PROOF.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_DEMO_PROOF.md").exists())
 
+    def test_readme_links_web_app_result_card_handoff_doc(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_RESULT_CARD_HANDOFF.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_RESULT_CARD_HANDOFF.md").exists())
+
     def test_readme_links_web_app_form_to_card_loop_doc(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
