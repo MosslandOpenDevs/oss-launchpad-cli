@@ -189,6 +189,13 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md").exists())
 
+
+    def test_readme_mentions_web_app_result_card_stability_note(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_RESULT_CARD_STABILITY_NOTE.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_RESULT_CARD_STABILITY_NOTE.md").exists())
+
     def test_readme_mentions_web_app_result_card_one_action_rule(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
