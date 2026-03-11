@@ -140,6 +140,7 @@ If you want a compact sequence for reviewing the generated proof pair before the
 If you need a quick pass/hold exit card before that first believable proof commit, open `docs/PRESET_FIRST_PROOF_REVIEW_EXIT.md`.
 If you need a quick rule for deciding what belongs in that first believable proof commit versus what should wait, open `docs/PRESET_FIRST_PROOF_KEEP_OR_TRIM.md`.
 If you want concrete preset-by-preset examples of what to keep in that first believable proof commit versus what to defer, open `docs/PRESET_FIRST_PROOF_TRIM_EXAMPLES.md`.
+If you want a compact rule for what the first believable proof artifact bundle should contain, open `docs/PRESET_FIRST_PROOF_ARTIFACT_BUNDLE.md`.
 If you want a compact guardrail for keeping the first manual proof commit small and believable, open `docs/PRESET_FIRST_PROOF_SCOPE_CHECK.md`.
 If you want a one-line preset-aware update that keeps the first proof claim honest about scope, open `docs/PRESET_FIRST_PROOF_SCOPE_STATUS_LINE.md`.
 If you want a short post-ready check before describing or pushing that first believable proof, open `docs/PRESET_FIRST_PROOF_POST_CHECK.md`.
