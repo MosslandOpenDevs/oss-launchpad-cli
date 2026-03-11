@@ -129,6 +129,8 @@ If you need a quick wording review for the first visible `web-app` result card b
 If you need a compact note for keeping the first `web-app` proof scoped to one visible result instead of a fake multi-screen launch claim, open `docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md`.
 If you need a compact check that the first `web-app` result card still exposes one believable download or handoff target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_CHECK.md`.
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
+If you need a compact first-pass note before widening a web-app preset into a larger UI proof loop, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
+
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
 If you want a compact set of honest names for that first believable proof pair, open `docs/PRESET_FIRST_PROOF_LABELS.md`.
