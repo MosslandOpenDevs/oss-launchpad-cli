@@ -154,6 +154,7 @@ If you need the shortest review loop for that same form -> result card -> downlo
 If you need a short guardrail for keeping that first web-app proof reproducible across form input, result card, and download handoff, open `docs/PRESET_WEB_APP_RESULT_CARD_REPRO_CHECK.md`.
 If you need a compact UI/UX-first note for keeping the first generated web-app result card scannable before widening the demo, open `docs/PRESET_WEB_APP_RESULT_CARD_SCAN_NOTE.md`.
 If you need a quick label-focused scan before sharing that first result card proof, open `docs/PRESET_WEB_APP_RESULT_CARD_LABEL_CHECK.md`.
+If you need a compact naming cue for keeping the first web-app report download tied to one visible result-card basename, open `docs/PRESET_WEB_APP_REPORT_BASENAME_NOTE.md`.
 If you want a compact file-open order before the first real web-app UI edit, open `docs/PRESET_WEB_APP_STARTER_REVIEW.md`.
 If you need a compact evidence ladder for deciding whether that first web-app proof is visible enough to share, open `docs/PRESET_WEB_DEMO_PROOF.md`.
 If the first web-app proof needs a form-first readiness audit before widening scope, open `docs/PRESET_WEB_APP_FORM_READINESS_CHECK.md`.
