@@ -181,6 +181,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
             "Fill .env.example with the minimum local variables required to boot the app.",
             "Review docs/information-architecture.md alongside docs/landing-page-brief.md before the first UI implementation.",
             "Use docs/PRESET_WEB_APP_UI_PROOF_LOOP.md to keep the first landing-page proof tied to docs/ui-ux-checklist.md and demo/run_demo.sh.",
+            "Use docs/PRESET_WEB_DEMO_RESULT_CARD.md to keep the first visible UI proof scoped to one reviewable result card before adding secondary screens.",
             "Replace docs/ui-ux-checklist.md examples with the actual landing-page and happy-path UX checks.",
         ],
         "python-lib": [
