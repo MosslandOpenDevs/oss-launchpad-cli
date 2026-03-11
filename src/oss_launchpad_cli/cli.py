@@ -179,6 +179,7 @@ def _build_next_steps(preset: str, title_slug: str, package_name: str) -> list[s
         ],
         "web-app": [
             "Fill .env.example with the minimum local variables required to boot the app.",
+            "Review docs/information-architecture.md alongside docs/landing-page-brief.md before the first UI implementation.",
             "Replace docs/ui-ux-checklist.md examples with the actual landing-page and happy-path UX checks.",
         ],
         "python-lib": [
