@@ -183,6 +183,7 @@ If you need a compact handoff note for generated web-app demos that should end i
 If you need a compact bridge between the generated web-app result card and the first maintainer-facing status line, open `docs/PRESET_WEB_APP_RESULT_CARD_STATUS_BRIDGE.md`.
 If you need a compact gate for deciding whether the first result card plus export path is really download-ready, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_GATE.md`.
 If you need a one-line maintainer update once that first web-app result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_STATUS_LINE.md`.
+If you need the same update to keep one download target visible, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STATUS_LINE.md`.
 If you need a one-line check that the first preset JSON export is already usable as a proof bundle, open `docs/PRESET_JSON_EXPORT_PROOF_BUNDLE_NOTE.md`.
 If you need a tiny signoff check once that first web-app result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_SIGNOFF.md`.
 If you need the shortest review loop for that same form -> result card -> download slice, open `docs/PRESET_WEB_APP_RESULT_CARD_REVIEW_START.md`.
