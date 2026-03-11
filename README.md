@@ -90,6 +90,7 @@ If you want a single review command for the first README-plus-proof-file sanity 
 If you want a compact maintainer handoff checklist after scaffold generation and before the first public push, open `docs/PRESET_HANDOFF_CHECKLIST.md`.
 If you want a compact field reference for `oss-launchpad presets --json` before wiring a chooser, open `docs/PRESET_JSON_EXPORT_FIELDS.md`.
 If you need the shortest bridge from `presets --json` to a tiny setup form or browser demo, open `docs/PRESET_JSON_WEB_FORM_START.md`.
+If you need a compact stability note for turning that same preset JSON into a reproducible browser-form proof, open `docs/PRESET_JSON_WEB_FORM_PLAYWRIGHT_NOTE.md`.
 If you need a compact note for the one obvious follow-up action after that first preset form result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NEXT_STEP.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
 If you want a single-page review checklist for the printed preset output before the first manual commit, open `docs/PRESET_OUTPUT_REVIEW.md`.
