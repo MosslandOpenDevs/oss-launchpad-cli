@@ -309,6 +309,8 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("first_proof_assets", payload["python-lib"])
         self.assertIn("docs/landing-page-brief.md", payload["web-app"]["starter_assets"])
         self.assertIn("demo/run_demo.sh", payload["web-app"]["day_zero_docs"])
+        self.assertIn("docs/landing-page-brief.md", payload["web-app"]["first_proof_assets"])
+        self.assertIn("docs/information-architecture.md", payload["web-app"]["day_zero_docs"])
 
 
     def test_cli_init_prints_preset_and_creates_files(self) -> None:
