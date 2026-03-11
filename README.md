@@ -154,6 +154,7 @@ If you need a short maintainer-ready note once that first result card is believa
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
 That JSON export now keeps a human label plus a one-line preset summary beside each preset so scripts, docs, and UI pickers can explain the proof lane without hard-coding copy.
 If you want the shortest start note before wiring that JSON into a script, UI, or review bot, open `docs/PRESET_JSON_EXPORT_START.md`.
+If you need the most compact UI-first note for that same preset JSON handoff, open `docs/PRESET_JSON_UI_START.md`.
 If you only need one preset payload for a picker or script, open `docs/PRESET_JSON_SINGLE_PRESET_NOTE.md`.
 If you need a compact reminder to keep one visible owner beside that preset JSON in a picker or setup form, open `docs/PRESET_JSON_OWNER_NOTE.md`.
 If you need a short reviewer note for why that JSON export exists at all, open `docs/PRESET_JSON_EXPORT_REVIEW_NOTE.md`.
