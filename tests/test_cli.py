@@ -390,3 +390,10 @@ class CliSmokeTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+    def test_build_day_zero_docs_keeps_web_app_demo_script_visible(self) -> None:
+        docs = _build_day_zero_docs("web-app", "web_repo")
+
+        self.assertIn("docs/information-architecture.md", docs)
+        self.assertIn("demo/run_demo.sh", docs)
