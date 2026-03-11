@@ -281,14 +281,25 @@ def main() -> None:
     )
 
     presets_cmd = sub.add_parser("presets", help="List scaffold presets and starter assets")
+    presets_cmd.add_argument("--json", action="store_true", help="Print preset metadata as JSON")
 
     args = parser.parse_args()
 
     if args.command == "presets":
+        preset_map = {}
         for preset in _list_presets():
             package_name = 'sample_project'
+            preset_map[preset] = {
+                "starter_assets": _build_starter_assets(preset, package_name),
+                "first_proof_assets": _build_first_proof_assets(preset, package_name),
+                "day_zero_docs": _build_day_zero_docs(preset, package_name),
+            }
+        if args.json:
+            print(json.dumps(preset_map, indent=2))
+            return
+        for preset, details in preset_map.items():
             print(f"{preset}:")
-            for asset in _build_starter_assets(preset, package_name):
+            for asset in details["starter_assets"]:
                 print(f"- {asset}")
         return
 

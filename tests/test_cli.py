@@ -278,6 +278,24 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("web-app:", result.stdout)
         self.assertIn("- demo/run_demo.sh", result.stdout)
 
+    def test_cli_presets_json_prints_structured_metadata(self) -> None:
+        env = dict(os.environ)
+        env["PYTHONPATH"] = str(SRC) + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
+        result = subprocess.run(
+            [sys.executable, "-m", "oss_launchpad_cli.cli", "presets", "--json"],
+            check=True,
+            capture_output=True,
+            text=True,
+            env=env,
+        )
+        payload = __import__("json").loads(result.stdout)
+        self.assertIn("ai-agent", payload)
+        self.assertIn("starter_assets", payload["web-app"])
+        self.assertIn("first_proof_assets", payload["python-lib"])
+        self.assertIn("docs/landing-page-brief.md", payload["web-app"]["starter_assets"])
+        self.assertIn("demo/run_demo.sh", payload["web-app"]["day_zero_docs"])
+
+
     def test_cli_init_prints_preset_and_creates_files(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             target = Path(tmp) / "agent-repo"
