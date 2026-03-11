@@ -116,6 +116,7 @@ If you want a 30-second owner-ready audit before posting that first proof update
 If you want a compact UI-first proof loop for `web-app` scaffolds, open `docs/PRESET_WEB_APP_UI_PROOF_LOOP.md`.
 If you need a quick polish pass for the generated `web-app` demo script after the first manual edits, open `docs/PRESET_WEB_APP_DEMO_SCRIPT_POLISH.md`.
 If you want a shorter first-pass checklist for the first manual `web-app` UI edit, open `docs/PRESET_WEB_APP_UI_FIRST_PASS.md`.
+That pass should stay UI-first: keep the landing brief, information architecture, checklist, and demo script aligned before widening scope or polishing secondary screens.
 If you want a one-card review note once the first web demo proof is visible, open `docs/PRESET_WEB_DEMO_RESULT_CARD.md`.
 If you want a compact landing-brief + information-architecture proof loop for the first `web-app` PR, open `docs/PRESET_WEB_APP_FIRST_PR_PROOF_LOOP.md`.
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
