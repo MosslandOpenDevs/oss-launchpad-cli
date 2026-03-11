@@ -286,3 +286,8 @@ PYTHONPATH=src python3 -m oss_launchpad_cli.cli presets
 ```
 
 Use this to compare starter assets before choosing `ai-agent`, `web-app`, or `python-lib`.
+
+
+## Web-app preset proof loop
+
+For UI-first starter repos, pair `docs/PRESET_WEB_APP_UI_PROOF_LOOP.md` with `docs/PRESET_WEB_DEMO_RESULT_CARD.md` before the first public demo so the landing-page proof path, result card, and smoke command evidence stay aligned.
