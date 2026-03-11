@@ -384,3 +384,6 @@ If you need a short note for keeping the first web-app result card tied to one e
 
 
 If you need a short note for preserving `report_author` / `report_authors` fields in preset JSON exports, open `docs/PRESET_JSON_REPORT_AUTHOR_ALIAS_NOTE.md`.
+
+
+If you need a compact UI note for keeping one result card tied to one report/download proof stack, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_STACK.md`.
