@@ -539,6 +539,12 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md").exists())
 
+    def test_readme_links_web_demo_proof_doc(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_DEMO_PROOF.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_DEMO_PROOF.md").exists())
+
     def test_readme_links_web_app_form_to_card_loop_doc(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
