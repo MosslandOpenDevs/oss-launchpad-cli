@@ -175,6 +175,7 @@ If you need a short reviewer note for why that JSON export exists at all, open `
 If you need a compact first-pass note before widening a web-app preset into a larger UI proof loop, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
 If you need a UI/UX-first scope note before widening that first web-app slice, open `docs/PRESET_WEB_APP_UI_UX_START.md`.
 If you need stable browser-proof checkpoints for that first web-app form-to-result-card slice, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md`.
+If you need a compact stability-first reminder for that same browser lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_STABILITY_NOTE.md`.
 If you need a compact reminder to keep that first browser proof in a stability-first lane before widening scope, open `docs/PRESET_WEB_APP_PLAYWRIGHT_STABILITY_LANE.md`.
 If you need a tiny recovery note for rerunning that first form-to-result-card proof after a flaky browser step, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY_NOTE.md`.
 If you need a quick asset checklist before calling that first web-app result-card slice reviewable, open `docs/PRESET_WEB_DEMO_ASSET_CHECK.md`.
