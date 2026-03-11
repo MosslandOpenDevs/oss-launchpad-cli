@@ -13,6 +13,11 @@ PRESET_TEMPLATE_ROOTS = {
     "web-app": TEMPLATES_ROOT / "web-app",
     "python-lib": TEMPLATES_ROOT / "python-lib",
 }
+PRESET_SUMMARIES = {
+    "ai-agent": "Best when the first believable proof is a prompt, eval, and runnable agent contract.",
+    "web-app": "Best when the first believable proof is a landing flow, UI checklist, and demo script.",
+    "python-lib": "Best when the first believable proof is an importable package, smoke test, and usage example.",
+}
 DEFAULT_CONTEXT = {
     "project_tagline": "Bootstrap a public repository with launch-ready documentation and reproducible project scaffolding.",
     "why_section": "Use this repository to explain the project clearly, show a runnable path, and make contribution/release expectations obvious.",
@@ -307,6 +312,8 @@ def main() -> None:
         for preset in preset_names:
             package_name = 'sample_project'
             preset_map[preset] = {
+                "label": preset.replace("-", " ").title(),
+                "summary": PRESET_SUMMARIES[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "quickstart_docs": _build_quickstart_docs(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),
@@ -327,7 +334,7 @@ def main() -> None:
             print(json.dumps(preset_map, indent=2))
             return
         for preset, details in preset_map.items():
-            print(f"{preset}:")
+            print(f"{preset}: {details['summary']}")
             for asset in details["starter_assets"]:
                 print(f"- {asset}")
         return
