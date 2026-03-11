@@ -321,3 +321,4 @@ Use this to compare starter assets before choosing `ai-agent`, `web-app`, or `py
 ## Web-app preset proof loop
 
 For UI-first starter repos, pair `docs/PRESET_WEB_APP_UI_PROOF_LOOP.md` with `docs/PRESET_WEB_DEMO_RESULT_CARD.md` before the first public demo so the landing-page proof path, result card, and smoke command evidence stay aligned.
+If you want a shorter pre-demo check that the first web-app form still resolves into one reviewable result card, open `docs/PRESET_WEB_APP_FORM_RESULT_CARD_CHECK.md`.
