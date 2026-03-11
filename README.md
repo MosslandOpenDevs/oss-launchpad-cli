@@ -135,6 +135,7 @@ If you need a compact check that the first `web-app` result card still exposes o
 If you need the shortest UI/UX-first + Playwright-stable stack for that same first visible proof, open `docs/PRESET_WEB_APP_RESULT_CARD_PROOF_STACK.md`.
 If you need a short maintainer-ready note once that first result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_HANDOFF.md`.
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
+If you want the shortest start note before wiring that JSON into a script, UI, or review bot, open `docs/PRESET_JSON_EXPORT_START.md`.
 If you need a short reviewer note for why that JSON export exists at all, open `docs/PRESET_JSON_EXPORT_REVIEW_NOTE.md`.
 If you need a compact first-pass note before widening a web-app preset into a larger UI proof loop, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
 If you need stable browser-proof checkpoints for that first web-app form-to-result-card slice, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md`.
