@@ -362,3 +362,5 @@ If you need a short acceptance note for when that first form -> result card slic
 - `docs/CLI_DRY_RUN_SUMMARY_NOTE.md`
 
 If you need a short note for keeping the first web-app result-card proof tied to one report/download target, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_HANDOFF.md`.
+
+If you need a short note for keeping the first web-app result card tied to one exported report file, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_FILE_NOTE.md`.
