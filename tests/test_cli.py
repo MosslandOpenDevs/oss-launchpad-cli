@@ -435,6 +435,12 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("docs/information-architecture.md", docs)
         self.assertIn("demo/run_demo.sh", docs)
 
+    def test_readme_links_web_app_ui_handoff_rules_doc(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_UI_HANDOFF_RULES.md").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
