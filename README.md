@@ -117,6 +117,7 @@ If you want the shortest preset-aware command for turning generated proof assets
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
 If you want a compact set of honest names for that first believable proof pair, open `docs/PRESET_FIRST_PROOF_LABELS.md`.
 If you want the shortest paired-file command for checking whether that first proof update is ready to post, use the new first proof status command printed by `oss-launchpad init`.
+If you want a compact audit for whether those paired files already form a believable first proof bundle, open `docs/PRESET_FIRST_PROOF_BUNDLE_CHECK.md`.
 If you want a compact pass/fail check before claiming that sentence publicly, open `docs/PRESET_FIRST_PROOF_STATUS_CHECK.md`.
 If you want the shortest preset-aware issue draft checklist after that first proof, open `docs/PRESET_FIRST_ISSUE_CHECKLIST.md`.
 If you want a commit message pattern for that first believable manual proof, open `docs/PRESET_FIRST_PROOF_COMMIT_MESSAGE.md`.
