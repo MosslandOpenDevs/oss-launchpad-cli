@@ -122,6 +122,8 @@ If you need a compact Playwright recovery checklist for that same first web-app 
 If you need a shorter form-to-card recovery note before reopening broader demo scope, open `docs/PRESET_WEB_APP_FORM_TO_CARD_RECOVERY_NOTE.md`.
 If you need an even shorter reminder to keep that same proof narrowed to one form, one result card, and one recovery step, open `docs/PRESET_WEB_APP_FORM_RESULT_RECOVERY_NOTE.md`.
 If you need a compact rule for keeping the first web-app proof tied to one form, one result card, and one downloadable artifact bundle, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_CHECK.md`.
+If you need a compact handoff for one web-app form submit plus one visible result card plus one exported artifact, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_NOTE.md`.
+
 If you want a compact maintainer check that keeps the first web-app result card paired with one reopened report artifact, open `docs/PRESET_WEB_APP_REPORT_DOWNLOAD_REVIEW.md`.
 If you need a shorter scope card for that same form-to-result-card bundle lane, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_SCOPE.md`.
 If you need a quick polish pass for the generated `web-app` demo script after the first manual edits, open `docs/PRESET_WEB_APP_DEMO_SCRIPT_POLISH.md`.
