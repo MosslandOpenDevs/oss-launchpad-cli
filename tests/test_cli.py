@@ -307,10 +307,17 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("ai-agent", payload)
         self.assertIn("starter_assets", payload["web-app"])
         self.assertIn("first_proof_assets", payload["python-lib"])
+        self.assertIn("smoke_command", payload["web-app"])
+        self.assertIn("validation_command", payload["web-app"])
+        self.assertIn("customize_first_command", payload["web-app"])
+        self.assertIn("first_pr_command", payload["web-app"])
         self.assertIn("docs/landing-page-brief.md", payload["web-app"]["starter_assets"])
         self.assertIn("demo/run_demo.sh", payload["web-app"]["day_zero_docs"])
         self.assertIn("docs/landing-page-brief.md", payload["web-app"]["first_proof_assets"])
         self.assertIn("docs/information-architecture.md", payload["web-app"]["day_zero_docs"])
+        self.assertIn("sh demo/run_demo.sh", payload["web-app"]["smoke_command"])
+        self.assertIn("docs/ui-ux-checklist.md", payload["web-app"]["customize_first_command"])
+        self.assertIn("docs/information-architecture.md", payload["web-app"]["first_pr_command"])
 
 
     def test_cli_init_prints_preset_and_creates_files(self) -> None:

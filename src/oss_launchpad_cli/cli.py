@@ -294,6 +294,10 @@ def main() -> None:
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),
                 "day_zero_docs": _build_day_zero_docs(preset, package_name),
+                "smoke_command": _build_smoke_command(preset, "sample-project", package_name),
+                "validation_command": _build_validation_command(preset, "sample-project", package_name),
+                "customize_first_command": _build_customize_first_command(preset, "sample-project", package_name),
+                "first_pr_command": _build_first_pr_command(preset, "sample-project", package_name),
             }
         if args.json:
             print(json.dumps(preset_map, indent=2))
