@@ -464,13 +464,18 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_UI_HANDOFF_RULES.md").exists())
 
-
-if __name__ == "__main__":
-    unittest.main()
-
-
     def test_readme_links_first_proof_artifact_bundle_doc(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
         self.assertIn("docs/PRESET_FIRST_PROOF_ARTIFACT_BUNDLE.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_FIRST_PROOF_ARTIFACT_BUNDLE.md").exists())
+
+    def test_readme_links_web_demo_result_card_doc(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_DEMO_RESULT_CARD.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_DEMO_RESULT_CARD.md").exists())
+
+
+if __name__ == "__main__":
+    unittest.main()
