@@ -334,3 +334,6 @@ For UI-first starter repos, pair `docs/PRESET_WEB_APP_UI_PROOF_LOOP.md` with `do
 If you want a shorter pre-demo check that the first web-app form still resolves into one reviewable result card, open `docs/PRESET_WEB_APP_FORM_RESULT_CARD_CHECK.md`.
 If you want a compact proof note for that same first form-to-result slice, open `docs/PRESET_WEB_APP_FORM_RESULT_PROOF.md`.
 If you want a quick audit before widening that same slice, open `docs/PRESET_WEB_APP_FORM_RESULT_AUDIT.md`.
+
+
+If you need a short acceptance note for when that first form -> result card slice is actually reviewable, open `docs/PRESET_WEB_APP_RESULT_CARD_ACCEPTANCE.md`.
