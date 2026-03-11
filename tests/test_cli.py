@@ -165,6 +165,12 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_APP_RESULT_CARD_UI_AUDIT.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_RESULT_CARD_UI_AUDIT.md").exists())
 
+    def test_readme_mentions_web_app_form_to_card_loop(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_FORM_TO_CARD_LOOP.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_FORM_TO_CARD_LOOP.md").exists())
+
     def test_readme_mentions_web_app_first_result_card_check(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
