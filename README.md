@@ -168,6 +168,7 @@ If you need a quick asset checklist before calling that first web-app result-car
 If you need a compact handoff note for generated web-app demos that should end in one report-style result card plus downloadable artifacts, open `docs/PRESET_WEB_APP_REPORT_CARD_HANDOFF.md`.
 If you need a compact bridge between the generated web-app result card and the first maintainer-facing status line, open `docs/PRESET_WEB_APP_RESULT_CARD_STATUS_BRIDGE.md`.
 If you need a one-line maintainer update once that first web-app result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_STATUS_LINE.md`.
+If you need a one-line check that the first preset JSON export is already usable as a proof bundle, open `docs/PRESET_JSON_EXPORT_PROOF_BUNDLE_NOTE.md`.
 If you need a tiny signoff check once that first web-app result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_SIGNOFF.md`.
 If you need the shortest review loop for that same form -> result card -> download slice, open `docs/PRESET_WEB_APP_RESULT_CARD_REVIEW_START.md`.
 If you need a short guardrail for keeping that first web-app proof reproducible across form input, result card, and download handoff, open `docs/PRESET_WEB_APP_RESULT_CARD_REPRO_CHECK.md`.
