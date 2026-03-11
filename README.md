@@ -120,6 +120,7 @@ If you need the shortest UI-first proof path before that polish pass, open `docs
 If you want a shorter first-pass checklist for the first manual `web-app` UI edit, open `docs/PRESET_WEB_APP_UI_FIRST_PASS.md`.
 That pass should stay UI-first: keep the landing brief, information architecture, checklist, and demo script aligned before widening scope or polishing secondary screens.
 If you want a one-card review note once the first web demo proof is visible, open `docs/PRESET_WEB_DEMO_RESULT_CARD.md`.
+If the starter proof specifically changes the first input form plus the first result card, open `docs/PRESET_WEB_DEMO_FORM_RESULT_STABILITY.md` before widening the demo surface.
 If you need a short reminder to stabilize that first result-card slice before adding more UI states, open `docs/PRESET_WEB_APP_RESULT_CARD_STABILITY_NOTE.md`.
 If you want a faster guardrail for keeping the first visible `web-app` proof limited to one believable result card, open `docs/PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md`.
 If you need a compact reminder to keep the first web-app result card tied to one proofable user action, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_ACTION_RULE.md`.
