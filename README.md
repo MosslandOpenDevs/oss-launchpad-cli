@@ -149,6 +149,7 @@ If you need a compact rule for keeping that first visible result tied to one obv
 If you need a compact check that the first `web-app` result card still exposes one believable download or handoff target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_CHECK.md`.
 If you need a short audit that keeps the first generated `web-app` proof scoped to one form, one result card, and one export target, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_CHECK.md`.
 If you need the shortest `web-app` form -> result card -> download proof path before a wider demo pass, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_START.md`.
+If you need a compact scope note for keeping that same proof limited to one form, one result card, and one download action, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_SCOPE_NOTE.md`.
 If you need the shortest UI/UX-first + Playwright-stable stack for that same first visible proof, open `docs/PRESET_WEB_APP_RESULT_CARD_PROOF_STACK.md`.
 If you need a short maintainer-ready note once that first result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_HANDOFF.md`.
 If you need a compact map of the machine-readable fields exposed by `oss-launchpad presets --json`, open `docs/PRESET_METADATA_EXPORT_FIELDS.md`.
