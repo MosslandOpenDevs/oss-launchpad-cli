@@ -256,7 +256,7 @@ def _build_day_zero_docs(preset: str, package_name: str) -> list[str]:
     ]
     preset_docs = {
         "ai-agent": ["docs/agent-demo-brief.md", "evals/README.md"],
-        "web-app": ["docs/landing-page-brief.md", "docs/ui-ux-checklist.md", "docs/information-architecture.md"],
+        "web-app": ["docs/landing-page-brief.md", "docs/ui-ux-checklist.md", "docs/information-architecture.md", "demo/run_demo.sh"],
         "python-lib": ["docs/api-surface.md", "examples/basic_usage.py", "tests/test_smoke.py"],
     }
     return common_docs + preset_docs[preset]

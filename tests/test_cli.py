@@ -387,13 +387,12 @@ class CliSmokeTests(unittest.TestCase):
             self.assertIn("First-issue command:", result.stdout)
             self.assertIn("First-release command:", result.stdout)
 
-
-if __name__ == "__main__":
-    unittest.main()
-
-
     def test_build_day_zero_docs_keeps_web_app_demo_script_visible(self) -> None:
         docs = _build_day_zero_docs("web-app", "web_repo")
 
         self.assertIn("docs/information-architecture.md", docs)
         self.assertIn("demo/run_demo.sh", docs)
+
+
+if __name__ == "__main__":
+    unittest.main()
