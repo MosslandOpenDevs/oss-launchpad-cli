@@ -177,6 +177,12 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md").exists())
 
+    def test_readme_mentions_web_app_result_card_one_action_rule(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_RESULT_CARD_ONE_ACTION_RULE.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_RESULT_CARD_ONE_ACTION_RULE.md").exists())
+
     def test_build_next_steps_keeps_web_app_bootstrap_handoffs_visible(self) -> None:
         steps = _build_next_steps("web-app", "web-repo", "web_repo")
 
