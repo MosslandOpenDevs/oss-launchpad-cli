@@ -411,4 +411,5 @@ If you need a short note for preserving `report_author` / `report_authors` field
 
 If you need a compact UI note for keeping one result card tied to one report/download proof stack, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_STACK.md`.
 If you need a compact export check for keeping that same result card tied to one downloadable artifact after the first pass, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_NOTE.md`.
+If you need a short status-first reminder for that same result card export lane, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
 If you need a compact scope note for keeping that same result card tied to one report download, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_DOWNLOAD_SCOPE.md`.
