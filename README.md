@@ -89,6 +89,7 @@ If you want the exact doc set to open immediately after `oss-launchpad init`, op
 If you want a single review command for the first README-plus-proof-file sanity check, open `docs/PRESET_DAY_ZERO_REVIEW_COMMAND.md`.
 If you want a compact maintainer handoff checklist after scaffold generation and before the first public push, open `docs/PRESET_HANDOFF_CHECKLIST.md`.
 If you want a compact field reference for `oss-launchpad presets --json` before wiring a chooser, open `docs/PRESET_JSON_EXPORT_FIELDS.md`.
+If you need the shortest bridge from `presets --json` to a tiny setup form or browser demo, open `docs/PRESET_JSON_WEB_FORM_START.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
 If you want a single-page review checklist for the printed preset output before the first manual commit, open `docs/PRESET_OUTPUT_REVIEW.md`.
 If you want a preset-by-preset map from generated files to the first believable proof path, open `docs/PRESET_OUTPUT_PROOF_MAP.md`.
