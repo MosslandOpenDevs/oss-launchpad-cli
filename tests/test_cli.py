@@ -503,6 +503,12 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_DEMO_RESULT_CARD.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_DEMO_RESULT_CARD.md").exists())
 
+    def test_readme_links_web_app_result_card_copy_review_doc(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_RESULT_CARD_COPY_REVIEW.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_RESULT_CARD_COPY_REVIEW.md").exists())
+
 
 if __name__ == "__main__":
     unittest.main()
