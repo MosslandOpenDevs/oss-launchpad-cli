@@ -318,6 +318,7 @@ def main() -> None:
                 "first_proof_status_command": _build_first_proof_status_command(preset, "sample-project", package_name),
                 "first_issue_command": _build_first_issue_command(preset, "sample-project", package_name),
                 "first_release_command": _build_first_release_command(preset, "sample-project", package_name),
+                "next_steps": _build_next_steps(preset, "sample-project", package_name),
             }
         if args.json:
             print(json.dumps(preset_map, indent=2))

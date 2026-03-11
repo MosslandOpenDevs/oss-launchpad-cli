@@ -334,6 +334,7 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("first_proof_status_command", payload["web-app"])
         self.assertIn("first_issue_command", payload["web-app"])
         self.assertIn("first_release_command", payload["web-app"])
+        self.assertIn("next_steps", payload["web-app"])
         self.assertIn("docs/landing-page-brief.md", payload["web-app"]["starter_assets"])
         self.assertIn("demo/run_demo.sh", payload["web-app"]["day_zero_docs"])
         self.assertIn("docs/landing-page-brief.md", payload["web-app"]["first_proof_assets"])
@@ -341,6 +342,8 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("sh demo/run_demo.sh", payload["web-app"]["smoke_command"])
         self.assertIn("docs/ui-ux-checklist.md", payload["web-app"]["customize_first_command"])
         self.assertIn("docs/information-architecture.md", payload["web-app"]["first_pr_command"])
+        self.assertTrue(any(step.startswith("Smoke command:") for step in payload["web-app"]["next_steps"]))
+        self.assertTrue(any("PRESET_WEB_DEMO_RESULT_CARD.md" in step for step in payload["web-app"]["next_steps"]))
 
 
     def test_cli_init_prints_preset_and_creates_files(self) -> None:
