@@ -139,6 +139,7 @@ If you need stable browser-proof checkpoints for that first web-app form-to-resu
 If you want a compact file-open order before the first real web-app UI edit, open `docs/PRESET_WEB_APP_STARTER_REVIEW.md`.
 If you need a compact evidence ladder for deciding whether that first web-app proof is visible enough to share, open `docs/PRESET_WEB_DEMO_PROOF.md`.
 If the first web-app proof needs a form-first readiness audit before widening scope, open `docs/PRESET_WEB_APP_FORM_READINESS_CHECK.md`.
+If you need a compact one-action guardrail before widening that same form-to-result-card proof, open `docs/PRESET_WEB_APP_ONE_ACTION_CHECK.md`.
 
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
