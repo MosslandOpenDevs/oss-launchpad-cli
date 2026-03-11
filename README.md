@@ -59,6 +59,8 @@ Current presets:
 
 Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
 
+Each preset also prints day-zero docs and review commands so maintainers can validate the first proof path before writing more code.
+
 Quick chooser:
 
 - `ai-agent` — best when the first believable proof is a prompt, eval, and runnable agent contract.
