@@ -133,6 +133,7 @@ If you need a compact stack note for keeping that same first web-app proof limit
 If you need a compact UI handoff rule card once that first `web-app` proof exists, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
 If you need a shorter audit for whether one visible `web-app` result card still forms an honest UI proof, open `docs/PRESET_WEB_APP_RESULT_CARD_UI_AUDIT.md`.
 If you need a quick wording review for the first visible `web-app` result card before widening scope, open `docs/PRESET_WEB_APP_RESULT_CARD_COPY_REVIEW.md`.
+If you need a quick wording review for the first visible `web-app` result card before widening scope, open `docs/PRESET_WEB_APP_RESULT_CARD_COPY_REVIEW.md`.
 If you need a smaller copy-only guardrail before touching layout or flow, open `docs/PRESET_WEB_APP_RESULT_CARD_COPY_GUARD.md`.
 If you need a compact note for keeping the first `web-app` proof scoped to one visible result instead of a fake multi-screen launch claim, open `docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md`.
 If you need a compact rule for keeping that first visible result tied to one obvious download/export action, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_DOWNLOAD_RULE.md`.
