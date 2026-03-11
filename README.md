@@ -148,6 +148,7 @@ If you need a smaller copy-only guardrail before touching layout or flow, open `
 If you need a compact note for keeping the first `web-app` proof scoped to one visible result instead of a fake multi-screen launch claim, open `docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md`.
 If you need a compact cue for keeping that first result card centered on one obvious primary action, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_ACTION_NOTE.md`.
 If you need a compact rule for keeping that first visible result tied to one obvious download/export action, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_DOWNLOAD_RULE.md`.
+If you need a shorter scope cue that keeps one form, one result card, and one obvious primary path together, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_PRIMARY_PATH.md`.
 If you need a compact rule for keeping the first web-app result card tied to one reproducible export target, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_RULE.md`.
 If you need a compact check that the first `web-app` result card still exposes one believable download or handoff target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_CHECK.md`.
 If you need a short audit that keeps the first generated `web-app` proof scoped to one form, one result card, and one export target, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_CHECK.md`.
