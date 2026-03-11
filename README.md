@@ -117,6 +117,7 @@ If you want a compact UI-first proof loop for `web-app` scaffolds, open `docs/PR
 If you want the shortest UI/UX review handoff before widening that first `web-app` slice, open `docs/PRESET_WEB_APP_UI_HANDOFF_RULES.md`.
 If you need a compact Playwright recovery checklist for that same first web-app proof lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY.md`.
 If you need a compact rule for keeping the first web-app proof tied to one form, one result card, and one downloadable artifact bundle, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_CHECK.md`.
+If you want a compact maintainer check that keeps the first web-app result card paired with one reopened report artifact, open `docs/PRESET_WEB_APP_REPORT_DOWNLOAD_REVIEW.md`.
 If you need a shorter scope card for that same form-to-result-card bundle lane, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_SCOPE.md`.
 If you need a quick polish pass for the generated `web-app` demo script after the first manual edits, open `docs/PRESET_WEB_APP_DEMO_SCRIPT_POLISH.md`.
 If you need the shortest UI-first proof path before that polish pass, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
