@@ -297,7 +297,13 @@ def main() -> None:
                 "smoke_command": _build_smoke_command(preset, "sample-project", package_name),
                 "validation_command": _build_validation_command(preset, "sample-project", package_name),
                 "customize_first_command": _build_customize_first_command(preset, "sample-project", package_name),
+                "starter_review_command": _build_starter_review_command(preset, "sample-project", package_name),
+                "day_zero_review_command": _build_day_zero_review_command(preset, "sample-project", package_name),
                 "first_pr_command": _build_first_pr_command(preset, "sample-project", package_name),
+                "proof_review_command": _build_proof_review_command(preset, "sample-project", package_name),
+                "first_proof_status_command": _build_first_proof_status_command(preset, "sample-project", package_name),
+                "first_issue_command": _build_first_issue_command(preset, "sample-project", package_name),
+                "first_release_command": _build_first_release_command(preset, "sample-project", package_name),
             }
         if args.json:
             print(json.dumps(preset_map, indent=2))
