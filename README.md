@@ -140,6 +140,7 @@ If you need a short reviewer note for why that JSON export exists at all, open `
 If you need a compact first-pass note before widening a web-app preset into a larger UI proof loop, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
 If you need a UI/UX-first scope note before widening that first web-app slice, open `docs/PRESET_WEB_APP_UI_UX_START.md`.
 If you need stable browser-proof checkpoints for that first web-app form-to-result-card slice, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINTS.md`.
+If you need a compact reminder to keep that first browser proof in a stability-first lane before widening scope, open `docs/PRESET_WEB_APP_PLAYWRIGHT_STABILITY_LANE.md`.
 If you need a short guardrail for keeping that first web-app proof reproducible across form input, result card, and download handoff, open `docs/PRESET_WEB_APP_RESULT_CARD_REPRO_CHECK.md`.
 If you want a compact file-open order before the first real web-app UI edit, open `docs/PRESET_WEB_APP_STARTER_REVIEW.md`.
 If you need a compact evidence ladder for deciding whether that first web-app proof is visible enough to share, open `docs/PRESET_WEB_DEMO_PROOF.md`.
