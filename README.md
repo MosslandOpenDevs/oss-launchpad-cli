@@ -515,3 +515,5 @@ If you need a compact result-card export ordering cue for preset JSON flows, ope
 
 If you need a compact handoff for keeping the first web-app result card tied to one report-style next action, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_HANDOFF.md`.
 If you need a compact UI proof rule for keeping the first web preset form limited to one primary action, one status card, and one download path, open `docs/PRESET_WEB_APP_PRIMARY_ACTION_RULE.md`.
+
+If you need a compact note for keeping that same first result card tied to one visible export bundle owner handoff, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_BUNDLE_OWNER_HANDOFF_NOTE.md`.
