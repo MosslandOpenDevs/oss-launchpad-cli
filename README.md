@@ -181,6 +181,8 @@ If you need a compact maintainer note for validating one small preset or README 
 If you need a compact bridge for keeping the first web-app chooser, one result card, and one exported bundle path visible together, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_BRIDGE.md`.
 
 If you want a compact maintainer check that keeps the first web-app result card paired with one reopened report artifact, open `docs/PRESET_WEB_APP_REPORT_DOWNLOAD_REVIEW.md`.
+If you need a compact maintainer note for pairing one generated preset review command with one proofable starter-doc edit before push, open `docs/PRESET_REVIEW_COMMAND_PROOF_PAIR_NOTE.md`.
+
 If you need a shorter scope card for that same form-to-result-card bundle lane, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_SCOPE.md`.
 If you need a quick polish pass for the generated `web-app` demo script after the first manual edits, open `docs/PRESET_WEB_APP_DEMO_SCRIPT_POLISH.md`.
 If you need the shortest UI-first proof path before that polish pass, open `docs/PRESET_WEB_APP_UI_PROOF_START.md`.
