@@ -106,6 +106,7 @@ If you need the shortest bridge from `presets --json` to a tiny setup form or br
 If you need a compact stability note for turning that same preset JSON into a reproducible browser-form proof, open `docs/PRESET_JSON_WEB_FORM_PLAYWRIGHT_NOTE.md`.
 If you want the shortest bridge between preset JSON UI review rules and Playwright stability rules for the first chooser/result-card slice, open `docs/PRESET_JSON_WEB_FORM_UI_UX_PLAYWRIGHT_BRIDGE.md`.
 If you need a compact bridge for keeping the first preset chooser, one result card, and one UI/UX-plus-Playwright review lane aligned, open `docs/PRESET_WEB_APP_UI_UX_PLAYWRIGHT_BRIDGE.md`.
+If you need a compact acceptance note for the first web-app demo slice, open `docs/PRESET_WEB_APP_RESULT_CARD_DEMO_ACCEPTANCE.md`.
 If you need the shortest recovery-first note for that same preset JSON form/result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_STACK.md`.
 If you need a compact maintainer checkpoint for one stable web-app result card plus one export review pass, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_REVIEW_NOTE.md`.
 If you need a compact note for the one obvious follow-up action after that first preset form result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NEXT_STEP.md`.
