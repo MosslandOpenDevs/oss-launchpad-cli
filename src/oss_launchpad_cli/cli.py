@@ -348,6 +348,7 @@ def main() -> None:
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
                 "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
+                "result_card_focus": PRESET_FIRST_UI_SLICE[preset],
                 "proof_scope": PRESET_FIRST_UI_SLICE[preset],
                 "ui_ux_lane": PRESET_UI_UX_LANE[preset],
                 "primary_action": _build_validation_command(preset, "sample-project", package_name),
@@ -376,6 +377,7 @@ def main() -> None:
         for preset, details in preset_map.items():
             print(f"{preset}: {details['summary']}")
             print(f"  first_ui_slice: {details['first_ui_slice']}")
+            print(f"  result_card_focus: {details['result_card_focus']}")
             print(f"  proof_scope: {details['proof_scope']}")
             print(f"  ui_ux_lane: {details['ui_ux_lane']}")
             print(f"  primary_action: {details['primary_action']}")
