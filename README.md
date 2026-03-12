@@ -98,6 +98,7 @@ If you need a compact reminder to keep generated starter docs visible beside the
 If you need a compact rule for keeping one preset chooser, one result card, and one validation command visible together in the first browser slice, open `docs/PRESET_JSON_FORM_SINGLE_PROOF_RULE.md`.
 If you need the narrowest start for keeping the chosen preset plus validation command visible on that same first result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_VALIDATION_START.md`.
 If you need a compact UI copy rule for showing that preset-specific validation command as a visible result-card badge, open `docs/PRESET_JSON_RESULT_CARD_VALIDATION_BADGE.md`.
+If you need a compact proof note for keeping one preset chooser, one result card, and one review command visible together, open `docs/PRESET_JSON_RESULT_CARD_PROOF_NOTE.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
 If you want a single-page review checklist for the printed preset output before the first manual commit, open `docs/PRESET_OUTPUT_REVIEW.md`.
 If you want a preset-by-preset map from generated files to the first believable proof path, open `docs/PRESET_OUTPUT_PROOF_MAP.md`.
