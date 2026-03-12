@@ -475,3 +475,5 @@ If you need a compact bootstrap note for the first web-app demo slice, open `doc
 If you want a compact preset-catalog note for the first believable UI slice, open `docs/PRESET_JSON_FIRST_UI_SLICE_NOTE.md`.
 
 If you need a compact retry note for keeping the first web-app form -> result-card lane recoverable without widening the UI, open `docs/PRESET_WEB_APP_RESULT_CARD_RETRY_NOTE.md`.
+
+If you need a compact result-card export ordering cue for preset JSON flows, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_READY_STACK.md`.
