@@ -335,6 +335,7 @@ def main() -> None:
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
                 "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
+                "proof_scope": PRESET_FIRST_UI_SLICE[preset],
                 "ui_ux_lane": PRESET_UI_UX_LANE[preset],
                 "playwright_lane": PRESET_PLAYWRIGHT_LANE[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
@@ -360,6 +361,7 @@ def main() -> None:
         for preset, details in preset_map.items():
             print(f"{preset}: {details['summary']}")
             print(f"  first_ui_slice: {details['first_ui_slice']}")
+            print(f"  proof_scope: {details['proof_scope']}")
             print(f"  ui_ux_lane: {details['ui_ux_lane']}")
             print(f"  playwright_lane: {details['playwright_lane']}")
             print("  starter_assets:")
