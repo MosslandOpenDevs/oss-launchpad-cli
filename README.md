@@ -425,6 +425,7 @@ If you want a quick audit before widening that same slice, open `docs/PRESET_WEB
 
 
 If you need a short acceptance note for when that first form -> result card slice is actually reviewable, open `docs/PRESET_WEB_APP_RESULT_CARD_ACCEPTANCE.md`.
+If you need a compact acceptance note for keeping one form path tied to one visible result card plus one report affordance, open `docs/PRESET_WEB_DEMO_RESULT_CARD_ACCEPTANCE.md`.
 
 
 - `docs/CLI_DRY_RUN_SUMMARY_NOTE.md`
