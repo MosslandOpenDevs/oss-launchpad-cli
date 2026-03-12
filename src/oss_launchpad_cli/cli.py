@@ -386,15 +386,16 @@ def main() -> None:
         return
 
     if args.command == "init":
+        resolved_preset = _resolve_preset_name(args.preset)
         target = Path(args.directory).resolve()
         target.mkdir(parents=True, exist_ok=True)
-        created = init_project(target, args.title, args.preset)
+        created = init_project(target, args.title, resolved_preset)
         title_slug = _slugify_title(args.title)
         package_name = title_slug.replace("-", "_")
         print(f"Initialized scaffold in: {target}")
         print(f"Preset: {resolved_preset}")
         print(f"Title slug: {title_slug}")
-        if args.preset == "python-lib":
+        if resolved_preset == "python-lib":
             print(f"Package import path: {package_name}")
         if created:
             print(f"Created {len(created)} file(s):")
@@ -403,19 +404,19 @@ def main() -> None:
         else:
             print("No new files created.")
         print("Starter assets to customize first:")
-        for item in _build_starter_assets(args.preset, package_name):
+        for item in _build_starter_assets(resolved_preset, package_name):
             print(f"- {item}")
         print("Quickstart docs to open first:")
-        for item in _build_quickstart_docs(args.preset, package_name):
+        for item in _build_quickstart_docs(resolved_preset, package_name):
             print(f"- {item}")
         print("First proof assets to capture:")
-        for item in _build_first_proof_assets(args.preset, package_name):
+        for item in _build_first_proof_assets(resolved_preset, package_name):
             print(f"- {item}")
         print("Day-zero docs to open:")
-        for item in _build_day_zero_docs(args.preset, package_name):
+        for item in _build_day_zero_docs(resolved_preset, package_name):
             print(f"- {item}")
         print("Next steps:")
-        for step in _build_next_steps(args.preset, title_slug, package_name):
+        for step in _build_next_steps(resolved_preset, title_slug, package_name):
             print(f"- {step}")
 
 
