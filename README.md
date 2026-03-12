@@ -452,6 +452,7 @@ If you need a compact UI note for keeping one obvious download target on that sa
 If you need a short status-first reminder for that same result card export lane, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
 If you need a compact scope note for keeping that same result card tied to one report download, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_DOWNLOAD_SCOPE.md`.
 If you need a matching note for making the first result-card status unmistakable before adding more actions, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_STATUS.md`.
+If you need a compact note for keeping the first download badge readable beside that same result-card status, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STATUS_BADGE.md`.
 
 If you want a compact maintainer note for choosing from the exported preset catalog without reopening template files, open `docs/PRESET_JSON_CATALOG_OWNER_NOTE.md`.
 
