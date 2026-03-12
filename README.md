@@ -92,6 +92,7 @@ If you want a compact maintainer handoff checklist after scaffold generation and
 If you want a compact field reference for `oss-launchpad presets --json` before wiring a chooser, open `docs/PRESET_JSON_EXPORT_FIELDS.md`.
 If you need the shortest bridge from `presets --json` to a tiny setup form or browser demo, open `docs/PRESET_JSON_WEB_FORM_START.md`.
 If you need a compact stability note for turning that same preset JSON into a reproducible browser-form proof, open `docs/PRESET_JSON_WEB_FORM_PLAYWRIGHT_NOTE.md`.
+If you want the shortest bridge between preset JSON UI review rules and Playwright stability rules for the first chooser/result-card slice, open `docs/PRESET_JSON_WEB_FORM_UI_UX_PLAYWRIGHT_BRIDGE.md`.
 If you need a compact note for the one obvious follow-up action after that first preset form result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NEXT_STEP.md`.
 If you need a compact note for keeping the exported preset `validation_command` visible in that same first setup form or result card, open `docs/PRESET_JSON_VALIDATION_COMMAND_NOTE.md`.
 If you need a compact reminder to keep generated starter docs visible beside the preset label in that same first setup flow, open `docs/PRESET_JSON_STARTER_DOCS_NOTE.md`.
