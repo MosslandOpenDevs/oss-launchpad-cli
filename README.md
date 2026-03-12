@@ -215,6 +215,7 @@ If you need a compact rule for keeping the first generated web-app proof tied to
 If you need a compact stack note for keeping that same first web-app result card tied to one validation cue plus one export cue, open `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATION_EXPORT_STACK.md`.
 If you need a compact UI/UX-first rule for keeping the first generated web-app result card limited to one visible primary action and one supporting validation cue, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_FLOW_RULE.md`.
 If you need a compact note for keeping the first web-app result card paired with one export path and one printed validation command, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_COMMAND_NOTE.md`.
+If you need the narrowest start for a web-app result card that shows both the validation command and export target in one glance, open `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATE_EXPORT_START.md`.
 If you need a compact review note for keeping that same first result card tied to one visible setup command, one validation command, and one export target, open `docs/PRESET_WEB_APP_RESULT_CARD_COMMAND_STACK_NOTE.md`.
 If you need a compact check that the first `web-app` result card still exposes one believable download or handoff target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_CHECK.md`.
 If you need a compact note for keeping the first report-download button tied to a validated result-card state before adding more actions, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_READY_NOTE.md`.
