@@ -159,6 +159,12 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn("docs/PRESET_WEB_APP_UI_SCOPE_NOTE.md", readme)
         self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_UI_SCOPE_NOTE.md").exists())
 
+    def test_readme_mentions_web_app_primary_cta_note(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_WEB_APP_PRIMARY_CTA_NOTE.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_PRIMARY_CTA_NOTE.md").exists())
+
     def test_readme_mentions_web_app_result_card_export_rule(self) -> None:
         readme = (ROOT / 'README.md').read_text(encoding='utf-8')
 
