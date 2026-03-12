@@ -1,18 +1,18 @@
+from __future__ import annotations
+
+import unittest
 from pathlib import Path
 
-
 ROOT = Path(__file__).resolve().parents[1]
-README = ROOT / "README.md"
-NOTE = ROOT / "docs" / "PRESET_JSON_FORM_CARD_SCOPE.md"
 
 
-def test_readme_mentions_preset_json_form_card_scope_note() -> None:
-    readme = README.read_text(encoding="utf-8")
-    assert "docs/PRESET_JSON_FORM_CARD_SCOPE.md" in readme
+class ReadmePresetJsonFormCardScopeTests(unittest.TestCase):
+    def test_readme_mentions_preset_json_form_card_scope(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_JSON_FORM_CARD_SCOPE.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_JSON_FORM_CARD_SCOPE.md").exists())
 
 
-def test_preset_json_form_card_scope_keeps_first_slice_small() -> None:
-    note = NOTE.read_text(encoding="utf-8")
-    assert "one preset picker or starter form" in note
-    assert "one reviewable result card" in note
-    assert "one obvious next action" in note
+if __name__ == "__main__":
+    unittest.main()

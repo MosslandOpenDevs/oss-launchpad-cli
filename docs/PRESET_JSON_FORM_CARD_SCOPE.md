@@ -1,9 +1,5 @@
 # Preset JSON form card scope
 
-When turning `oss-launchpad presets --json` into a starter browser demo, keep the first slice intentionally small:
+Keep the first browser proof intentionally narrow: one preset chooser, one result card, and one visible validation command.
 
-- one preset picker or starter form,
-- one reviewable result card,
-- one obvious next action for the maintainer.
-
-Do not widen into multi-step onboarding or multi-panel dashboards until this preset-json -> form -> result-card path is stable, easy to explain, and easy to re-run.
+Treat extra panels, tabs, and secondary actions as follow-up work until that form-to-card path is stable and reviewable.
