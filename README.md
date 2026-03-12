@@ -147,6 +147,7 @@ If you need a compact note for keeping that same result card tied to one explici
 If you need a compact rule for keeping the first preset chooser limited to one form, one result card, and one explicit next-step artifact, open `docs/PRESET_JSON_FORM_ONE_FLOW_RULE.md`.
 If you need a compact reminder to keep the first JSON form anchored to one exported preset catalog, open `docs/PRESET_JSON_FORM_PRESET_CATALOG_NOTE.md`.
 If you need a short copy-focused review before polishing that first preset JSON result card, open `docs/PRESET_JSON_RESULT_CARD_COPY_NOTE.md`.
+If you need the quickest field-order scan before polishing that same first result card, open `docs/PRESET_JSON_RESULT_CARD_SCAN_START.md`.
 If you need a shorter guardrail for keeping that same preset-JSON flow tied to one result card plus one downloadable bundle, open `docs/PRESET_JSON_RESULT_CARD_ONE_BUNDLE_NOTE.md`.
 If you want a shorter first-pass checklist for the first manual `web-app` UI edit, open `docs/PRESET_WEB_APP_UI_FIRST_PASS.md`.
 That pass should stay UI-first: keep the landing brief, information architecture, checklist, and demo script aligned before widening scope or polishing secondary screens.
