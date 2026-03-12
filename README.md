@@ -169,6 +169,7 @@ If you need a compact rule for keeping the first web-app proof tied to one form,
 If you need a compact handoff for one web-app form submit plus one visible result card plus one exported artifact, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_NOTE.md`.
 If you need a compact owner-ready note for the first believable web-app result card before widening scope, open `docs/PRESET_WEB_APP_RESULT_CARD_OWNER_READY_NOTE.md`.
 If you need a compact result-card cue that keeps the chosen preset, validation command, and export-ready state visible together, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
+If you need a compact maintainer reminder for the required five-line short report across the active repos, open `docs/PRESET_FIVE_REPO_SHORT_REPORT_NOTE.md`.
 
 If you need a compact bridge for keeping the first web-app chooser, one result card, and one exported bundle path visible together, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_BRIDGE.md`.
 
