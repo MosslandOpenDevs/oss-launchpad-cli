@@ -428,6 +428,8 @@ class CliSmokeTests(unittest.TestCase):
         self.assertIn("first_proof_assets", payload["python-lib"])
         self.assertIn("smoke_command", payload["web-app"])
         self.assertIn("validation_command", payload["web-app"])
+        self.assertIn("setup_command", payload["web-app"])
+        self.assertEqual(payload["web-app"]["setup_command"], payload["web-app"]["customize_first_command"])
         self.assertIn("customize_first_command", payload["web-app"])
         self.assertIn("starter_review_command", payload["web-app"])
         self.assertIn("day_zero_review_command", payload["web-app"])
