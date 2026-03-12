@@ -440,3 +440,5 @@ If you need a compact scope note for keeping that same result card tied to one r
 If you need a matching note for making the first result-card status unmistakable before adding more actions, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_STATUS.md`.
 
 If you want a compact maintainer note for choosing from the exported preset catalog without reopening template files, open `docs/PRESET_JSON_CATALOG_OWNER_NOTE.md`.
+
+If you need the same recovery posture condensed to one preset-catalog form -> one result card replay loop, open `docs/PRESET_JSON_WEB_FORM_RECOVERY_LOOP.md`.
