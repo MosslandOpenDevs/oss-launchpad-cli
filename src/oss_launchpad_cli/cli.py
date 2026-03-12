@@ -30,6 +30,12 @@ PRESET_PLAYWRIGHT_LANE = {
     "python-lib": "Keep smoke proof focused on one import path and one stable usage example before adding matrix coverage.",
 }
 
+PRESET_UI_UX_LANE = {
+    "ai-agent": "Lead with the smallest believable workflow proof before layering extra controls or dashboards.",
+    "web-app": "Lead with intro-first messaging, one form, one primary action, and one reviewable result card before adding secondary navigation.",
+    "python-lib": "Lead with the clearest import/use path before widening advanced API surface or packaging detail.",
+}
+
 DEFAULT_CONTEXT = {
     "project_tagline": "Bootstrap a public repository with launch-ready documentation and reproducible project scaffolding.",
     "why_section": "Use this repository to explain the project clearly, show a runnable path, and make contribution/release expectations obvious.",
@@ -329,7 +335,8 @@ def main() -> None:
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
                 "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
-        "playwright_lane": PRESET_PLAYWRIGHT_LANE[preset],
+                "ui_ux_lane": PRESET_UI_UX_LANE[preset],
+                "playwright_lane": PRESET_PLAYWRIGHT_LANE[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "quickstart_docs": _build_quickstart_docs(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),
@@ -353,6 +360,8 @@ def main() -> None:
         for preset, details in preset_map.items():
             print(f"{preset}: {details['summary']}")
             print(f"  first_ui_slice: {details['first_ui_slice']}")
+            print(f"  ui_ux_lane: {details['ui_ux_lane']}")
+            print(f"  playwright_lane: {details['playwright_lane']}")
             print("  starter_assets:")
             for asset in details["starter_assets"]:
                 print(f"  - {asset}")
