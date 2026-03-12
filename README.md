@@ -129,6 +129,7 @@ If you need a compact owner-facing bridge that keeps the preset label, owner, va
 If you need a compact cue for showing owner-ready status as a visible review badge on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_REVIEW_BADGE_NOTE.md`.
 If you need a compact cue for showing a single honest progress badge before widening the result-card state machine, open `docs/PRESET_JSON_RESULT_CARD_PROGRESS_BADGE_NOTE.md`.
 If you need a compact owner-facing note for keeping exported proof status visible on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_OWNER_STATUS_NOTE.md`.
+If you need a compact follow-up note for keeping preset label, validation command, owner-ready status, and export/download target visible in one first-card stack, open `docs/PRESET_JSON_RESULT_CARD_OWNER_STATUS_STACK_NOTE.md`.
 If you want the machine-readable export to keep a shorter `setup_command` alias beside `customize_first_command`, open `docs/PRESET_JSON_SETUP_COMMAND_ALIAS_NOTE.md`.
 If you need a compact rule for keeping one preset chooser, one result card, and one validation command visible together in the first browser slice, open `docs/PRESET_JSON_FORM_SINGLE_PROOF_RULE.md`.
 If you need the narrowest start for keeping the chosen preset plus validation command visible on that same first result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_VALIDATION_START.md`.
