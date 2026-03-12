@@ -136,6 +136,7 @@ If you need the shortest UI-first proof path before that polish pass, open `docs
 If you need a compact bridge from exported preset JSON into a first form submit plus visible result card, open `docs/PRESET_JSON_WEB_FORM_START.md`.
 If you need a compact reminder to keep that same preset-JSON proof tied to one visible export action, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_START.md`.
 If you need a compact reminder to keep preset JSON labels visible inside that same first setup form and result card, open `docs/PRESET_JSON_FORM_LABEL_NOTE.md`.
+If you need a compact rule for keeping the first preset chooser limited to one form, one result card, and one explicit next-step artifact, open `docs/PRESET_JSON_FORM_ONE_FLOW_RULE.md`.
 If you need a compact reminder to keep the first JSON form anchored to one exported preset catalog, open `docs/PRESET_JSON_FORM_PRESET_CATALOG_NOTE.md`.
 If you need a short copy-focused review before polishing that first preset JSON result card, open `docs/PRESET_JSON_RESULT_CARD_COPY_NOTE.md`.
 If you need a shorter guardrail for keeping that same preset-JSON flow tied to one result card plus one downloadable bundle, open `docs/PRESET_JSON_RESULT_CARD_ONE_BUNDLE_NOTE.md`.
