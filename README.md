@@ -144,6 +144,7 @@ If you need a compact bridge from exported preset JSON into a first form submit 
 If you need a compact reminder to keep that same preset-JSON proof tied to one visible export action, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_START.md`.
 If you need a compact reminder to keep preset JSON labels visible inside that same first setup form and result card, open `docs/PRESET_JSON_FORM_LABEL_NOTE.md`.
 If you need a compact note for keeping that same preset JSON result card tied to one explicit export or copy target, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_NOTE.md`.
+If you need a shorter pass/hold cue for whether that same result card is already export-ready, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_READY_NOTE.md`.
 If you need a compact cue for keeping preset summary, validation command, and generated path hints visible on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_PATHS_NOTE.md`.
 If you need a compact note for keeping that same result card tied to one explicit export or copy target that names the generated path handoff, open `docs/PRESET_JSON_FORM_RESULT_CARD_EXPORT_PATH_NOTE.md`.
 If you need a compact cue for keeping the preset `validation_command` visible on that same first result card before widening the demo, open `docs/PRESET_JSON_RESULT_CARD_VALIDATION_COMMAND_NOTE.md`.
