@@ -1,10 +1,21 @@
-# Preset web app result card replay lane
+# Preset Web App Result Card Replay Lane
 
-For preset web app work, keep one reproducible path from form input to result card proof:
+When extending the `web-app` preset, keep the first proof loop narrow:
 
-1. Fill one preset JSON form path.
-2. Verify the primary status/result card above the fold.
-3. Verify the export/download target without branching into multiple competing actions.
-4. Record the validation command or Playwright checkpoint that can replay the same path.
+1. one form,
+2. one primary action,
+3. one reviewable result card,
+4. one replayable validation command.
 
-This keeps UI polish aligned with stable verification instead of adding extra surface area without proof.
+## Why this lane matters
+
+- It matches the UI-first starter promise in the preset catalog.
+- It keeps the first browser automation target stable before secondary routes appear.
+- It gives maintainers a single visible artifact to review during day-zero setup.
+
+## Preferred proof bundle
+
+- `docs/landing-page-brief.md`
+- `docs/ui-ux-checklist.md`
+- `demo/run_demo.sh`
+- one short replay command or smoke command in README/docs
