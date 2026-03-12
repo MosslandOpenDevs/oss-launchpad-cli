@@ -1,10 +1,12 @@
-# Preset web-app one-action result-card note
+# Web-app preset one-action result-card note
 
-Use this note when the first `web-app` chooser or setup form should stay small, scannable, and honest.
+For the first web-app preset proof, keep the UI scope intentionally small:
 
-Keep the first proof lane limited to:
-- one visible primary action
-- one reviewable result card
-- one obvious follow-up file or command
+- one form,
+- one primary action,
+- one stable result card,
+- and one saved proof artifact path.
 
-Start from `oss-launchpad presets --json --preset web-app` so the UI reads from the same machine-readable preset payload that documents the first believable slice.
+Start proof capture with `oss-launchpad presets --json --preset web-app` so the primary action and result card stay anchored to one reproducible command.
+
+This follows the result-card-first UI lane and keeps Playwright replay work stable before wider flow expansion.
