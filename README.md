@@ -101,6 +101,7 @@ If you need a compact note for keeping the exported preset `validation_command` 
 If you need a compact note for keeping the chooser, result card, and export/download proof in one reviewable stack, open `docs/PRESET_JSON_FORM_RESULT_CARD_EXPORT_STACK.md`.
 If you need a compact note for keeping the chooser label, validation command, and starter docs visible together on the first result card, open `docs/PRESET_JSON_RESULT_CARD_TRIPLE_PROOF_NOTE.md`.
 If you need a compact note for keeping the same first result card tied to both a validation command and one export target, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_VALIDATION_NOTE.md`.
+If you need a compact note for keeping that same first result card tied to one output slug for the exported setup bundle, open `docs/PRESET_JSON_RESULT_CARD_OUTPUT_SLUG_NOTE.md`.
 If you need a shorter note for keeping that same first preset chooser tied to one visible result card plus one obvious download target, open `docs/PRESET_JSON_FORM_RESULT_CARD_DOWNLOAD_NOTE.md`.
 If you need a compact reminder to keep generated starter docs visible beside the preset label in that same first setup flow, open `docs/PRESET_JSON_STARTER_DOCS_NOTE.md`.
 If you need a compact note for keeping the first preset JSON result card tied to one visible setup command as well as one validation command, open `docs/PRESET_JSON_RESULT_CARD_SETUP_COMMAND_NOTE.md`.

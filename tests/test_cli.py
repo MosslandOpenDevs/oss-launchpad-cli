@@ -171,6 +171,12 @@ class InitProjectTests(unittest.TestCase):
         self.assertIn('docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_RULE.md', readme)
         self.assertTrue((ROOT / 'docs' / 'PRESET_WEB_APP_RESULT_CARD_EXPORT_RULE.md').exists())
 
+    def test_readme_mentions_preset_json_result_card_output_slug_note(self) -> None:
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("docs/PRESET_JSON_RESULT_CARD_OUTPUT_SLUG_NOTE.md", readme)
+        self.assertTrue((ROOT / "docs" / "PRESET_JSON_RESULT_CARD_OUTPUT_SLUG_NOTE.md").exists())
+
     def test_readme_mentions_web_app_result_card_download_check(self) -> None:
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
 
