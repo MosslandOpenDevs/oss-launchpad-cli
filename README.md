@@ -110,6 +110,7 @@ If you need the narrowest start for keeping the chosen preset plus validation co
 If you need a compact scope note for keeping that first preset JSON browser slice limited to one chooser and one result card, open `docs/PRESET_JSON_FORM_CARD_SCOPE.md`.
 If you need the matching handoff note once that first result card is present, open `docs/PRESET_JSON_RESULT_CARD_HANDOFF.md`.
 If you need a compact UI copy rule for showing that preset-specific validation command as a visible result-card badge, open `docs/PRESET_JSON_RESULT_CARD_VALIDATION_BADGE.md`.
+If you need a compact note for keeping the first web-app result card recovery loop tied to one visible validation badge, open `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_BADGE_NOTE.md`.
 If you need a compact proof note for keeping one preset chooser, one result card, and one review command visible together, open `docs/PRESET_JSON_RESULT_CARD_PROOF_NOTE.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
 If you want a single-page review checklist for the printed preset output before the first manual commit, open `docs/PRESET_OUTPUT_REVIEW.md`.
