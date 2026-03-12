@@ -534,3 +534,5 @@ If you need a compact note for keeping that same first result card tied to one v
 
 If you need a compact note for keeping the first web-app preset proof limited to one form, one primary action, and one result card, open `docs/PRESET_WEB_APP_ONE_FORM_ONE_CARD_NOTE.md`.
 - Web-app result-card recovery loop note: `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_LOOP.md`
+
+If you need a compact rule for keeping the first `web-app` result card focused on one visible validation command plus one export target, open `docs/PRESET_WEB_APP_RESULT_CARD_COMMAND_EXPORT_RULE.md`.
