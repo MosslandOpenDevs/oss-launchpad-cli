@@ -94,6 +94,7 @@ If you need the shortest bridge from `presets --json` to a tiny setup form or br
 If you need a compact stability note for turning that same preset JSON into a reproducible browser-form proof, open `docs/PRESET_JSON_WEB_FORM_PLAYWRIGHT_NOTE.md`.
 If you need a compact note for the one obvious follow-up action after that first preset form result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NEXT_STEP.md`.
 If you need a compact note for keeping the exported preset `validation_command` visible in that same first setup form or result card, open `docs/PRESET_JSON_VALIDATION_COMMAND_NOTE.md`.
+If you need a compact reminder to keep generated starter docs visible beside the preset label in that same first setup flow, open `docs/PRESET_JSON_STARTER_DOCS_NOTE.md`.
 If you need a compact rule for keeping one preset chooser, one result card, and one validation command visible together in the first browser slice, open `docs/PRESET_JSON_FORM_SINGLE_PROOF_RULE.md`.
 If you need a compact UI copy rule for showing that preset-specific validation command as a visible result-card badge, open `docs/PRESET_JSON_RESULT_CARD_VALIDATION_BADGE.md`.
 If you want a one-page "is this already a believable repo?" check before the first manual commit, open `docs/PRESET_FIRST_REPO_CHECK.md`.
