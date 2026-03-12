@@ -1,2 +1,3 @@
-Keep the preset-json result card export-ready stack small: validation badge first, export path second, download handoff third.
-Use one result card proof bundle per preset run so the web slice stays stable for UI/UX review and Playwright replay.
+# Preset JSON result-card export-ready stack
+
+Call the slice export-ready only when one preset chooser, one visible result card, one explicit export target, and one visible validation command are all present in the same proof pass.
