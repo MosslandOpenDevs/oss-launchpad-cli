@@ -95,6 +95,7 @@ If you want the exact doc set to open immediately after `oss-launchpad init`, op
 If you want a single review command for the first README-plus-proof-file sanity check, open `docs/PRESET_DAY_ZERO_REVIEW_COMMAND.md`.
 If you want a compact maintainer handoff checklist after scaffold generation and before the first public push, open `docs/PRESET_HANDOFF_CHECKLIST.md`.
 If you want a compact field reference for `oss-launchpad presets --json` before wiring a chooser, open `docs/PRESET_JSON_EXPORT_FIELDS.md`.
+If you need a compact reminder to prove one preset with `presets --preset <key> --json` before widening the chooser, open `docs/PRESET_JSON_SINGLE_PRESET_EXPORT_NOTE.md`.
 If you need the shortest bridge from `presets --json` to a tiny setup form or browser demo, open `docs/PRESET_JSON_WEB_FORM_START.md`.
 If you need a compact stability note for turning that same preset JSON into a reproducible browser-form proof, open `docs/PRESET_JSON_WEB_FORM_PLAYWRIGHT_NOTE.md`.
 If you want the shortest bridge between preset JSON UI review rules and Playwright stability rules for the first chooser/result-card slice, open `docs/PRESET_JSON_WEB_FORM_UI_UX_PLAYWRIGHT_BRIDGE.md`.
