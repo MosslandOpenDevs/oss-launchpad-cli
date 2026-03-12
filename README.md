@@ -70,6 +70,7 @@ If you need a compact reminder to keep the first web-app preset proof limited to
 If you need a compact UI note for keeping that first proof to one primary action and one reviewable result card, open `docs/PRESET_WEB_APP_ONE_ACTION_RESULT_CARD_NOTE.md`.
 If you need a compact reminder to keep the first web-app proof to one small reviewable result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_SMALL_PROOF_NOTE.md`.
 If you need a compact preset-catalog reminder for keeping the first `web-app` proof limited to one form, one primary action, and one reviewable result card, open `docs/PRESET_JSON_PLAYWRIGHT_RESULT_CARD_NOTE.md`.
+If you need a compact stability rule for keeping that first `web-app` proof to one input form, one primary action, and one stable result card, open `docs/PRESET_WEB_APP_RESULT_CARD_STABILITY_RULE.md`.
 If you want the matching UI/UX-first starting note before widening the first web-app preset beyond that one form and one result card, open `docs/PRESET_WEB_APP_UI_UX_START.md`.
 
 Quick chooser:
