@@ -4,6 +4,8 @@ CLI toolkit for bootstrapping public open-source projects with strong documentat
 
 > Build cleaner public repos faster: README, demo script, benchmark folder, issue/PR templates, release scaffolding, and preset-specific starter files in one flow.
 
+If you need the smallest post-generate proof loop, open `docs/PRESET_FIRST_REVIEW_COMMAND_START.md` before widening the preset review surface.
+
 ---
 
 ## Why this project exists
