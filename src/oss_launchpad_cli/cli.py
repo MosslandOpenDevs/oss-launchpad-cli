@@ -344,8 +344,13 @@ def main() -> None:
             return
         for preset, details in preset_map.items():
             print(f"{preset}: {details['summary']}")
+            print(f"  first_ui_slice: {details['first_ui_slice']}")
+            print("  starter_assets:")
             for asset in details["starter_assets"]:
-                print(f"- {asset}")
+                print(f"  - {asset}")
+            print("  quickstart_docs:")
+            for doc in details["quickstart_docs"]:
+                print(f"  - {doc}")
         return
 
     if args.command == "init":
