@@ -179,6 +179,7 @@ If you need a compact rule for keeping that first visible result tied to one obv
 If you need a shorter scope cue that keeps one form, one result card, and one obvious primary path together, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_PRIMARY_PATH.md`.
 If you need a compact rule for keeping the first web-app result card tied to one reproducible export target, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_RULE.md`.
 If you need a compact rule for keeping the first generated web-app proof tied to one visible form, one result card, and one validation command, open `docs/PRESET_WEB_APP_FORM_RESULT_VALIDATION_RULE.md`.
+If you need a compact UI/UX-first rule for keeping the first generated web-app result card limited to one visible primary action and one supporting validation cue, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_FLOW_RULE.md`.
 If you need a compact note for keeping the first web-app result card paired with one export path and one printed validation command, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_COMMAND_NOTE.md`.
 If you need a compact check that the first `web-app` result card still exposes one believable download or handoff target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_CHECK.md`.
 If you need a slightly fuller UI-first scope note for the same one-form -> one-result-card -> one-download proof, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_BLUEPRINT.md`.
