@@ -312,6 +312,7 @@ def main() -> None:
         for preset in preset_names:
             package_name = 'sample_project'
             preset_map[preset] = {
+                "preset_count": len(_list_presets()),
                 "preset_key": preset,
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
