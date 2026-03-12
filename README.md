@@ -195,6 +195,7 @@ If you need the matching checkpoint rule for one form, one result card, and one 
 If you need a tiny recovery note for rerunning that first form-to-result-card proof after a flaky browser step, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY_NOTE.md`.
 If you need a quick asset checklist before calling that first web-app result-card slice reviewable, open `docs/PRESET_WEB_DEMO_ASSET_CHECK.md`.
 If you need a compact handoff note for generated web-app demos that should end in one report-style result card plus downloadable artifacts, open `docs/PRESET_WEB_APP_REPORT_CARD_HANDOFF.md`.
+If you need a compact bridge from one preset chooser submit to one report-style result card plus one downloadable artifact, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_PATH.md`.
 If you need a shorter pre-share check that keeps that same first result card tied to one report-ready download, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_READY_NOTE.md`.
 If you need a compact bridge between the generated web-app result card and the first maintainer-facing status line, open `docs/PRESET_WEB_APP_RESULT_CARD_STATUS_BRIDGE.md`.
 If you need a compact gate for deciding whether the first result card plus export path is really download-ready, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_GATE.md`.
