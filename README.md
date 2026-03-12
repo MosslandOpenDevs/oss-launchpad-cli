@@ -469,6 +469,7 @@ If you need a compact reminder to keep one primary CTA tied to one visible resul
 If you need a compact UI note for keeping the first web-app result card focused on one primary CTA plus one secondary download action, open `docs/PRESET_WEB_APP_PRIMARY_CTA_NOTE.md`.
 If you need a compact export check for keeping that same result card tied to one downloadable artifact after the first pass, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_NOTE.md`.
 If you need a compact UI note for keeping one obvious download target on that same first result card, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_NOTE.md`.
+If you need a compact UI note for keeping that same first result card limited to one clear status plus one obvious download handoff, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_STATUS_ONE_DOWNLOAD_NOTE.md`.
 If you need a short status-first reminder for that same result card export lane, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
 If you need a compact scope note for keeping that same result card tied to one report download, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_DOWNLOAD_SCOPE.md`.
 If you need a matching note for making the first result-card status unmistakable before adding more actions, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_STATUS.md`.
