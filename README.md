@@ -161,6 +161,8 @@ If you need an even shorter reminder to keep that same proof narrowed to one for
 If you need a compact rule for keeping the first web-app proof tied to one form, one result card, and one downloadable artifact bundle, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_CHECK.md`.
 If you need a compact handoff for one web-app form submit plus one visible result card plus one exported artifact, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_NOTE.md`.
 If you need a compact owner-ready note for the first believable web-app result card before widening scope, open `docs/PRESET_WEB_APP_RESULT_CARD_OWNER_READY_NOTE.md`.
+If you need a compact result-card cue that keeps the chosen preset, validation command, and export-ready state visible together, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
+
 If you need a compact bridge for keeping the first web-app chooser, one result card, and one exported bundle path visible together, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_BRIDGE.md`.
 
 If you want a compact maintainer check that keeps the first web-app result card paired with one reopened report artifact, open `docs/PRESET_WEB_APP_REPORT_DOWNLOAD_REVIEW.md`.
