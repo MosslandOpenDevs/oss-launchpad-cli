@@ -350,6 +350,7 @@ def main() -> None:
                 "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
                 "proof_scope": PRESET_FIRST_UI_SLICE[preset],
                 "ui_ux_lane": PRESET_UI_UX_LANE[preset],
+                "primary_action": _build_validation_command(preset, "sample-project", package_name),
                 "playwright_lane": PRESET_PLAYWRIGHT_LANE[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "quickstart_docs": _build_quickstart_docs(preset, package_name),
@@ -376,6 +377,7 @@ def main() -> None:
             print(f"  first_ui_slice: {details['first_ui_slice']}")
             print(f"  proof_scope: {details['proof_scope']}")
             print(f"  ui_ux_lane: {details['ui_ux_lane']}")
+            print(f"  primary_action: {details['primary_action']}")
             print(f"  playwright_lane: {details['playwright_lane']}")
             print("  starter_assets:")
             for asset in details["starter_assets"]:
