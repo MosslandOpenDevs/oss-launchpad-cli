@@ -528,3 +528,4 @@ If you need a compact UI proof rule for keeping the first web preset form limite
 If you need a compact note for keeping that same first result card tied to one visible export bundle owner handoff, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_BUNDLE_OWNER_HANDOFF_NOTE.md`.
 
 If you need a compact note for keeping the first web-app preset proof limited to one form, one primary action, and one result card, open `docs/PRESET_WEB_APP_ONE_FORM_ONE_CARD_NOTE.md`.
+- Web-app result-card recovery loop note: `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_LOOP.md`
