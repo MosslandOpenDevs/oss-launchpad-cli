@@ -463,6 +463,7 @@ If you need a compact note for keeping one short subject visible in that same pr
 
 If you need a compact UI note for keeping one result card tied to one report/download proof stack, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_STACK.md`.
 If you need a compact UI note for keeping one web-app preset result card tied to one visible starter-doc handoff plus one download-ready proof target, open `docs/PRESET_WEB_APP_RESULT_CARD_STARTER_DOCS_NOTE.md`.
+If you need a compact reminder to keep one primary CTA tied to one visible result card, open `docs/PRESET_WEB_APP_PRIMARY_CTA_RESULT_CARD_NOTE.md`.
 
 If you need a compact UI note for keeping the first web-app result card focused on one primary CTA plus one secondary download action, open `docs/PRESET_WEB_APP_PRIMARY_CTA_NOTE.md`.
 If you need a compact export check for keeping that same result card tied to one downloadable artifact after the first pass, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_NOTE.md`.
