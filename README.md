@@ -239,6 +239,7 @@ If you need a tiny signoff check once that first web-app result card is believab
 If you need the shortest review loop for that same form -> result card -> download slice, open `docs/PRESET_WEB_APP_RESULT_CARD_REVIEW_START.md`.
 If you need a short guardrail for keeping that first web-app proof reproducible across form input, result card, and download handoff, open `docs/PRESET_WEB_APP_RESULT_CARD_REPRO_CHECK.md`.
 If you need a compact UI/UX-first note for keeping the first generated web-app result card scannable before widening the demo, open `docs/PRESET_WEB_APP_RESULT_CARD_SCAN_NOTE.md`.
+If you need a compact UI/UX-first note for keeping the first generated web-app result card scannable in one glance, open `docs/PRESET_WEB_APP_RESULT_CARD_ONE_GLANCE_NOTE.md`.
 If you need a quick label-focused scan before sharing that first result card proof, open `docs/PRESET_WEB_APP_RESULT_CARD_LABEL_CHECK.md`.
 If you need a compact copy cue for the first empty-state result card before real demo data exists, open `docs/PRESET_WEB_APP_RESULT_CARD_EMPTY_STATE_NOTE.md`.
 If you need a quick scan for whether the generated web-app result card keeps input summary, primary status, and one download target above the fold, open `docs/PRESET_WEB_APP_RESULT_CARD_ABOVE_FOLD_CHECK.md`.
