@@ -218,6 +218,7 @@ If you need a compact bridge between the generated web-app result card and the f
 If you need a compact gate for deciding whether the first result card plus export path is really download-ready, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_GATE.md`.
 If you need a one-line maintainer update once that first web-app result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_STATUS_LINE.md`.
 If you need the same update to keep one download target visible, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STATUS_LINE.md`.
+If you need a compact owner-ready note for the first web-app result card plus one visible download target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_OWNER_NOTE.md`.
 If you need a one-line check that the first preset JSON export is already usable as a proof bundle, open `docs/PRESET_JSON_EXPORT_PROOF_BUNDLE_NOTE.md`.
 If you need a compact UI note for keeping preset label, validation command, and generated starter-doc handoff visible in one first result card, open `docs/PRESET_JSON_RESULT_CARD_STARTER_DOCS_NOTE.md`.
 If you need a compact UI/UX-first note for keeping one primary action, one validation command, and one download target visible on that same first web-app result card, open `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATION_HUD_NOTE.md`.
