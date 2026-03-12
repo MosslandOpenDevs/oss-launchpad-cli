@@ -1,5 +1,5 @@
 # Preset JSON form result-card export path note
 
-For the first `web-app` preset browser slice, keep the proof narrow: one preset chooser, one visible result card, and one explicit export or copy target that names the generated validation command or starter-doc path.
-
-That keeps UI copy, reproducible setup proof, and follow-up action aligned before widening the demo.
+For the first web-app proof, keep one submitted preset chooser tied to one visible result card and one explicit generated-path handoff.
+The export path should be readable without opening a second screen, and the validation command should stay visible beside it.
+Use this note to keep ui-first scope, deterministic proof, and maintainer handoff aligned in one narrow browser slice.
