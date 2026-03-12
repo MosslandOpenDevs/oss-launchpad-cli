@@ -13,6 +13,13 @@ PRESET_TEMPLATE_ROOTS = {
     "web-app": TEMPLATES_ROOT / "web-app",
     "python-lib": TEMPLATES_ROOT / "python-lib",
 }
+PRESET_ALIASES = {
+    "agent": "ai-agent",
+    "app": "web-app",
+    "library": "python-lib",
+    "lib": "python-lib",
+}
+
 PRESET_SUMMARIES = {
     "ai-agent": "Best when the first believable proof is a prompt, eval, and runnable agent contract.",
     "web-app": "Best when the first believable proof is a landing flow, UI checklist, and demo script.",
@@ -48,7 +55,12 @@ def _slugify_title(title: str) -> str:
     return slug or "new-project"
 
 
+def _resolve_preset_name(preset: str) -> str:
+    return PRESET_ALIASES.get(preset, preset)
+
+
 def _load_preset_context(preset: str, title: str) -> dict[str, str]:
+    preset = _resolve_preset_name(preset)
     if preset not in PRESET_TEMPLATE_ROOTS:
         raise ValueError(f"Unsupported preset: {preset}")
     context_path = PRESET_TEMPLATE_ROOTS[preset] / "context.json"
@@ -91,6 +103,7 @@ def _render_template_group(target: Path, template_root: Path, context: dict[str,
 
 
 def init_project(target: Path, title: str, preset: str) -> list[str]:
+    preset = _resolve_preset_name(preset)
     context = _load_preset_context(preset, title)
     created = _render_template_group(target, BASE_TEMPLATE_ROOT, context)
     created.extend(_render_template_group(target, PRESET_TEMPLATE_ROOTS[preset], context))
@@ -379,7 +392,7 @@ def main() -> None:
         title_slug = _slugify_title(args.title)
         package_name = title_slug.replace("-", "_")
         print(f"Initialized scaffold in: {target}")
-        print(f"Preset: {args.preset}")
+        print(f"Preset: {resolved_preset}")
         print(f"Title slug: {title_slug}")
         if args.preset == "python-lib":
             print(f"Package import path: {package_name}")
