@@ -244,6 +244,7 @@ If the first web-app proof needs a form-first readiness audit before widening sc
 If you need a compact one-action guardrail before widening that same form-to-result-card proof, open `docs/PRESET_WEB_APP_ONE_ACTION_CHECK.md`.
 If you need the shortest `presets --json --preset web-app` handoff before wiring one setup form and one result card, open `docs/PRESET_JSON_WEB_APP_SINGLE_PRESET_NOTE.md`.
 If you need the same single-preset JSON handoff with one visible owner and one download-ready result card, open `docs/PRESET_JSON_SINGLE_PRESET_OWNER_NOTE.md`.
+If you need a compact UI handoff for keeping one web-app chooser tied to one visible primary action and one reviewable result card, open `docs/PRESET_WEB_APP_ONE_ACTION_RESULT_CARD_NOTE.md`.
 
 If you want the shortest preset-aware command for turning generated proof assets into the first backlog issue draft, use the new first-issue command printed by `oss-launchpad init`.
 If you want the shortest preset-by-preset first-proof progress sentence, open `docs/PRESET_FIRST_PROOF_STATUS_LINE.md`.
