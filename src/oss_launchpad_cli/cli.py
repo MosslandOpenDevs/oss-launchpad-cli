@@ -24,6 +24,12 @@ PRESET_FIRST_UI_SLICE = {
     "python-lib": "One import path, one smoke test, and one usage example.",
 }
 
+PRESET_PLAYWRIGHT_LANE = {
+    "ai-agent": "Keep the first prompt/eval proof deterministic before widening the demo surface.",
+    "web-app": "Keep browser proof limited to one form, one primary action, and one stable result card before widening flows.",
+    "python-lib": "Keep smoke proof focused on one import path and one stable usage example before adding matrix coverage.",
+}
+
 DEFAULT_CONTEXT = {
     "project_tagline": "Bootstrap a public repository with launch-ready documentation and reproducible project scaffolding.",
     "why_section": "Use this repository to explain the project clearly, show a runnable path, and make contribution/release expectations obvious.",
@@ -323,6 +329,7 @@ def main() -> None:
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
                 "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
+        "playwright_lane": PRESET_PLAYWRIGHT_LANE[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "quickstart_docs": _build_quickstart_docs(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),
