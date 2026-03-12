@@ -18,6 +18,12 @@ PRESET_SUMMARIES = {
     "web-app": "Best when the first believable proof is a landing flow, UI checklist, and demo script.",
     "python-lib": "Best when the first believable proof is an importable package, smoke test, and usage example.",
 }
+PRESET_FIRST_UI_SLICE = {
+    "ai-agent": "System prompt + eval contract + first runnable demo brief.",
+    "web-app": "One form, one primary action, and one reviewable result card.",
+    "python-lib": "One import path, one smoke test, and one usage example.",
+}
+
 DEFAULT_CONTEXT = {
     "project_tagline": "Bootstrap a public repository with launch-ready documentation and reproducible project scaffolding.",
     "why_section": "Use this repository to explain the project clearly, show a runnable path, and make contribution/release expectations obvious.",
@@ -316,6 +322,7 @@ def main() -> None:
                 "preset_key": preset,
                 "label": preset.replace("-", " ").title(),
                 "summary": PRESET_SUMMARIES[preset],
+                "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "quickstart_docs": _build_quickstart_docs(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),

@@ -458,3 +458,6 @@ If you want a compact maintainer note for choosing from the exported preset cata
 If you need the same recovery posture condensed to one preset-catalog form -> one result card replay loop, open `docs/PRESET_JSON_WEB_FORM_RECOVERY_LOOP.md`.
 
 If you need a compact bootstrap note for the first web-app demo slice, open `docs/PRESET_JSON_WEB_FORM_FIRST_BOOT_NOTE.md` and start from `oss-launchpad presets --preset web-app --json` before widening the form -> result-card -> export flow.
+
+
+If you want a compact preset-catalog note for the first believable UI slice, open `docs/PRESET_JSON_FIRST_UI_SLICE_NOTE.md`.
