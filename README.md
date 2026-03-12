@@ -140,6 +140,7 @@ If you want a compact Playwright stability loop before widening that first `web-
 If you need a one-screen rule for keeping that first web-app proof limited to one form, one submit, and one result card, open `docs/PRESET_WEB_DEMO_FORM_RESULT_STABILITY.md`.
 If you need a compact checkpoint order for that same first web-app Playwright proof lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_CHECKPOINT_SEQUENCE.md`.
 If you need a compact Playwright recovery checklist for that same first web-app proof lane, open `docs/PRESET_WEB_APP_PLAYWRIGHT_RECOVERY.md`.
+If you need a compact rule for keeping the first preset chooser, one visible result card, and one exported report path together before expanding the demo, open `docs/PRESET_JSON_RESULT_CARD_REPORT_PATH_NOTE.md`.
 If you need a shorter form-to-card recovery note before reopening broader demo scope, open `docs/PRESET_WEB_APP_FORM_TO_CARD_RECOVERY_NOTE.md`.
 If you need an even shorter reminder to keep that same proof narrowed to one form, one result card, and one recovery step, open `docs/PRESET_WEB_APP_FORM_RESULT_RECOVERY_NOTE.md`.
 If you need a compact rule for keeping the first web-app proof tied to one form, one result card, and one downloadable artifact bundle, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_CHECK.md`.
