@@ -180,6 +180,7 @@ If you want the shortest start note before wiring that JSON into a script, UI, o
 If you need the most compact UI-first note for that same preset JSON handoff, open `docs/PRESET_JSON_UI_START.md`.
 If you only need one preset payload for a picker or script, open `docs/PRESET_JSON_SINGLE_PRESET_NOTE.md`.
 If you need a compact reminder to keep one visible owner beside that preset JSON in a picker or setup form, open `docs/PRESET_JSON_OWNER_NOTE.md`.
+If you need a compact UI note for keeping preset label, validation command, and owner visible together on the same first result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_VALIDATION_NOTE.md`.
 If you need a compact reminder to keep that same preset JSON result card paired with one visible owner handoff, open `docs/PRESET_JSON_RESULT_CARD_OWNER_NOTE.md`.
 If you need a smaller scope note for keeping that preset JSON browser slice limited to one form and one result card, open `docs/PRESET_JSON_FORM_CARD_SCOPE.md`.
 
