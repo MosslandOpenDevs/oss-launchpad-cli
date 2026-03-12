@@ -96,6 +96,7 @@ If you need a compact stability note for turning that same preset JSON into a re
 If you want the shortest bridge between preset JSON UI review rules and Playwright stability rules for the first chooser/result-card slice, open `docs/PRESET_JSON_WEB_FORM_UI_UX_PLAYWRIGHT_BRIDGE.md`.
 If you need a compact note for the one obvious follow-up action after that first preset form result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NEXT_STEP.md`.
 If you need a compact note for keeping the exported preset `validation_command` visible in that same first setup form or result card, open `docs/PRESET_JSON_VALIDATION_COMMAND_NOTE.md`.
+If you need a compact note for keeping the chooser, result card, and export/download proof in one reviewable stack, open `docs/PRESET_JSON_FORM_RESULT_CARD_EXPORT_STACK.md`.
 If you need a compact reminder to keep generated starter docs visible beside the preset label in that same first setup flow, open `docs/PRESET_JSON_STARTER_DOCS_NOTE.md`.
 If you need a compact note for keeping the first preset JSON result card tied to one visible setup command as well as one validation command, open `docs/PRESET_JSON_RESULT_CARD_SETUP_COMMAND_NOTE.md`.
 If you need a compact rule for keeping one preset chooser, one result card, and one validation command visible together in the first browser slice, open `docs/PRESET_JSON_FORM_SINGLE_PROOF_RULE.md`.
