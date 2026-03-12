@@ -1,3 +1,9 @@
-# preset JSON result card export command path note
+# Preset JSON result-card export command path note
 
-For the first preset JSON web-form slice, keep three things visible together on the result card: the chosen preset, the validation command, and the exported path or download target. This preserves one obvious proof lane before widening the UI.
+For the first web-app proof, keep one result card visibly tied to:
+
+- the selected preset label,
+- the validation command to rerun, and
+- one exported bundle or download target.
+
+Do not add extra actions until that single form-to-result-card flow is reproducible.
