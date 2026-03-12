@@ -206,6 +206,7 @@ If you need a compact reminder to keep one visible owner beside that preset JSON
 If you need a compact UI note for keeping preset label, validation command, and owner visible together on the same first result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_VALIDATION_NOTE.md`.
 If you need a compact reminder to keep that same preset JSON result card paired with one visible owner handoff, open `docs/PRESET_JSON_RESULT_CARD_OWNER_NOTE.md`.
 If you need a compact note for keeping preset owner, summary, and validation command visible together on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_SUMMARY_NOTE.md`.
+If you need a compact note for keeping preset owner, starter docs, and validation command visible together on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_STARTER_DOCS_NOTE.md`.
 If you need a smaller scope note for keeping that preset JSON browser slice limited to one form and one result card, open `docs/PRESET_JSON_FORM_CARD_SCOPE.md
 - Preset JSON result-card handoff: `docs/PRESET_JSON_RESULT_CARD_HANDOFF.md`
 `.
