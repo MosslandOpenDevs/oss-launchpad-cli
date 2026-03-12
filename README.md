@@ -414,7 +414,7 @@ If you need a short note for keeping the first web-app result card tied to one e
 
 If you need a short note for preserving `report_author` / `report_authors` fields in preset JSON exports, open `docs/PRESET_JSON_REPORT_AUTHOR_ALIAS_NOTE.md`.
 If you need a compact note for keeping one subtitle visible under the same preset JSON result-card title, open `docs/PRESET_JSON_RESULT_CARD_SUBTITLE_NOTE.md`.
-
+If you need a compact note for keeping one short subject visible in that same preset JSON result-card header, open `docs/PRESET_JSON_RESULT_CARD_SUBJECT_NOTE.md`.
 
 If you need a compact UI note for keeping one result card tied to one report/download proof stack, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_STACK.md`.
 If you need a compact export check for keeping that same result card tied to one downloadable artifact after the first pass, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_NOTE.md`.
