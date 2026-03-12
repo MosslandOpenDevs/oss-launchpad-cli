@@ -480,6 +480,7 @@ If you need a compact UI note for keeping that same first result card limited to
 If you need a short status-first reminder for that same result card export lane, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
 If you need a compact scope note for keeping that same result card tied to one report download, open `docs/PRESET_WEB_APP_RESULT_CARD_REPORT_DOWNLOAD_SCOPE.md`.
 If you need one compact note for keeping the first result card limited to one validated status line plus one export path, open `docs/PRESET_JSON_RESULT_CARD_STATUS_EXPORT_NOTE.md`.
+If you need one compact note for keeping the first result card tied to setup command, validation command, and one export path together, open `docs/PRESET_JSON_RESULT_CARD_COMMAND_EXPORT_STACK_NOTE.md`.
 If you need a matching note for making the first result-card status unmistakable before adding more actions, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_STATUS.md`.
 If you need a compact note for keeping the first download badge readable beside that same result-card status, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STATUS_BADGE.md`.
 
