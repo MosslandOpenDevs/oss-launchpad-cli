@@ -63,6 +63,7 @@ Each preset also prints day-zero docs and review commands so maintainers can val
 If you need a compact web-app note for keeping the JSON form, result card, and exported proof in one visible stack, open `docs/PRESET_JSON_FORM_RESULT_CARD_STACK.md`.
 If you need a compact review loop for one preset JSON form result card before widening the UI flow, open `docs/PRESET_JSON_FORM_RESULT_CARD_REVIEW_NOTE.md`.
 If you need a compact chooser note for proving the web-app preset before widening the first UI slice, open `docs/PRESET_WEB_APP_JSON_CHOOSER_NOTE.md`.
+If you need a compact reminder to keep the first web-app preset proof limited to one form and one stable result card, open `docs/PRESET_WEB_APP_FORM_CARD_PROOF_NOTE.md`.
 
 Quick chooser:
 
