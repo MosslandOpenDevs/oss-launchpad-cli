@@ -60,6 +60,7 @@ Current presets:
 Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
 
 Each preset also prints day-zero docs and review commands so maintainers can validate the first proof path before writing more code.
+If you need a compact web-app note for keeping the JSON form, result card, and exported proof in one visible stack, open `docs/PRESET_JSON_FORM_RESULT_CARD_STACK.md`.
 
 Quick chooser:
 
