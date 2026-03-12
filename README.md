@@ -304,6 +304,8 @@ If you need a shortest-possible repo-push test, use `docs/PRESET_FIRST_PROOF_REP
 The CLI next steps also print a preset-specific first-PR evidence command so maintainers can immediately open the two proof files most likely to anchor the first reviewable diff.
 If you need a compact boundary for the first form-to-result-card slice, open `docs/PRESET_WEB_APP_FORM_RESULT_CARD_SCOPE.md`.
 
+If you need the matching small-slice review loop for one result card, one export action, and one validation pass, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_REVIEW_LOOP.md`.
+
 ## Local validation loop
 
 Before shipping doc or scaffold changes, run the CLI smoke tests locally:
