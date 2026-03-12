@@ -61,6 +61,7 @@ Each preset keeps the same public-repo scaffold, but changes the README framing,
 
 Each preset also prints day-zero docs and review commands so maintainers can validate the first proof path before writing more code.
 If you need a compact web-app note for keeping the JSON form, result card, and exported proof in one visible stack, open `docs/PRESET_JSON_FORM_RESULT_CARD_STACK.md`.
+If you need a compact review loop for one preset JSON form result card before widening the UI flow, open `docs/PRESET_JSON_FORM_RESULT_CARD_REVIEW_NOTE.md`.
 
 Quick chooser:
 
