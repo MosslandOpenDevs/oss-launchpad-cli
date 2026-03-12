@@ -193,6 +193,7 @@ If you need a compact UI/UX-first rule for keeping the first generated web-app r
 If you need a compact note for keeping the first web-app result card paired with one export path and one printed validation command, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_COMMAND_NOTE.md`.
 If you need a compact review note for keeping that same first result card tied to one visible setup command, one validation command, and one export target, open `docs/PRESET_WEB_APP_RESULT_CARD_COMMAND_STACK_NOTE.md`.
 If you need a compact check that the first `web-app` result card still exposes one believable download or handoff target, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_CHECK.md`.
+If you need a compact note for keeping the first report-download button tied to a validated result-card state before adding more actions, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_READY_NOTE.md`.
 If you need a slightly fuller UI-first scope note for the same one-form -> one-result-card -> one-download proof, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_BLUEPRINT.md`.
 If you need a short audit that keeps the first generated `web-app` proof scoped to one form, one result card, and one export target, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_CHECK.md`.
 If you need the shortest `web-app` form -> result card -> download proof path before a wider demo pass, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_START.md`.
