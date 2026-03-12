@@ -8,11 +8,11 @@ ROOT = Path(__file__).resolve().parents[1]
 
 class ReadmeWebAppUiUxStartTests(unittest.TestCase):
     def test_readme_mentions_web_app_ui_ux_start(self) -> None:
-        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        readme = (ROOT / 'README.md').read_text(encoding='utf-8')
 
-        self.assertIn("docs/PRESET_WEB_APP_UI_UX_START.md", readme)
-        self.assertTrue((ROOT / "docs" / "PRESET_WEB_APP_UI_UX_START.md").exists())
+        self.assertIn('docs/PRESET_WEB_APP_UI_UX_START.md', readme)
+        self.assertTrue((ROOT / 'docs' / 'PRESET_WEB_APP_UI_UX_START.md').exists())
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     unittest.main()
