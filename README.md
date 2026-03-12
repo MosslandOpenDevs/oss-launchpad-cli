@@ -109,6 +109,7 @@ If you need a compact maintainer checkpoint for one stable web-app result card p
 If you need a compact note for the one obvious follow-up action after that first preset form result card, open `docs/PRESET_JSON_FORM_RESULT_CARD_NEXT_STEP.md`.
 If you need a compact note for keeping the exported preset `validation_command` visible in that same first setup form or result card, open `docs/PRESET_JSON_VALIDATION_COMMAND_NOTE.md`.
 If you need a compact note for keeping the chooser, result card, and export/download proof in one reviewable stack, open `docs/PRESET_JSON_FORM_RESULT_CARD_EXPORT_STACK.md`.
+If you need a compact note for keeping the first preset JSON result card tied to one visible export path as well as the validation command, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_PATH_NOTE.md`.
 If you need a compact checklist for that same result-card-plus-export checkpoint, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_CHECKLIST.md`.
 If you need a compact note for keeping the chooser, result card, and exported validation command path in one reviewable stack, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_COMMAND_PATH_NOTE.md`.
 If you need a compact note for keeping the chooser label, validation command, and starter docs visible together on the first result card, open `docs/PRESET_JSON_RESULT_CARD_TRIPLE_PROOF_NOTE.md`.
