@@ -317,6 +317,10 @@ def _list_presets() -> list[str]:
     return sorted(PRESET_TEMPLATE_ROOTS)
 
 
+def _list_preset_choices() -> list[str]:
+    return sorted(set(_list_presets()) | set(PRESET_ALIASES))
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(prog="oss-launchpad")
     sub = parser.add_subparsers(dest="command", required=True)
@@ -326,20 +330,20 @@ def main() -> None:
     init_cmd.add_argument("--title", help="Project title", default="New Project")
     init_cmd.add_argument(
         "--preset",
-        choices=_list_presets(),
+        choices=_list_preset_choices(),
         default="ai-agent",
         help="Project preset to render into the scaffold",
     )
 
     presets_cmd = sub.add_parser("presets", help="List scaffold presets and starter assets")
     presets_cmd.add_argument("--json", action="store_true", help="Print preset metadata as JSON")
-    presets_cmd.add_argument("--preset", choices=_list_presets(), help="Show metadata for one preset only")
+    presets_cmd.add_argument("--preset", choices=_list_preset_choices(), help="Show metadata for one preset only")
 
     args = parser.parse_args()
 
     if args.command == "presets":
         preset_map = {}
-        preset_names = [args.preset] if args.preset else _list_presets()
+        preset_names = [_resolve_preset_name(args.preset)] if args.preset else _list_presets()
         for preset in preset_names:
             package_name = 'sample_project'
             preset_map[preset] = {
