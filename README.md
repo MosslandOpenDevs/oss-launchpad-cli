@@ -143,6 +143,7 @@ If you need a compact cue for showing owner-ready status as a visible review bad
 If you need a compact cue for showing a single honest progress badge before widening the result-card state machine, open `docs/PRESET_JSON_RESULT_CARD_PROGRESS_BADGE_NOTE.md`.
 If you need the matching `web-app` scope gate before widening result-card states, open `docs/PRESET_WEB_APP_RESULT_CARD_PROGRESS_BADGE_GATE.md`.
 If you need a compact owner-facing note for keeping exported proof status visible on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_OWNER_STATUS_NOTE.md`.
+If you need a compact recheck note before claiming that same owner/export status card is ready to push, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_OWNER_STATUS_RECHECK_NOTE.md`.
 If you need a compact follow-up note for keeping preset label, validation command, owner-ready status, and export/download target visible in one first-card stack, open `docs/PRESET_JSON_RESULT_CARD_OWNER_STATUS_STACK_NOTE.md`.
 If you want the machine-readable export to keep a shorter `setup_command` alias beside `customize_first_command`, open `docs/PRESET_JSON_SETUP_COMMAND_ALIAS_NOTE.md`.
 If you need a compact rule for keeping one preset chooser, one result card, and one validation command visible together in the first browser slice, open `docs/PRESET_JSON_FORM_SINGLE_PROOF_RULE.md`.
