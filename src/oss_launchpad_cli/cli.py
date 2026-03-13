@@ -25,6 +25,7 @@ PRESET_ALIASES = {
     "showcase": "web-app",
     "result-card-demo": "web-app",
     "result-card-ui": "web-app",
+    "result-card-proof": "web-app",
     "web-demo": "web-app",
     "web-ui-demo": "web-app",
     "web-form": "web-app",
