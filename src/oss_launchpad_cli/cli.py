@@ -38,6 +38,12 @@ PRESET_PLAYWRIGHT_LANE = {
     "python-lib": "Keep smoke proof focused on one import path and one stable usage example before adding matrix coverage.",
 }
 
+PRESET_PLAYWRIGHT_RECOVERY_LANE = {
+    "ai-agent": "Re-run the smallest deterministic eval path before widening agent-demo automation.",
+    "web-app": "Recover with the smallest form -> primary action -> result-card replay before widening browser flows.",
+    "python-lib": "Recover with one import path and one smoke example before adding broader matrix checks.",
+}
+
 PRESET_UI_UX_LANE = {
     "ai-agent": "Lead with the smallest believable workflow proof before layering extra controls or dashboards.",
     "web-app": "Lead with intro-first messaging, one form, one primary action, and one reviewable result card before adding secondary navigation.",
@@ -359,6 +365,7 @@ def main() -> None:
                 "ui_ux_lane": PRESET_UI_UX_LANE[preset],
                 "primary_action": _build_validation_command(preset, "sample-project", package_name),
                 "playwright_lane": PRESET_PLAYWRIGHT_LANE[preset],
+                "playwright_recovery_lane": PRESET_PLAYWRIGHT_RECOVERY_LANE[preset],
                 "starter_assets": _build_starter_assets(preset, package_name),
                 "quickstart_docs": _build_quickstart_docs(preset, package_name),
                 "first_proof_assets": _build_first_proof_assets(preset, package_name),
@@ -389,6 +396,7 @@ def main() -> None:
             print(f"  ui_ux_lane: {details['ui_ux_lane']}")
             print(f"  primary_action: {details['primary_action']}")
             print(f"  playwright_lane: {details['playwright_lane']}")
+            print(f"  playwright_recovery_lane: {details['playwright_recovery_lane']}")
             print("  starter_assets:")
             for asset in details["starter_assets"]:
                 print(f"  - {asset}")
