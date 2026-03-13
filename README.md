@@ -639,3 +639,4 @@ If you need a compact governance-demo recheck note for keeping one chooser, one 
 docs/PRESET_WEB_APP_GOVERNANCE_PHASE_ONE_REPORT_CARD_SYNC_NOTE.md
 
 If you need a compact repo-4 reminder that preset-json/result-card work still needs validator-clean proof before commit or push, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_THEN_PUSH_MICRO_NOTE.md`.
+If you need the adjacent-markdown proposal-file reminder for that same bridge, open `docs/PRESET_JSON_GOVERNANCE_PROPOSAL_MARKDOWN_PATH_NOTE.md`.
