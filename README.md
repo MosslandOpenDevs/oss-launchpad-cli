@@ -184,6 +184,7 @@ If you need a compact result-card cue that keeps the chosen preset, validation c
 If you need a compact maintainer reminder for the required five-line short report across the active repos, open `docs/PRESET_FIVE_REPO_SHORT_REPORT_NOTE.md`.
 If you need the matching preset note for five-repo runs, open `docs/PRESET_FIVE_REPO_COMMIT_GATE_NOTE.md` to keep one-line repo status plus validation-first commit/push claims.
 If you need a compact maintainer note for validating one small preset or README slice before push, open `docs/PRESET_VALIDATE_SMALL_SLICE_NOTE.md`.
+If you need a short maintainer cue that keeps the first web-app UI/UX slice paired with one reproducible Playwright-style proof, open `docs/PRESET_WEB_APP_UI_UX_PLAYWRIGHT_STATUS_NOTE.md`.
 
 If you need a compact bridge for keeping the first web-app chooser, one result card, and one exported bundle path visible together, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_BRIDGE.md`.
 
