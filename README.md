@@ -60,6 +60,8 @@ Current presets:
 - `web-app`
 - `python-lib`
 
+Alias note: `site` and `website` resolve to `web-app` for teams that name the same public proof by surface instead of stack.
+
 Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
 
 Each preset also prints day-zero docs and review commands so maintainers can validate the first proof path before writing more code.

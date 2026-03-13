@@ -17,6 +17,7 @@ PRESET_ALIASES = {
     "agent": "ai-agent",
     "app": "web-app",
     "site": "web-app",
+    "website": "web-app",
     "library": "python-lib",
     "lib": "python-lib",
 }
