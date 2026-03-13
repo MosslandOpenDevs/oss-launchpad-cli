@@ -103,6 +103,7 @@ If you need a compact UI note for keeping that same first governance web-app pro
 If you need the matching short status cue for that same `reports_directory` result-card proof, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORTS_DIRECTORY_STATUS_NOTE.md`.
 If you need a compact governance web-app reminder that the same `reports_directory` result-card proof still needs a validation rerun before commit/push, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORTS_DIRECTORY_VALIDATE_NOTE.md`.
 If you need a compact gate for keeping the first preset JSON chooser tied to one result card plus one explicit download/export path, open `docs/PRESET_JSON_RESULT_CARD_DOWNLOAD_GATE.md`.
+If you need the matching preset-json alias note for exposing the same setup lane as `result_card_setup_command`, open `docs/PRESET_JSON_RESULT_CARD_SETUP_COMMAND_ALIAS_NOTE.md`.
 
 If you want the matching UI/UX-first starting note before widening the first web-app preset beyond that one form and one result card, open `docs/PRESET_WEB_APP_UI_UX_START.md`.
 

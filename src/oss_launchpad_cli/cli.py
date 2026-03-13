@@ -398,6 +398,7 @@ def main() -> None:
                 "proof_validation_command": _build_validation_command(preset, "sample-project", package_name),
                 "result_card_validation_command": _build_validation_command(preset, "sample-project", package_name),
                 "setup_command": _build_customize_first_command(preset, "sample-project", package_name),
+                "result_card_setup_command": _build_customize_first_command(preset, "sample-project", package_name),
                 "customize_first_command": _build_customize_first_command(preset, "sample-project", package_name),
                 "starter_review_command": _build_starter_review_command(preset, "sample-project", package_name),
                 "day_zero_review_command": _build_day_zero_review_command(preset, "sample-project", package_name),
