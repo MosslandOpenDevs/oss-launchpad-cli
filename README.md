@@ -575,6 +575,7 @@ If you need a compact scope note for keeping that same result card tied to one r
 If you need the machine-readable export to keep one obvious `primary_action` for a chooser or result card, open `docs/PRESET_JSON_PRIMARY_ACTION_NOTE.md`.
 If you need one compact note for keeping the first result card limited to one validated status line plus one export path, open `docs/PRESET_JSON_RESULT_CARD_STATUS_EXPORT_NOTE.md`.
 If you need the matching compact reminder to keep the cross-repo maintainer update to one short validated status line per repo, open `docs/PRESET_WEB_APP_ONE_LINE_RESULT_STATUS_NOTE.md`.
+If you need the shortest note for keeping one exported preset JSON file tied to one setup form and one result-card validation pass, open `docs/PRESET_JSON_FORM_RESULT_CARD_VALIDATE_NOTE.md`.
 If you need the matching web-app reminder to keep the first download/export button tied to one rerunnable validation loop, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_VALIDATE_NOTE.md`.
 If you need a compact UI note for keeping one visible download/export badge beside that same primary status, open `docs/PRESET_JSON_RESULT_CARD_DOWNLOAD_BADGE_NOTE.md`.
 If you need one compact note for keeping the first result card tied to setup command, validation command, and one export path together, open `docs/PRESET_JSON_RESULT_CARD_COMMAND_EXPORT_STACK_NOTE.md`.
