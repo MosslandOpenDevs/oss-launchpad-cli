@@ -552,3 +552,5 @@ If you need a compact note for keeping the first web-app preset proof limited to
 - Web-app result-card recovery loop note: `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_LOOP.md`
 
 If you need a compact rule for keeping the first `web-app` result card focused on one visible validation command plus one export target, open `docs/PRESET_WEB_APP_RESULT_CARD_COMMAND_EXPORT_RULE.md`.
+
+If you need a compact proof reminder that repo 4 and repo 5 stay mandatory in every five-repo pass, open `docs/PRESET_FIRST_PROOF_REPO_FOUR_FIVE_RULE.md`.
