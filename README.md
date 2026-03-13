@@ -78,6 +78,7 @@ If you need a compact governance handoff for scenario-source short aliases (`sce
 If you need a compact web-demo boundary note for keeping one input form, one result card, and one exported governance report path together, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_CARD_SCOPE_NOTE.md`.
 If you need a compact UI/UX reminder for that same governance web-demo slice, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_UI_UX_NOTE.md`.
 If you need a compact step-check note for keeping that same governance result-card slice reproducible during UI review, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_STEP_CHECK_NOTE.md`.
+If you need a compact bridge for keeping the same governance result-card slice aligned with UI/UX-first layout choices and Playwright-style replay discipline, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_UI_PLAYWRIGHT_BRIDGE.md`.
 If you need a compact bridge from `oss-launchpad presets --json --preset web-app` to the governance-sandbox web demo, open `docs/PRESET_WEB_APP_GOVERNANCE_WEB_DEMO_BRIDGE.md`.
 If you need a compact phase-one reminder that governance web-app starter work should keep scenario-file input and report output coupled before broader demo polish, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_PAIR_NOTE.md`.
 If you need a compact preset-catalog reminder for keeping the first `web-app` proof limited to one form, one primary action, and one reviewable result card, open `docs/PRESET_JSON_PLAYWRIGHT_RESULT_CARD_NOTE.md`.
