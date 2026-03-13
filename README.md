@@ -117,6 +117,7 @@ If you need the matching governance-sandbox-first note for one form -> one prima
 If you need a compact bridge for keeping the first preset chooser, one result card, and one UI/UX-plus-Playwright review lane aligned, open `docs/PRESET_WEB_APP_UI_UX_PLAYWRIGHT_BRIDGE.md`.
 If you need the matching compact reminder that the first chooser/result-card slice should keep one explicit validation rerun before any commit/push claim, open `docs/PRESET_WEB_APP_VALIDATE_BEFORE_PUSH_RESULT_CARD_NOTE.md`.
 If you need a compact note for keeping governance-aligned preset work behind the same scenario-file -> report-bundle -> preset -> result-card phase order, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ORDER_NOTE.md`.
+If you need a compact note for the phase-one web-app handoff, keep one chooser, one primary action, and one result card behind the same scenario-file/report-first order in `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_RESULT_CARD_NOTE.md`.
 If you need a compact acceptance note for the first web-app demo slice, open `docs/PRESET_WEB_APP_RESULT_CARD_DEMO_ACCEPTANCE.md`.
 If you need a compact stability note for keeping one visible export/download path on that same first result card, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STABILITY_NOTE.md`.
 If you need the shortest recovery-first note for that same preset JSON form/result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_STACK.md`.
