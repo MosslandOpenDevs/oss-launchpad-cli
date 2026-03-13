@@ -207,6 +207,7 @@ If you need a shorter form-to-card recovery note before reopening broader demo s
 If you need an even shorter reminder to keep that same proof narrowed to one form, one result card, and one recovery step, open `docs/PRESET_WEB_APP_FORM_RESULT_RECOVERY_NOTE.md`.
 If you need a compact rule for keeping the first web-app proof tied to one form, one result card, and one downloadable artifact bundle, open `docs/PRESET_WEB_APP_RESULT_CARD_BUNDLE_CHECK.md`.
 If you need a compact UI/UX plus Playwright reminder for keeping the first web-app demo limited to one form, one submit, one stable result card, and one validation/export proof, open `docs/PRESET_WEB_APP_FORM_CARD_VALIDATE_EXPORT_GATE.md`.
+If you need a shorter recheck gate before widening that same result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_RECHECK_GATE.md`.
 If you need a compact proof note for keeping the first web-app slice to one form, one primary action, one stable result card, and one visible proof cue, open `docs/PRESET_WEB_APP_FORM_RESULT_PROOF_NOTE.md`.
 If you need a compact recovery note for keeping the first web-app proof tied to one result card plus one export/download target, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_RECOVERY_NOTE.md`.
 If you need a compact handoff for one web-app form submit plus one visible result card plus one exported artifact, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_NOTE.md`.
