@@ -637,3 +637,5 @@ If you need the shortest preset handoff for a governance web-app slice that must
 If you need a compact checkpoint for the first governance web-app slice, keep one preset chooser, one result card, and one explicit local validation rerun together in `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATE_COMMAND_NOTE.md`.
 If you need a compact governance-demo recheck note for keeping one chooser, one primary action, one result card, and one replayable export path stable before widening the web-app flow, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_REVIEW_LOOP_NOTE.md`.
 docs/PRESET_WEB_APP_GOVERNANCE_PHASE_ONE_REPORT_CARD_SYNC_NOTE.md
+
+If you need a compact repo-4 reminder that preset-json/result-card work still needs validator-clean proof before commit or push, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_THEN_PUSH_MICRO_NOTE.md`.
