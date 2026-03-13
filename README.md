@@ -73,6 +73,7 @@ If you need a compact preset-catalog reminder for keeping the first `web-app` pr
 If you need a compact stability rule for keeping that first `web-app` proof to one input form, one primary action, and one stable result card, open `docs/PRESET_WEB_APP_RESULT_CARD_STABILITY_RULE.md`.
 If you need a compact stage gate for keeping the first `web-app` proof to one form, one stable result card, and one explicit validation replay, open `docs/PRESET_WEB_APP_RESULT_CARD_STAGE_GATE.md`.
 If you need a compact bridge for keeping the first `web-app` result card focused on one validation command plus one export path before widening the demo, open `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATION_EXPORT_BRIDGE.md`.
+If you need a compact gate for keeping the first preset JSON chooser tied to one result card plus one explicit download/export path, open `docs/PRESET_JSON_RESULT_CARD_DOWNLOAD_GATE.md`.
 
 If you want the matching UI/UX-first starting note before widening the first web-app preset beyond that one form and one result card, open `docs/PRESET_WEB_APP_UI_UX_START.md`.
 
