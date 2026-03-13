@@ -31,6 +31,7 @@ PRESET_ALIASES = {
     "ui-proof": "web-app",
     "governance-demo": "web-app",
     "governance-ui": "web-app",
+    "dao-demo": "web-app",
     "governance-sandbox-demo": "web-app",
     "scenario-demo": "web-app",
     "scenario-report-demo": "web-app",
