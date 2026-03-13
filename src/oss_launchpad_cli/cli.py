@@ -21,6 +21,7 @@ PRESET_ALIASES = {
     "ui-demo": "web-app",
     "frontend": "web-app",
     "landing-page": "web-app",
+    "landing": "web-app",
     "showcase": "web-app",
     "web-demo": "web-app",
     "library": "python-lib",
