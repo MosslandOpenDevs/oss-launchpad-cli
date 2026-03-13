@@ -1,4 +1,3 @@
-# Preset web-app result-card export status note
+# PRESET_WEB_APP_RESULT_CARD_EXPORT_STATUS_NOTE
 
-For the first `web-app` demo, keep the result card honest: show one visible export target, one status line, and one primary next action.
-Use this note before widening the UI beyond the intro form and first proof card.
+Keep the first web-app preset demo to one form, one result card, and one clearly labeled export status before widening the flow.
