@@ -561,6 +561,7 @@ If you need a compact note for keeping the first web-app preset proof limited to
 If you need a compact rule for keeping the first `web-app` result card focused on one visible validation command plus one export target, open `docs/PRESET_WEB_APP_RESULT_CARD_COMMAND_EXPORT_RULE.md`.
 
 If you need a compact proof reminder that repo 4 and repo 5 stay mandatory in every five-repo pass, open `docs/PRESET_FIRST_PROOF_REPO_FOUR_FIVE_RULE.md`.
+If you need the matching one-line status reminder for repo 4 and repo 5 before any commit/push claim, open `docs/PRESET_FIVE_REPO_REPO45_ONE_LINE_GATE_NOTE.md`.
 If you need the matching validation-first reminder for repo 4 and repo 5 inside that same five-repo pass, open `docs/PRESET_FIVE_REPO_FOUR_FIVE_VALIDATE_NOTE.md`.
 
 If you need a compact bridge from preset JSON export to one owner-facing result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_QUEUE_NOTE.md`.
