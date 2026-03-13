@@ -620,3 +620,5 @@ If you need a compact bridge from preset JSON export to one owner-facing result 
 If you need a compact preset note for keeping governance report-output aliases stable while phase-one work stays scenario/report-first, open `docs/PRESET_GOVERNANCE_REPORT_ALIAS_NOTE.md`.
 If you need a compact phase-one reminder for keeping governance report-file aliases readable alongside scenario-file inputs, open `docs/PRESET_GOVERNANCE_REPORT_FILE_ALIAS_NOTE.md`.
 - Governance sandbox proposal-file alias note: use `docs/PRESET_GOVERNANCE_PROPOSAL_FILE_ALIAS_NOTE.md` when a preset handoff needs to mention direct `proposal_file` / `proposal_path` scenario inputs before the same report replay.
+
+If you need the shortest preset handoff for a governance web-app slice that must stay one form, one primary action, and one reviewable result card, open `docs/GOVERNANCE_SANDBOX_WEB_APP_RESULT_CARD_VALIDATE_START_NOTE.md`.
