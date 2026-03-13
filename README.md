@@ -78,6 +78,7 @@ If you need a compact reminder to keep the first web-app proof to one small revi
 If you need a compact governance handoff for scenario-source short aliases (`scenario_src`, `source_href`) before widening the result-card export path, open `docs/PRESET_JSON_GOVERNANCE_SCENARIO_SOURCE_SHORT_ALIAS_NOTE.md`.
 If you need a compact governance web-app note for keeping one scenario-file input, one primary action, and one export-ready result card aligned with UI/UX-first and Playwright-interactive review rules, open `docs/PRESET_WEB_APP_GOVERNANCE_UI_PLAYWRIGHT_RESULT_CARD_NOTE.md`.
 If you need the matching governance handoff for the neutral `source_location` alias, open `docs/PRESET_JSON_GOVERNANCE_SOURCE_LOCATION_ALIAS_NOTE.md`.
+If you need a compact governance handoff for download-oriented report bundle aliases (`report.outputs.downloads` and top-level `report_downloads`), open `docs/PRESET_JSON_GOVERNANCE_REPORT_DOWNLOADS_ALIAS_NOTE.md`.
 If you need a compact web-demo boundary note for keeping one input form, one result card, and one exported governance report path together, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_CARD_SCOPE_NOTE.md`.
 If you need a compact governance web-app note for keeping one scenario file entry, one result card, and one exported report bundle aligned with UI/UX-first and Playwright-interactive review rules, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_BUNDLE_ENTRY_NOTE.md`.
 If you need a compact UI/UX reminder for that same governance web-demo slice, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_UI_UX_NOTE.md`.
