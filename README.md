@@ -296,6 +296,7 @@ If you need a compact owner-ready note for the first web-app result card plus on
 If you need a one-line check that the first preset JSON export is already usable as a proof bundle, open `docs/PRESET_JSON_EXPORT_PROOF_BUNDLE_NOTE.md`.
 If you need a compact UI note for keeping preset label, validation command, and generated starter-doc handoff visible in one first result card, open `docs/PRESET_JSON_RESULT_CARD_STARTER_DOCS_NOTE.md`.
 If you need a compact UI/UX-first note for keeping one primary action, one validation command, and one download target visible on that same first web-app result card, open `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATION_HUD_NOTE.md`.
+If you need a compact rule for keeping the first web-app result card centered on one primary action with reproducible validation and download labels, open `docs/PRESET_WEB_APP_RESULT_CARD_PRIMARY_ACTION_RULE.md`.
 If you need a tiny signoff check once that first web-app result card is believable, open `docs/PRESET_WEB_APP_RESULT_CARD_SIGNOFF.md`.
 If you need the shortest review loop for that same form -> result card -> download slice, open `docs/PRESET_WEB_APP_RESULT_CARD_REVIEW_START.md`.
 If you need a short guardrail for keeping that first web-app proof reproducible across form input, result card, and download handoff, open `docs/PRESET_WEB_APP_RESULT_CARD_REPRO_CHECK.md`.
