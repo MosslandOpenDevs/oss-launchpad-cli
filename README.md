@@ -153,6 +153,7 @@ If you need a tighter UI-first reminder for keeping preset label, validation com
 If you need a compact note for keeping the first result card focused on one validation badge plus one export badge, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_EXPORT_BADGE_NOTE.md`.
 If you need a compact gate for keeping that same result card honest before export/download handoff, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_EXPORT_GATE.md`.
 If you need a compact note for keeping the same first result card tied to both a validation command and one export target, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_VALIDATION_NOTE.md`.
+If you need a compact cue for the smallest result-card slice that still exposes one visible export/download target, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_CUE.md`.
 If you need a compact note for keeping the chooser, result card, and starter docs visible together on the first preset JSON UI slice, open `docs/PRESET_JSON_RESULT_CARD_TRIPLE_PROOF_NOTE.md`.
 If you need a compact note for keeping that same first result card tied to one output slug for the exported setup bundle, open `docs/PRESET_JSON_RESULT_CARD_OUTPUT_SLUG_NOTE.md`.
 If you need a shorter note for keeping that same first preset chooser tied to one visible result card plus one obvious download target, open `docs/PRESET_JSON_FORM_RESULT_CARD_DOWNLOAD_NOTE.md`.
