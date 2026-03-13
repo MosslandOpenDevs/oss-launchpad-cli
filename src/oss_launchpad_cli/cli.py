@@ -16,6 +16,7 @@ PRESET_TEMPLATE_ROOTS = {
 PRESET_ALIASES = {
     "agent": "ai-agent",
     "app": "web-app",
+    "site": "web-app",
     "library": "python-lib",
     "lib": "python-lib",
 }
