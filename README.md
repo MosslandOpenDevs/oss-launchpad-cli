@@ -94,6 +94,7 @@ If you want a compact proof standard for making that first manual commit feel be
 If you want a short guide for the first preset-specific files to customize, open `docs/PRESET_CUSTOMIZE_FIRST_GUIDE.md`.
 If you want the shortest preset-specific proof command to re-run after customizing the scaffold, open `docs/PRESET_VALIDATION_COMMANDS.md`.
 If you want a compact note for the smallest validate-then-push loop after the first preset proof edit, open `docs/PRESET_FIRST_PROOF_VALIDATE_THEN_PUSH.md`.
+If you want the matching bridge from that validation rerun to the shortest preset progress line, open `docs/PRESET_FIRST_PROOF_VALIDATE_STATUS_BRIDGE.md`.
 If you want a one-page "does this scaffold already feel alive?" check before the first public commit, open `docs/PRESET_PROOF_OF_LIFE_CHECKLIST.md`.
 If you want the shortest preset-specific proof command to run immediately after scaffold generation, open `docs/PRESET_FIRST_PROOF_COMMANDS.md`.
 If you want a compact map of which generated files should become the first believable proof by preset, open `docs/PRESET_FIRST_PROOF_OUTPUTS.md`.
