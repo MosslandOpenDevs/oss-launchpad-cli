@@ -353,6 +353,7 @@ def main() -> None:
                 "summary": PRESET_SUMMARIES[preset],
                 "first_ui_slice": PRESET_FIRST_UI_SLICE[preset],
                 "result_card_focus": PRESET_FIRST_UI_SLICE[preset],
+                "report_download_checkpoint": PRESET_FIRST_UI_SLICE[preset],
                 "proof_scope": PRESET_FIRST_UI_SLICE[preset],
                 "ui_ux_lane": PRESET_UI_UX_LANE[preset],
                 "primary_action": _build_validation_command(preset, "sample-project", package_name),
