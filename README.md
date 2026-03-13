@@ -127,6 +127,7 @@ If you need a compact note for keeping the chooser, result card, and export/down
 If you need a compact note for keeping the first preset JSON result card tied to one visible export path as well as the validation command, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_PATH_NOTE.md`.
 If you need a compact checklist for that same result-card-plus-export checkpoint, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_CHECKLIST.md`.
 If you need a compact note for keeping the chooser, result card, and exported validation command path in one reviewable stack, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_COMMAND_PATH_NOTE.md`.
+If you need a compact note for keeping the first web-app chooser/result-card slice tied to one exported review file, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_REVIEW_FILE_NOTE.md`.
 If you need a compact note for keeping the chooser label, validation command, and starter docs visible together on the first result card, open `docs/PRESET_JSON_RESULT_CARD_TRIPLE_PROOF_NOTE.md`.
 If you need a tighter UI-first reminder for keeping preset label, validation command, and exported bundle target visible together on that same first result card, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_TRIO_NOTE.md`.
 If you need a compact note for keeping the first result card focused on one validation badge plus one export badge, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_EXPORT_BADGE_NOTE.md`.
