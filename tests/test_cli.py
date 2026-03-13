@@ -46,6 +46,11 @@ class InitProjectTests(unittest.TestCase):
         self.assertEqual(_slugify_title(" Agent---CLI   Demo "), "agent-cli-demo")
 
 
+    def test_showcase_alias_resolves_to_web_app(self) -> None:
+        from oss_launchpad_cli.cli import _resolve_preset_name
+
+        self.assertEqual(_resolve_preset_name("showcase"), "web-app")
+
     def test_list_presets_returns_sorted_presets(self) -> None:
         self.assertEqual(_list_presets(), ["ai-agent", "python-lib", "web-app"])
 
