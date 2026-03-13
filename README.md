@@ -81,6 +81,7 @@ If you need a compact UI/UX reminder for that same governance web-demo slice, op
 If you need a compact step-check note for keeping that same governance result-card slice reproducible during UI review, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_STEP_CHECK_NOTE.md`.
 If you need a compact bridge for keeping the same governance result-card slice aligned with UI/UX-first layout choices and Playwright-style replay discipline, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_UI_PLAYWRIGHT_BRIDGE.md`.
 If you need a compact bridge from `oss-launchpad presets --json --preset web-app` to the governance-sandbox web demo, open `docs/PRESET_WEB_APP_GOVERNANCE_WEB_DEMO_BRIDGE.md`.
+If you need a compact bridge from that same single-preset JSON export to one governance result card plus one visible report download target, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_DOWNLOAD_NOTE.md`.
 If you need a compact phase-one reminder that governance web-app starter work should keep scenario-file input and report output coupled before broader demo polish, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_PAIR_NOTE.md`.
 If you need a compact governance web-app reminder that the same phase-one pair still starts with one JSON/YAML scenario file before the result-card/export layer, open `docs/PRESET_WEB_APP_GOVERNANCE_JSON_YAML_PHASE_ONE_NOTE.md`.
 If you need a compact gate for keeping the first governance result card tied to one explicit export/download cue, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_EXPORT_GATE.md`.
