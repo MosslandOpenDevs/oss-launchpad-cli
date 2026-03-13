@@ -56,6 +56,11 @@ class InitProjectTests(unittest.TestCase):
 
         self.assertEqual(_resolve_preset_name("web-demo"), "web-app")
 
+    def test_result_card_demo_alias_resolves_to_web_app(self) -> None:
+        from oss_launchpad_cli.cli import _resolve_preset_name
+
+        self.assertEqual(_resolve_preset_name("result-card-demo"), "web-app")
+
     def test_list_presets_returns_sorted_presets(self) -> None:
         self.assertEqual(_list_presets(), ["ai-agent", "python-lib", "web-app"])
 

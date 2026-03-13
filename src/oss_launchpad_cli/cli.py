@@ -23,6 +23,7 @@ PRESET_ALIASES = {
     "landing-page": "web-app",
     "landing": "web-app",
     "showcase": "web-app",
+    "result-card-demo": "web-app",
     "web-demo": "web-app",
     "library": "python-lib",
     "lib": "python-lib",
