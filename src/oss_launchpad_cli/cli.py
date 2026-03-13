@@ -30,6 +30,7 @@ PRESET_ALIASES = {
     "ui-proof": "web-app",
     "governance-demo": "web-app",
     "governance-ui": "web-app",
+    "governance-sandbox-demo": "web-app",
     "library": "python-lib",
     "lib": "python-lib",
 }
