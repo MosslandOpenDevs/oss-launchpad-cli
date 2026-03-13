@@ -73,6 +73,7 @@ If you need a compact preset note for keeping the first web-app pass to one form
 If you need a compact UI note for keeping that first proof to one primary action and one reviewable result card, open `docs/PRESET_WEB_APP_ONE_ACTION_RESULT_CARD_NOTE.md`.
 If you need a compact priority summary for the first web-app preset slice, keep it to one form, one primary action, and one reviewable result card before broader exports.
 If you need a compact UI note for keeping that same first proof anchored to one unmistakable primary CTA before widening the result card, open `docs/PRESET_WEB_APP_PRIMARY_CTA_RULE.md`.
+If you need a compact review note for keeping that same first proof to one primary action plus one reviewable result card, open `docs/PRESET_WEB_APP_PRIMARY_ACTION_RESULT_CARD_CHECK.md`.
 If you need a compact UI/Playwright checkpoint for keeping one form, one CTA, and one export-ready result card stable, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STABILITY_NOTE.md`.
 If you need a compact reminder to keep the first web-app proof to one small reviewable result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_SMALL_PROOF_NOTE.md`.
 If you need a compact governance handoff for scenario-source short aliases (`scenario_src`, `source_href`) before widening the result-card export path, open `docs/PRESET_JSON_GOVERNANCE_SCENARIO_SOURCE_SHORT_ALIAS_NOTE.md`.
