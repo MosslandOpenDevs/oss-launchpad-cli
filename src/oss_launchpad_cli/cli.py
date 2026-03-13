@@ -27,6 +27,7 @@ PRESET_ALIASES = {
     "result-card-ui": "web-app",
     "web-demo": "web-app",
     "web-ui-demo": "web-app",
+    "ui-proof": "web-app",
     "governance-demo": "web-app",
     "governance-ui": "web-app",
     "library": "python-lib",
