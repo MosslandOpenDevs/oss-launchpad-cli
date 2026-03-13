@@ -573,3 +573,5 @@ If you need the matching one-line status reminder for repo 4 and repo 5 before a
 If you need the matching validation-first reminder for repo 4 and repo 5 inside that same five-repo pass, open `docs/PRESET_FIVE_REPO_FOUR_FIVE_VALIDATE_NOTE.md`.
 
 If you need a compact bridge from preset JSON export to one owner-facing result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_QUEUE_NOTE.md`.
+
+- `docs/PRESET_WEB_APP_PLAYWRIGHT_STEP_CHECK.md` — keep web-app browser proof scoped to one stable step-by-step form-to-card loop.
