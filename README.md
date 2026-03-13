@@ -236,7 +236,9 @@ If you need the quickest field-order scan before polishing that same first resul
 If you need a shorter guardrail for keeping that same preset-JSON flow tied to one result card plus one downloadable bundle, open `docs/PRESET_JSON_RESULT_CARD_ONE_BUNDLE_NOTE.md`.
 If you want a shorter first-pass checklist for the first manual `web-app` UI edit, open `docs/PRESET_WEB_APP_UI_FIRST_PASS.md`.
 That pass should stay UI-first: keep the landing brief, information architecture, checklist, and demo script aligned before widening scope or polishing secondary screens.
-If you want a one-card review note once the first web demo proof is visible, open `docs/PRESET_WEB_DEMO_RESULT_CARD.md`.
+If you want a one-card review note once the first web demo proof is visible, open `docs/PRESET_WEB_DEMO_RESULT_CARD.md
+If you need the smallest export-aware proof gate for the web-app preset, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_GATE.md`.
+`.
 If the starter proof specifically changes the first input form plus the first result card, open `docs/PRESET_WEB_DEMO_FORM_RESULT_STABILITY.md` before widening the demo surface.
 If you need a short reminder to stabilize that first result-card slice before adding more UI states, open `docs/PRESET_WEB_APP_RESULT_CARD_STABILITY_NOTE.md`.
 If you want a faster guardrail for keeping the first visible `web-app` proof limited to one believable result card, open `docs/PRESET_WEB_APP_FIRST_RESULT_CARD_CHECK.md`.
