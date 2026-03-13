@@ -623,3 +623,5 @@ If you need a compact phase-one reminder for keeping governance report-file alia
 - Governance sandbox proposal-file alias note: use `docs/PRESET_GOVERNANCE_PROPOSAL_FILE_ALIAS_NOTE.md` when a preset handoff needs to mention direct `proposal_file` / `proposal_path` scenario inputs before the same report replay.
 
 If you need the shortest preset handoff for a governance web-app slice that must stay one form, one primary action, and one reviewable result card, open `docs/GOVERNANCE_SANDBOX_WEB_APP_RESULT_CARD_VALIDATE_START_NOTE.md`.
+
+If you need a compact checkpoint for the first governance web-app slice, keep one preset chooser, one result card, and one explicit local validation rerun together in `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATE_COMMAND_NOTE.md`.
