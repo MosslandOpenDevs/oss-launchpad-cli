@@ -136,6 +136,7 @@ If you need a compact note for keeping the first governance-aligned web-app slic
 If you need a compact note for the phase-one web-app handoff, keep one chooser, one primary action, and one result card behind the same scenario-file/report-first order in `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_RESULT_CARD_NOTE.md`.
 If you need a compact governance-sandbox phase-one reminder that nested scenario proposal text should populate the first result card before wrapper titles, open `docs/PRESET_GOVERNANCE_SCENARIO_INPUT_PRECEDENCE_NOTE.md`.
 If you need a compact handoff that keeps the repo-4 result card aligned with repo-5's current delivery order, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_RESULT_CARD_HANDOFF.md`.
+If you need a compact handoff for keeping repo 4 aligned with repo 5's current phase-one pace, open `docs/PRESET_WEB_APP_GOVERNANCE_PHASE_ONE_PROGRESS_SYNC_NOTE.md`.
 If you need a compact scope note for the first governance web-demo slice, open `docs/PRESET_WEB_APP_GOVERNANCE_PHASE_ONE_SCOPE_NOTE.md`.
 If you need a compact acceptance note for the first web-app demo slice, open `docs/PRESET_WEB_APP_RESULT_CARD_DEMO_ACCEPTANCE.md`.
 If you need a compact stability note for keeping one visible export/download path on that same first result card, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STABILITY_NOTE.md`.
