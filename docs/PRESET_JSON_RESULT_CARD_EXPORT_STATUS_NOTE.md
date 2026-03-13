@@ -1,3 +1,3 @@
-# Preset JSON Result Card Export Status Note
+# Preset JSON result-card export status note
 
-For the first preset JSON result card, keep three things visible together: chosen preset label, validation command, and whether the export/download path is ready.
+Keep the preset JSON output explicit about the first result-card export path so web-demo scaffolds can hand off one reviewable artifact before widening screens or flows.
