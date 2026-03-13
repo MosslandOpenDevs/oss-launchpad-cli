@@ -365,6 +365,7 @@ def main() -> None:
                 "smoke_command": _build_smoke_command(preset, "sample-project", package_name),
                 "validation_command": _build_validation_command(preset, "sample-project", package_name),
                 "proof_validation_command": _build_validation_command(preset, "sample-project", package_name),
+                "result_card_validation_command": _build_validation_command(preset, "sample-project", package_name),
                 "setup_command": _build_customize_first_command(preset, "sample-project", package_name),
                 "customize_first_command": _build_customize_first_command(preset, "sample-project", package_name),
                 "starter_review_command": _build_starter_review_command(preset, "sample-project", package_name),
