@@ -197,6 +197,7 @@ If you need a compact maintainer reminder to keep repo 4 visibly active while re
 If you need the matching preset note for five-repo runs, open `docs/PRESET_FIVE_REPO_COMMIT_GATE_NOTE.md` to keep one-line repo status plus validation-first commit/push claims.
 If you need a compact maintainer note for validating one small preset or README slice before push, open `docs/PRESET_VALIDATE_SMALL_SLICE_NOTE.md`.
 If you need a short maintainer cue that keeps the first web-app UI/UX slice paired with one reproducible Playwright-style proof, open `docs/PRESET_WEB_APP_UI_UX_PLAYWRIGHT_STATUS_NOTE.md`.
+If you need a compact scope reminder for keeping the first web-app preset demo limited to one form, one result card, one validation command, and one downloadable proof path, open `docs/PRESET_WEB_APP_VALIDATE_DOWNLOAD_CARD_SCOPE.md`.
 
 If you need a compact bridge for keeping the first web-app chooser, one result card, and one exported bundle path visible together, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_BRIDGE.md`.
 
