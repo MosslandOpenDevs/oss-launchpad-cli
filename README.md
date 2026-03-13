@@ -595,3 +595,4 @@ If you need the matching validation-first reminder for repo 4 and repo 5 inside 
 If you need a compact bridge from preset JSON export to one owner-facing result card, open `docs/PRESET_JSON_RESULT_CARD_OWNER_QUEUE_NOTE.md`.
 
 - `docs/PRESET_WEB_APP_PLAYWRIGHT_STEP_CHECK.md` — keep web-app browser proof scoped to one stable step-by-step form-to-card loop.
+If you need a compact preset note for keeping governance report-output aliases stable while phase-one work stays scenario/report-first, open `docs/PRESET_GOVERNANCE_REPORT_ALIAS_NOTE.md`.
