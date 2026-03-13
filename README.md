@@ -125,6 +125,7 @@ If you need the matching compact reminder that the first chooser/result-card sli
 If you need a compact note for keeping governance-aligned preset work behind the same scenario-file -> report-bundle -> preset -> result-card phase order, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ORDER_NOTE.md`.
 If you need a compact note for keeping the first governance-aligned web-app slice compatible with commented `.json5` scenario fixtures before wiring the broader demo, open `docs/PRESET_JSON_GOVERNANCE_JSON5_COMPAT_NOTE.md`.
 If you need a compact note for the phase-one web-app handoff, keep one chooser, one primary action, and one result card behind the same scenario-file/report-first order in `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_RESULT_CARD_NOTE.md`.
+If you need a compact handoff that keeps the repo-4 result card aligned with repo-5's current delivery order, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_RESULT_CARD_HANDOFF.md`.
 If you need a compact acceptance note for the first web-app demo slice, open `docs/PRESET_WEB_APP_RESULT_CARD_DEMO_ACCEPTANCE.md`.
 If you need a compact stability note for keeping one visible export/download path on that same first result card, open `docs/PRESET_WEB_APP_RESULT_CARD_DOWNLOAD_STABILITY_NOTE.md`.
 If you need the shortest recovery-first note for that same preset JSON form/result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_RECOVERY_STACK.md`.
