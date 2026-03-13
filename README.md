@@ -60,7 +60,7 @@ Current presets:
 - `web-app`
 - `python-lib`
 
-Alias note: `site`, `website`, `showcase`, `governance-demo`, `governance-ui`, and `dao-demo` resolve to `web-app` for teams that name the same public proof by surface or governance demo outcome instead of stack.
+Alias note: `site`, `website`, `showcase`, `governance-demo`, `governance-ui`, `governance-report-demo`, and `dao-demo` resolve to `web-app` for teams that name the same public proof by surface, governance outcome, or report-driven demo instead of stack.
 
 Each preset keeps the same public-repo scaffold, but changes the README framing, setup guidance, and starter files so the generated repository feels more specific on day one.
 
