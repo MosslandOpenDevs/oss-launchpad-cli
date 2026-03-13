@@ -191,6 +191,7 @@ If you need a compact copy-order cue for that same form -> result-card -> export
 If you need a compact result-card cue that keeps the chosen preset, validation command, and export-ready state visible together, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
 If you need a compact reminder to keep the first preset chooser/result-card slice tied to one export-ready validation status before widening the UI, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_EXPORT_STATUS_NOTE.md`.
 If you need a compact maintainer reminder for the required five-line short report across the active repos, open `docs/PRESET_FIVE_REPO_SHORT_REPORT_NOTE.md`.
+If you need a compact maintainer reminder to keep repo 4 visibly active while repo 5 stays scenario/report-first, open `docs/PRESET_REPO_FOUR_ACTIVE_WITH_REPO_FIVE_PHASE_ONE_NOTE.md`.
 If you need the matching preset note for five-repo runs, open `docs/PRESET_FIVE_REPO_COMMIT_GATE_NOTE.md` to keep one-line repo status plus validation-first commit/push claims.
 If you need a compact maintainer note for validating one small preset or README slice before push, open `docs/PRESET_VALIDATE_SMALL_SLICE_NOTE.md`.
 If you need a short maintainer cue that keeps the first web-app UI/UX slice paired with one reproducible Playwright-style proof, open `docs/PRESET_WEB_APP_UI_UX_PLAYWRIGHT_STATUS_NOTE.md`.
