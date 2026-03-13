@@ -209,6 +209,7 @@ If you need a short maintainer cue that keeps the first web-app UI/UX slice pair
 If you need a compact scope reminder for keeping the first web-app preset demo limited to one form, one result card, one validation command, and one downloadable proof path, open `docs/PRESET_WEB_APP_VALIDATE_DOWNLOAD_CARD_SCOPE.md`.
 
 If you need a compact bridge for keeping the first web-app chooser, one result card, and one exported bundle path visible together, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_BRIDGE.md`.
+If you need a compact maintainer note for keeping starter docs visible on that same first result card alongside one export/download target, open `docs/PRESET_WEB_APP_RESULT_CARD_STARTER_DOCS_EXPORT_NOTE.md`.
 
 If you want a compact maintainer check that keeps the first web-app result card paired with one reopened report artifact, open `docs/PRESET_WEB_APP_REPORT_DOWNLOAD_REVIEW.md`.
 If you need a compact maintainer note for pairing one generated preset review command with one proofable starter-doc edit before push, open `docs/PRESET_REVIEW_COMMAND_PROOF_PAIR_NOTE.md`.
