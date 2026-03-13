@@ -211,6 +211,7 @@ If you need a shorter recheck gate before widening that same result-card slice, 
 If you need a compact proof note for keeping the first web-app slice to one form, one primary action, one stable result card, and one visible proof cue, open `docs/PRESET_WEB_APP_FORM_RESULT_PROOF_NOTE.md`.
 If you need a compact recovery note for keeping the first web-app proof tied to one result card plus one export/download target, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_RECOVERY_NOTE.md`.
 If you need a compact handoff for one web-app form submit plus one visible result card plus one exported artifact, open `docs/PRESET_WEB_APP_FORM_RESULT_EXPORT_NOTE.md`.
+If you need a compact recheck note for keeping that same governance-aligned web-app slice to one form, one primary action, one result card, and one replayable export/report proof, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_RECHECK_NOTE.md`.
 If you need a compact owner-ready note for the first believable web-app result card before widening scope, open `docs/PRESET_WEB_APP_RESULT_CARD_OWNER_READY_NOTE.md`.
 If you need a compact copy-order cue for that same form -> result-card -> export slice, open `docs/PRESET_WEB_APP_FORM_CARD_EXPORT_STATUS_ORDER.md`.
 If you need a compact result-card cue that keeps the chosen preset, validation command, and export-ready state visible together, open `docs/PRESET_JSON_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
