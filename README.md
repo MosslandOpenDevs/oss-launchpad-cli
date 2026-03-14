@@ -116,6 +116,7 @@ If you need a compact note for keeping that same first `web-app` slice readable 
 If you need a compact UI note for keeping the first governance web-app proof tied to one scenario file and one report basename before broader demo polish, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_BASENAME_NOTE.md`.
 If you need a compact UI note for keeping top-level `report_output_ref` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_REF_NOTE.md`.
 If you need a compact UI note for keeping top-level `report_output_tag` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_TAG_NOTE.md`.
+If you need a compact UI note for keeping top-level `report_output_title` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_TITLE_NOTE.md`.
 If you need a compact UI note for keeping that same first governance web-app proof tied to one scenario file and one generated `reports_directory` output location, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORTS_DIRECTORY_NOTE.md`.
 If you need a compact UI note for keeping that same first governance web-app proof tied to one scenario file and one `report_output_dir` export location, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_DIR_NOTE.md`.
 If you need a compact UI note for keeping that same first governance web-app proof tied to one scenario file and one explicit `report_output_basename`, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_BASENAME_NOTE.md`.
