@@ -88,6 +88,7 @@ If you need a compact governance handoff for download-oriented report bundle ali
 If you need a compact governance preset alias note for teams that call the same first web demo `governance-scenario-demo`, open `docs/PRESET_WEB_APP_GOVERNANCE_SCENARIO_DEMO_ALIAS_NOTE.md`.
 If you need a compact web-demo boundary note for keeping one input form, one result card, and one exported governance report path together, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_CARD_SCOPE_NOTE.md`.
 If you need a compact governance web-app note for keeping one scenario file entry, one result card, and one exported report bundle aligned with UI/UX-first and Playwright-interactive review rules, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_BUNDLE_ENTRY_NOTE.md`.
+If you need the matching compact note for stdin-fed YAML/JSON governance replay into the same result card and exported report bundle, open `docs/PRESET_WEB_APP_GOVERNANCE_STDIN_REPORT_BUNDLE_NOTE.md`.
 If you need a compact governance web-app note for keeping one form, one primary CTA, and one export-ready result card together, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_EXPORT_ONE_CTA_NOTE.md`.
 If you need a compact governance web-app reminder that the phase-one UI slice should stay one form, one primary action, and one stable result card before broader polish, open `docs/PRESET_WEB_APP_GOVERNANCE_PHASE_ONE_SCOPE_NOTE.md`.
 If you need the matching replay note for keeping that same governance result-card slice step-checkable before wider demo polish, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_REPLAY_NOTE.md`.
