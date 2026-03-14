@@ -95,6 +95,7 @@ If you need a compact governance web-app note for replaying a journal-shaped sce
 If you need a compact bridge for keeping the same governance result-card slice aligned with UI/UX-first layout choices and Playwright-style replay discipline, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_UI_PLAYWRIGHT_BRIDGE.md`.
 If you need a compact bridge from `oss-launchpad presets --json --preset web-app` to the governance-sandbox web demo, open `docs/PRESET_WEB_APP_GOVERNANCE_WEB_DEMO_BRIDGE.md`.
 If you need a compact bridge from that same single-preset JSON export to one governance result card plus one visible report download target, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_DOWNLOAD_NOTE.md`.
+If you need the shortest alias note for teams that call the same preset lane `governance-report-ui`, open `docs/PRESET_GOVERNANCE_REPORT_UI_ALIAS_NOTE.md`.
 If you need a compact phase-one reminder that governance web-app starter work should keep scenario-file input and report output coupled before broader demo polish, open `docs/PRESET_JSON_GOVERNANCE_PHASE_ONE_PAIR_NOTE.md`.
 If you need the matching compact reminder that this first governance web-app slice should stay one form, one result card, and one exported report bundle, open `docs/PRESET_WEB_APP_GOVERNANCE_PHASE_ONE_RESULT_CARD_NOTE.md`.
 If you need a compact governance web-app reminder that the same phase-one pair still starts with one JSON/YAML scenario file before the result-card/export layer, open `docs/PRESET_WEB_APP_GOVERNANCE_JSON_YAML_PHASE_ONE_NOTE.md`.
