@@ -83,6 +83,7 @@ If you need a compact review note for keeping that same first proof to one prima
 If you need a compact UI/Playwright checkpoint for keeping one form, one CTA, and one export-ready result card stable, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STABILITY_NOTE.md`.
 If you need a compact reminder to keep the first web-app proof to one small reviewable result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_SMALL_PROOF_NOTE.md`.
 If you need a compact governance handoff for scenario-source short aliases (`scenario_src`, `source_href`) before widening the result-card export path, open `docs/PRESET_JSON_GOVERNANCE_SCENARIO_SOURCE_SHORT_ALIAS_NOTE.md`.
+If you need the matching governance handoff for wrapped scenario exports that keep stakeholder preset maps under `stakeholder_types`, open `docs/PRESET_JSON_GOVERNANCE_STAKEHOLDER_TYPES_WRAPPER_NOTE.md`.
 If you need a compact governance web-app note for keeping one scenario-file input, one primary action, and one export-ready result card aligned with UI/UX-first and Playwright-interactive review rules, open `docs/PRESET_WEB_APP_GOVERNANCE_UI_PLAYWRIGHT_RESULT_CARD_NOTE.md`.
 If you need the matching governance handoff for the neutral `source_location` alias, open `docs/PRESET_JSON_GOVERNANCE_SOURCE_LOCATION_ALIAS_NOTE.md`.
 If you need the matching governance handoff for the file-first `scenario_source_file` alias, open `docs/PRESET_JSON_GOVERNANCE_SCENARIO_SOURCE_FILE_ALIAS_NOTE.md`.
