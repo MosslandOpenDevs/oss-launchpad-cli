@@ -6,6 +6,7 @@ CLI toolkit for bootstrapping public open-source projects with strong documentat
 
 If you need the smallest post-generate proof loop, open `docs/PRESET_FIRST_REVIEW_COMMAND_START.md` before widening the preset review surface.
 If you need a compact maintainer reminder to keep one generated preset, one review command, and one proof artifact bundle in the same first-pass handoff, open `docs/PRESET_FIRST_PROOF_BUNDLE_HANDOFF_NOTE.md`.
+If you need a compact note for keeping one preset JSON flow tied to one web result card and one exported governance report bundle, open `docs/PRESET_JSON_RESULT_CARD_ALIAS_HANDOFF.md`.
 
 ---
 
