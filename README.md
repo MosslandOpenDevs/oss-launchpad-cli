@@ -94,6 +94,7 @@ If you need a compact UI/UX reminder for that same governance web-demo slice, op
 If you need a compact step-check note for keeping that same governance result-card slice reproducible during UI review, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_STEP_CHECK_NOTE.md`.
 If you need a compact governance web-app note for replaying a journal-shaped scenario import into the same one-form, one-CTA, one-result-card proof lane, open `docs/PRESET_WEB_APP_GOVERNANCE_SCENARIO_JOURNAL_NOTE.md`.
 If you need a compact bridge for keeping the same governance result-card slice aligned with UI/UX-first layout choices and Playwright-style replay discipline, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_UI_PLAYWRIGHT_BRIDGE.md`.
+If you need a compact governance web-app note for keeping one scenario input form, one stable result card, one export cue, and the same UI/UX + Playwright discipline in a single first-pass slice, open `docs/PRESET_WEB_APP_GOVERNANCE_FORM_CARD_UI_PLAYWRIGHT_NOTE.md`.
 If you need a compact bridge from `oss-launchpad presets --json --preset web-app` to the governance-sandbox web demo, open `docs/PRESET_WEB_APP_GOVERNANCE_WEB_DEMO_BRIDGE.md`.
 If you need a compact bridge from that same single-preset JSON export to one governance result card plus one visible report download target, open `docs/PRESET_WEB_APP_GOVERNANCE_RESULT_CARD_DOWNLOAD_NOTE.md`.
 If you need the shortest alias note for teams that call the same preset lane `governance-report-ui`, open `docs/PRESET_GOVERNANCE_REPORT_UI_ALIAS_NOTE.md`.
