@@ -38,6 +38,7 @@ PRESET_ALIASES = {
     "governance-report-bundle-demo": "web-app",
     "governance-report-ui": "web-app",
     "governance-report-key-demo": "web-app",
+    "governance-report-handle-demo": "web-app",
     "governance-web-form": "web-app",
     "scenario-demo": "web-app",
     "scenario-report-demo": "web-app",
