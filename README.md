@@ -115,6 +115,7 @@ If you need a compact bridge for keeping the first `web-app` result card focused
 If you need a compact note for keeping that same first `web-app` slice readable as one form, one result card, and one export-status cue, open `docs/PRESET_WEB_APP_RESULT_CARD_EXPORT_STATUS_NOTE.md`.
 If you need a compact UI note for keeping the first governance web-app proof tied to one scenario file and one report basename before broader demo polish, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_BASENAME_NOTE.md`.
 If you need a compact UI note for keeping top-level `report_output_ref` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_REF_NOTE.md`.
+If you need a compact UI note for keeping top-level `report_output_key` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_KEY_NOTE.md`.
 If you need a compact UI note for keeping top-level `report_output_tag` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_TAG_NOTE.md`.
 If you need a compact UI note for keeping top-level `report_output_title` mapped to that same governance report basename, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORT_OUTPUT_TITLE_NOTE.md`.
 If you need a compact UI note for keeping that same first governance web-app proof tied to one scenario file and one generated `reports_directory` output location, open `docs/PRESET_WEB_APP_GOVERNANCE_REPORTS_DIRECTORY_NOTE.md`.
