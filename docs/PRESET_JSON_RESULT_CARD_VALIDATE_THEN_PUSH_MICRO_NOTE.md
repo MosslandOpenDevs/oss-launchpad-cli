@@ -1,3 +1,7 @@
-# PRESET_JSON_RESULT_CARD_VALIDATE_THEN_PUSH_MICRO_NOTE
+# Preset JSON Result Card Validate-Then-Push Micro Note
 
-If you need a compact repo-4 reminder that preset-json/result-card work still needs validator-clean proof before commit or push, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_THEN_PUSH_MICRO_NOTE.md`.
+For preset-json and result-card slices, keep the change small and validation-backed before commit or push.
+
+- One small preset or result-card improvement is enough for a pass.
+- Re-run the local validator before commit/push.
+- If validation fails, keep the change local and report the hold reason.
