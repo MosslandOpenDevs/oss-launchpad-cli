@@ -9,6 +9,7 @@ If you need a compact maintainer reminder to keep one generated preset, one revi
 If you need a compact note for keeping one preset JSON flow tied to one web result card and one exported governance report bundle, open `docs/PRESET_JSON_RESULT_CARD_ALIAS_HANDOFF.md`.
 If you need a compact reminder that governance-flavored web presets should stay intro-first with one primary action and one reviewable result card, open `docs/PRESET_WEB_APP_INTRO_FIRST_RESULT_CARD_NOTE.md`.
 If you need a compact web-app preset note for replaying governance-sandbox input via `proposal_input_markdown_path` before widening the result-card flow, open `docs/PRESET_WEB_APP_GOVERNANCE_PROPOSAL_INPUT_MARKDOWN_PATH_NOTE.md`.
+If you need a compact preset note for keeping governance web-demo work behind the scenario-file -> report-bundle phase-one lane, open `docs/PRESET_WEB_APP_GOVERNANCE_SCENARIO_REPORT_PHASE_ONE_NOTE.md`.
 
 ---
 
