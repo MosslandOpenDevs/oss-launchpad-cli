@@ -47,6 +47,7 @@ PRESET_ALIASES = {
     "report-card-demo": "web-app",
     "dao-result-card": "web-app",
     "playwright-card-demo": "web-app",
+    "governance-result-card-demo": "web-app",
     "library": "python-lib",
     "lib": "python-lib",
 }
