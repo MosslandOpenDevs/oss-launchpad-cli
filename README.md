@@ -660,3 +660,4 @@ If you need a compact repo-4 reminder that preset-json/result-card work still ne
 If you need the adjacent-markdown proposal-file reminder for that same bridge, open `docs/PRESET_JSON_GOVERNANCE_PROPOSAL_MARKDOWN_PATH_NOTE.md`.
 
 If you need a compact repo-4 reminder that preset-json/result-card work still needs validator-clean proof before commit or push, open `docs/PRESET_JSON_RESULT_CARD_VALIDATE_THEN_PUSH_MICRO_NOTE.md`.
+If you need a compact bridge for keeping the first governance web demo inside one form, one primary action, one result card, and one validation rerun, open `docs/PRESET_WEB_APP_UI_UX_PLAYWRIGHT_RESULT_CARD_LOOP.md`.

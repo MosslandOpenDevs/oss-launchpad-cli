@@ -1,0 +1,1 @@
+For governance-sandbox-aligned web demos, keep the first proof inside one form, one primary action, one result card, and one validation rerun so the UI stays reviewable and Playwright-friendly before wider navigation.
