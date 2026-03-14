@@ -11,6 +11,8 @@ If you need a compact reminder that governance-flavored web presets should stay 
 
 ---
 
+If you need the shortest preset handoff for a one-form, one-primary-action, validator-backed result-card slice, open `docs/PRESET_WEB_APP_RESULT_CARD_VALIDATE_START_NOTE.md`.
+
 ## Why this project exists
 
 Recommended maintainer loop: scaffold once, tailor the generated docs immediately, then keep the review commands in the repo so every launch decision leaves visible evidence.
