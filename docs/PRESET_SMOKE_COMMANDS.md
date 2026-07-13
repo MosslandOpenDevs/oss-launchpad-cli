@@ -9,14 +9,16 @@ This document explains what each command is checking and when to replace it with
 Printed smoke command:
 
 ```bash
-python3 -m json.tool evals/smoke_cases.jsonl >/dev/null || head -n 3 evals/smoke_cases.jsonl
+python3 -m json.tool --json-lines < evals/smoke_cases.jsonl >/dev/null
 ```
 
 What it proves:
 
 - the generated eval file exists,
-- the JSONL content is visible immediately,
+- every line is valid JSON, so the file stays parseable as more eval cases are added,
 - and the maintainer has an obvious first artifact to customize.
+
+(The file is read via stdin redirection because `json.tool --json-lines <file>` is broken on some Python versions.)
 
 Upgrade later to a real eval runner once the repo has a model or agent loop.
 
@@ -25,8 +27,10 @@ Upgrade later to a real eval runner once the repo has a model or agent loop.
 Printed smoke command:
 
 ```bash
-sh demo/run_demo.sh && sed -n '1,40p' docs/landing-page-brief.md
+bash demo/run_demo.sh && sed -n '1,40p' docs/landing-page-brief.md
 ```
+
+(The script uses bash-only options such as `pipefail`, so it is invoked with `bash` rather than `sh`.)
 
 What it proves:
 
@@ -41,8 +45,10 @@ Upgrade later to a real frontend build, test, or screenshot step.
 Printed smoke command:
 
 ```bash
-PYTHONPATH=src python3 -m unittest tests/test_smoke.py && python3 examples/basic_usage.py
+PYTHONPATH=src python3 -m unittest tests/test_smoke.py && PYTHONPATH=src python3 examples/basic_usage.py
 ```
+
+(`PYTHONPATH=src` is repeated because a `VAR=value` prefix only applies to the first command in a `&&` chain.)
 
 What it proves:
 

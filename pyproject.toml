@@ -1,21 +1,31 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "oss-launchpad-cli"
-version = "0.1.0"
+dynamic = ["version"]
 description = "CLI for bootstrapping public OSS project launch scaffolding"
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "MosslandOpenDevs" }]
+
+[project.urls]
+Homepage = "https://github.com/MosslandOpenDevs/oss-launchpad-cli"
+Issues = "https://github.com/MosslandOpenDevs/oss-launchpad-cli/issues"
 
 [project.scripts]
 oss-launchpad = "oss_launchpad_cli.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+# Template files (including dot-directories like .github) are pulled in via
+# MANIFEST.in; glob-based package-data patterns skip dot-directory segments.
+include-package-data = true
+
+[tool.setuptools.dynamic]
+version = { attr = "oss_launchpad_cli.__version__" }
 
 [tool.setuptools.packages.find]
 where = ["src"]

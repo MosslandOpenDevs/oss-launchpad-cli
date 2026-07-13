@@ -1,0 +1,3 @@
+graft src/oss_launchpad_cli/templates
+global-exclude *.py[cod]
+prune **/__pycache__

@@ -2,23 +2,56 @@ name: CI
 
 on:
   push:
+    branches: [main]
   pull_request:
 
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  smoke:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.12", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run unit tests
+        run: python3 -m unittest discover -s tests -q
+
+  package-smoke:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Install package
-        run: pip install -e .
-      - name: Run unit tests
-        run: python3 -m unittest discover -s tests -q
-      - name: Run scaffold smoke test
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      # Install non-editable so missing package data (templates) fails here,
+      # not on end-user machines.
+      - name: Install built package
+        run: pip install .
+      - name: Run scaffold smoke test from outside the repo
         run: |
+          cd "$RUNNER_TEMP"
+          oss-launchpad --version
           oss-launchpad init sample-agent --title "Sample Agent" --preset ai-agent
           test -f sample-agent/README.md
+          test -f sample-agent/LICENSE
+          test -f sample-agent/.gitignore
           test -f sample-agent/CONTRIBUTING.md
           test -f sample-agent/benchmark/README.md
           grep -q "public AI agent repository" sample-agent/README.md
+          (cd sample-agent && python3 -m json.tool --json-lines < evals/smoke_cases.jsonl >/dev/null)
           oss-launchpad init sample-lib --title "Sample Library" --preset python-lib
           grep -q "public Python library repository" sample-lib/README.md
+          (cd sample-lib && PYTHONPATH=src python3 -m unittest tests/test_smoke.py && PYTHONPATH=src python3 examples/basic_usage.py)
+          oss-launchpad init sample-app --title "Sample App" --preset web-app
+          (cd sample-app && bash demo/run_demo.sh)
+          oss-launchpad presets --json > /dev/null

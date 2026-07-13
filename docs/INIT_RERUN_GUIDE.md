@@ -9,8 +9,14 @@ A second run against the same directory should:
 
 - keep existing files untouched,
 - print `No new files created.` when the scaffold is already complete,
+- print `Skipped N existing file(s), never overwritten (X customized, Y untouched since generation).` so the no-overwrite contract and your customization state are both visible,
+- warn if the directory was previously scaffolded with a different preset,
 - preserve preset-specific starter files,
 - and still print the title slug, smoke command, and next steps.
+
+## How the drift check works
+
+Every run writes `.oss-launchpad.json` into the target: the generator version, preset, title, and a SHA-256 hash of each file as it was generated. On rerun, skipped files are compared against their recorded hashes, so the CLI can distinguish files you have customized (expected) from files still identical to the template output (safe to regenerate elsewhere). Commit this file so the drift check works for every collaborator.
 
 ## Recommended maintainer workflow
 
