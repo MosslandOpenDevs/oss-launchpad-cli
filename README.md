@@ -1,5 +1,10 @@
 # oss-launchpad-cli
 
+<!-- opendevs-badges:start -->
+[![CI](https://github.com/MosslandOpenDevs/oss-launchpad-cli/actions/workflows/ci.yml/badge.svg)](https://github.com/MosslandOpenDevs/oss-launchpad-cli/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-64748b?style=flat)](LICENSE)
+<!-- opendevs-badges:end -->
+
 CLI toolkit for bootstrapping public open-source projects with strong documentation, reproducibility, and launch readiness.
 
 > Build cleaner public repos faster: README, LICENSE, demo script, benchmark folder, issue/PR templates, release scaffolding, and preset-specific starter files in one flow.
